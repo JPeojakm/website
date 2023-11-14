@@ -1,0 +1,131 @@
+{
+  "projects": [
+    {
+      "name": "Vacant Land",
+      "credit": "Project",
+      "label": "GIS",
+      "title": "Evaluate Cleveland Re-use vacant land project",
+      "source": "",
+      "image": "image1.jpg"
+    },
+    {
+      "name": "H-1B",
+      "credit": "Project",
+      "label": "Data analysis",
+      "title": "How the H-1B Visa Process Creates Challenges for International Students in the US",
+      "source": "https://jpeojakm.github.io/portfolio/h-1b.html",
+      "image": "image2.jpg"
+    },
+    {
+      "name": "CATL",
+      "credit": "Caixin Media",
+      "label": "Infographic",
+      "title": "CATL Q1 Results Fall Short: Leadership at Risk in Competitive Market?",
+      "source": "https://jpeojakm.github.io/portfolio/infogra3.html",
+      "image": "image3.jpg"
+    },
+    {
+      "name": "EV",
+      "credit": "Reporting Texas",
+      "label": "Writing",
+      "title": "EV Charging Set to Expand in Rural Texas in Next Five Years ",
+      "source": "https://www.reportingtexas.com/electric-vehicle-charging-set-to-expand-in-rural-texas-in-next-five-years/",
+      "image": "image4.jpg"
+    }
+  ],
+  "maps": [
+    {
+      "name": "Vacant",
+      "credit": "GIS",
+      "label": "GWR analysis",
+      "label2": "",
+      "title": "Vacant Land Re-use Strategy",
+      "source": "",
+      "image": "image1.jpg"
+    },
+    {
+      "name": "Events",
+      "credit": "GIS",
+      "label": "Geocoding",
+      "label2": "Spatial analysis",
+      "title": "FLUX Events Venue",
+      "source": "",
+      "image": "image2.jpg"
+    },
+    {
+      "name": "Landuse",
+      "credit": "GIS",
+      "label": "Georeferencing",
+      "label2": "",
+      "title": "West Campus Land Use",
+      "source": "",
+      "image": "image3.jpg"
+    },
+    {
+      "name": "Travistransport",
+      "credit": "GIS",
+      "label": "cartography\n",
+      "label2": "",
+      "title": "Travis County Transport",
+      "source": "",
+      "image": "image4.jpg"
+    },
+    {
+      "name": "Travisschool",
+      "credit": "GIS",
+      "label": "cartography",
+      "label2": "",
+      "title": "Travis County Schools and Roads",
+      "source": "",
+      "image": "image5.jpg"
+    }
+  ],
+  "dataviz": [
+    {
+      "name": "covid",
+      "credit": "",
+      "label": "R",
+      "label2": "",
+      "title": "covid-19",
+      "source": "https://jpeojakm.github.io/portfolio/covid19.html"
+    }
+  ],
+  "writing": [
+    {
+      "name": "Chinese rally",
+      "credit": "Reporting Texas",
+      "time": "Jan 31, 2023",
+      "label": "Politic",
+      "title": "Chinese Americans March in Austin, Call for Withdraw of Bills",
+      "source": "https://www.reportingtexas.com/chinese-american-march-in-austin-calls-for-withdraw-of-bills/",
+      "image": "image1.jpg"
+    },
+    {
+      "name": "UTtiktok",
+      "credit": "Reporting Texas",
+      "time": "Jan 18, 2023",
+      "label": "Tech",
+      "title": "UT Bans TikTok Due to Security Concerns, But Some Professors Wary",
+      "source": "https://www.reportingtexas.com/citing-cybersecurity-risks-ut-bans-tiktok-but-some-professors-wary/",
+      "image": "image2.jpg"
+    },
+    {
+      "name": "Election",
+      "credit": "Reporting Texas",
+      "time": "Dec 11, 2022",
+      "label": "Politic",
+      "title": "How Asian Texans Are Working to Improve Their Community’s Political Engagement, Representation",
+      "source": "https://www.reportingtexas.com/how-asian-texans-are-working-to-improve-their-communitys-political-engagement-representation/",
+      "image": "image3.jpg"
+    },
+    {
+      "name": "EV",
+      "credit": "Reporting Texas",
+      "time": "Nov 16, 2022",
+      "label": "Business",
+      "title": "Electric Vehicle Charging Set to Expand in Rural Texas in Next Five Years ",
+      "source": "https://www.reportingtexas.com/electric-vehicle-charging-set-to-expand-in-rural-texas-in-next-five-years/",
+      "image": "image4.jpg"
+    }
+  ]
+}

@@ -1,30 +1,36 @@
 {% extends '_templates/base.njk' %}
 
-{% block page_title %}Index page title{% endblock %}
-
-{% block page_description %}The index search description for this page goes here.{% endblock %}
-
 {% block content %}
 <div class="container">
-  <h1>Main headline here</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in facilisis velit, aliquam congue dui. Mauris id mi quam. Nam enim leo, bibendum vel efficitur id, elementum malesuada est. Pellentesque interdum tempus eros nec iaculis. Quisque ac est dictum, vehicula nulla quis, condimentum dui.</p>
-  <h2>Library books loop</h2>
-  <p>This loops through data that came from a Google Docs example.</p>
-  <div class="row">
-    {% for book in library.books %}
+  <div class="row justify-content-center">
+    <div class="col col-md-8 col-lg-8">
+    <h1>Jinpeng Li aka J.P.</h1>
+    <p>is a data reporter based in Austin, TX. My passions include crafting maps, designing infographics, making data visualizations, and I also love writing. I curate a newsletter called "HardFork" which focuses on AI development in Asia. Know more about my works below. </p>
+    <p>#Longhorn #NewNewHuman #WeekendCooking</p>
+
+<div class="container-fluid">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+      {% for project in home.projects %}
       <div class="col">
-        <img src="img/{{ book.slug }}.jpg" alt="" class="img-fluid">
-        <h3><a href="books/{{ book.slug }}.html">{{ book.title }}</a></h3>
+        <a href="{{ project.source }}" class="text-decoration-none text-dark">
+        <div class="card h-90 border">
+          <img src="../img/projects-photo/{{ project.image }}" class="card-img-top" alt="{{ project.title }}">
+             <div class="card-body">
+              <h5 class="card-title">{{ project.title }}</h5>
+              <div class="badge-container">
+                  <span class="badge rounded-pill bg-primary">{{ project.credit }}</span>
+                  <span class="badge rounded-pill bg-warning">{{ project.label }}</span>
+              </div>
+            </div>
+        </div>
+        </a>
       </div>
-    {% endfor %}
+      {% endfor %}
+    </div>
+      </div>
+
+
+    </div>
   </div>
-  <h2>Bookstores loop</h2>
-  <p>This loops through data that came from a Google Sheet example.</p>
-  <hr>
-  {% for store in bookstores.stores %}
-    <h3><a href="{{ store.url }}" target="_blank">{{ store.name }}</a></h3>
-    <p>{{ store.address}}, {{ store.city }}, {{ store.state }} {{ store.zip }}</p>
-    <hr>
-  {% endfor %}
 </div>
 {% endblock %}

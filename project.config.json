@@ -9,6 +9,16 @@
       "fileId": "1gDwO-32cgpBDn_0niV0iu6TqQTaRDr4nmSqnT53magY",
       "type": "sheet",
       "name": "bookstores"
+    },
+    {
+      "fileId": "1EUeJtpbqwxAGmZdOGLRZSO1D7bRZV2UdfB9E8k2Yog4",
+      "type": "sheet",
+      "name": "home"
+    },
+    {
+      "fileId": "1OowQ7l_VenUrQUZS3agzaQqsaeL156nu4wWkBTuLOV4",
+      "type": "doc",
+      "name": "cartography"
     }
   ],
   "to_bake": [
@@ -18,6 +28,13 @@
       "array": "books",
       "slug": "slug",
       "path": "books"
+    },
+    {
+      "template": "bake-book",
+      "data": "cartography",
+      "array": "maps",
+      "slug": "slug",
+      "path": "maps"
     }
   ]
 }
