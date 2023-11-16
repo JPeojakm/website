@@ -18,20 +18,13 @@
     {
       "fileId": "1OowQ7l_VenUrQUZS3agzaQqsaeL156nu4wWkBTuLOV4",
       "type": "doc",
-      "name": "cartography"
+      "name": "portfolio"
     }
   ],
   "to_bake": [
     {
-      "template": "bake-book",
-      "data": "library",
-      "array": "books",
-      "slug": "slug",
-      "path": "books"
-    },
-    {
-      "template": "bake-book",
-      "data": "cartography",
+      "template": "bake-map",
+      "data": "portfolio",
       "array": "maps",
       "slug": "slug",
       "path": "maps"

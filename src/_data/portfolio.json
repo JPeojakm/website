@@ -1,0 +1,59 @@
+{
+  "maps": [
+    {
+      "slug": "vacant_land",
+      "title": "Re-use vacant land",
+      "label": "Geographically Weighted Regression analysis",
+      "image": "image1",
+      "blurb": "As many rust-belt cities grapple with the challenges of shrinking populations, the City of Cleveland is at a pivotal juncture. Vacant lands, a byproduct of this demographic shift, present both a challenge and an opportunity. This study aims to evaluate the effectiveness of Cleveland’s neighborhood revitalization strategy in repurposing these lands. Utilizing the Opportunity Index compiled by the Kirwan Institute for Race and Ethnicity, along with Geographically Weighted Regression analysis, we will assess the correlation between areas of high vacancy and low opportunity. This analysis is not only pivotal for local urban development but also forms a crucial part of our application for additional program funding from the U.S. Department of Housing and Urban Development. The hypothesis driving this research posits that Cleveland’s vacant land reuse program is adept at identifying areas with high vacancy rates and low opportunity indices, thereby targeting interventions where they are most needed."
+    },
+    {
+      "slug": "event_venue",
+      "title": "event venue",
+      "label": "Geocoding; Spatial analysis",
+      "image": "image2",
+      "blurb": "This report aims to assist FLUX, an annual artist event in Pittsburgh, Pennsylvania, in identifying an optimal venue that balances both the event's budget constraints and the convenience of attendees. Our approach involved using the Average Nearest Neighbor method to analyze the addresses of past attendees to discern clusters of households. A Hot Spot analysis was also conducted to determine the most suitable zip codes based on our findings."
+    },
+    {
+      "slug": "wc_landuse",
+      "title": "wc landuse",
+      "label": "Georeferencing",
+      "image": "image3",
+      "blurb": "To gain a deeper understanding of how land use in the west campus has evolved over time and to predict its potential future changes, we compared land use situations from different periods. Additionally, we collected coordinate data for various amenities to integrate into the base map, thereby practicing georeferencing methods."
+    },
+    {
+      "slug": "transport",
+      "title": "Travis Transport",
+      "label": "Georeferencing",
+      "image": "image4",
+      "blurb": "To gain a deeper understanding of how land use in the west campus has evolved over time and to predict its potential future changes, we compared land use situations from different periods. Additionally, we collected coordinate data for various amenities to integrate into the base map, thereby practicing georeferencing methods."
+    },
+    {
+      "slug": "school",
+      "title": "Travis School",
+      "label": "Georeferencing",
+      "image": "image5",
+      "blurb": "To gain a deeper understanding of how land use in the west campus has evolved over time and to predict its potential future changes, we compared land use situations from different periods. Additionally, we collected coordinate data for various amenities to integrate into the base map, thereby practicing georeferencing methods."
+    }
+  ],
+  "dataviz": [
+    {
+      "slug": "h1b",
+      "title": "H1b",
+      "label": "Datawrapper; R",
+      "blurb": "After obtaining his physics doctorate in physics degree from an Ivy League institution, Leo Zheng found it challenging to secure a job in the U.S. For eight months, he repeated the same routine every day: waking up early, browsing through LinkedIn, and submitting a job application every thirty minutes. As he grew increasingly hopeless and contemplated returning to China, he received an unexpected offer from Apple."
+    },
+    {
+      "slug": "covid",
+      "title": "Covid-19",
+      "label": "R-ggplot",
+      "blurb": "In this series of data visualizations on COVID, I primarily utilized the ggplot2, scales, and patchwork packages in R for presentation. The data focuses on the daily COVID timeline data for cases and deaths in each US state and territory, sourced from The New York Times. Prior to visualization, a cleaning process was conducted."
+    },
+    {
+      "slug": "GDP",
+      "title": "GDP",
+      "label": "R-ggplot",
+      "blurb": "The raw data showcases various key economic indicators for different countries from 1990 to 2017. I have chosen the Gross Domestic Product (GDP), life expectancy at birth and population as a crucial data point to visualize the economic development of countries over the past 30 years. For this purpose, I primarily utilized the gganimate package in R to create animated GIFs."
+    }
+  ]
+}

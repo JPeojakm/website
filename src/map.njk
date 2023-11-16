@@ -2,35 +2,31 @@
 
 {% block page_title %}Map{% endblock %}
 
-{% block page_description %}Some maps was made by GIS.{% endblock %}
+{% block page_description %}Some maps were made by GIS.{% endblock %}
 
 {% block content %}
 <div class="container">
   <div class="row">
     <div class="col">
-    <h1>Map</h1>
-    <p> I use ArcGIS, QGIS, and Mapbox to make maps. </p>
+      <h1>Map</h1>
+      <p> I use ArcGIS, QGIS, and Mapbox to make maps. </p>
 
-<div class="container-fluid">
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
-      {% for map in home.maps %}
-      <div class="col">
-        <div class="card h-90 border">
-          <img src="../img/maps-photo/{{ map.image }}" class="card-img-top" alt="{{ map.title }}">
-             <div class="card-body">
-              <h5 class="card-title">{{ map.title }}</h5>
-              <div class="badge-container">
-                  <span class="badge rounded-pill bg-primary">{{ project.credit }}</span>
-                  <span class="badge rounded-pill bg-warning">{{ project.label }}</span>
+      <div class="container-fluid">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+          {% for map in portfolio.maps %}
+          <div class="col">
+            <div class="card h-90 border">
+              <img src="../img/maps-photo/{{ map.image }}.jpg" class="card-img-top" alt="{{ map.title }}">
+              <div class="card-body">
+                <h5 class="card-title">
+                   <a href="maps/{{ map.slug }}.html">{{ map.title }}</a>
+                </h5>
               </div>
             </div>
+          </div>
+          {% endfor %}
         </div>
       </div>
-      {% endfor %}
-    </div>
-      </div>
-
-
     </div>
   </div>
 </div>
