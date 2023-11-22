@@ -1,156 +1,130 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <!-- A Intro to Coding for Journalists class project -->
   <head>
     <title>JP Li | Writing</title>
-    <meta name="description" content="Some story for Reporting Texas." />
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1"
-    />
-    <link rel="stylesheet" href="css/main.css" />
+    <meta name="description" content="Some story for Reporting Texas.">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/main.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Urbanist:wght@200&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Exo+2:wght@300&display=swap" rel="stylesheet">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg">
+  <div class="container-fluid d-flex justify-content-between">
+    <div>
+      <a class="navbar-brand" href="index.html">
+        <img src="/img/profile.svg" alt="profile">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+     <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="map.html">Map</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index-example.html">Data Viz</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index-example.html">Writing</a>
+        </li>
+      </ul>
+    </div>
+
+    <form class="d-flex" role="search">
+    <a href="https://theabacus.beehiiv.com/" class="btn btn-outline-success">Join the newsletter</a>
+</form>
+  </div>
+</nav>
+
+
+    
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1>Map</h1>
+      <p> I focus on technology and Asian American community. </p>
+
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">Jinpeng "J.P" Li</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="map.html">Map</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index-example.html">Data Viz</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index-example.html">Writing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index-example.html">Index example</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <h1>Map</h1>
-          <p>I focus on technology and Asian American community.</p>
-
-          <div class="container-fluid">
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
-              <div class="col">
-                <div class="card h-90 border">
-                  <img
-                    src="../img/maps-photo/image1.jpg"
-                    class="card-img-top"
-                    alt="Re-use vacant land"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">
-                      <a href="maps/vacant_land.html">Re-use vacant land</a>
-                    </h5>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col">
-                <div class="card h-90 border">
-                  <img
-                    src="../img/maps-photo/image2.jpg"
-                    class="card-img-top"
-                    alt="event venue"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">
-                      <a href="maps/event_venue.html">event venue</a>
-                    </h5>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col">
-                <div class="card h-90 border">
-                  <img
-                    src="../img/maps-photo/image3.jpg"
-                    class="card-img-top"
-                    alt="wc landuse"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">
-                      <a href="maps/wc_landuse.html">wc landuse</a>
-                    </h5>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col">
-                <div class="card h-90 border">
-                  <img
-                    src="../img/maps-photo/image4.jpg"
-                    class="card-img-top"
-                    alt="Travis Transport"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">
-                      <a href="maps/transport.html">Travis Transport</a>
-                    </h5>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col">
-                <div class="card h-90 border">
-                  <img
-                    src="../img/maps-photo/image5.jpg"
-                    class="card-img-top"
-                    alt="Travis School"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">
-                      <a href="maps/school.html">Travis School</a>
-                    </h5>
-                  </div>
-                </div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+          
+          <div class="col">
+            <div class="card h-90 border">
+              <img src="../img/maps-photo/image1.jpg" class="card-img-top" alt="Re-use vacant land">
+              <div class="card-body">
+                <h5 class="card-title">
+                   <a href="maps/vacant_land.html">Re-use vacant land</a>
+                </h5>
               </div>
             </div>
           </div>
+          
+          <div class="col">
+            <div class="card h-90 border">
+              <img src="../img/maps-photo/image2.jpg" class="card-img-top" alt="event venue">
+              <div class="card-body">
+                <h5 class="card-title">
+                   <a href="maps/event_venue.html">event venue</a>
+                </h5>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col">
+            <div class="card h-90 border">
+              <img src="../img/maps-photo/image3.jpg" class="card-img-top" alt="wc landuse">
+              <div class="card-body">
+                <h5 class="card-title">
+                   <a href="maps/wc_landuse.html">wc landuse</a>
+                </h5>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col">
+            <div class="card h-90 border">
+              <img src="../img/maps-photo/image4.jpg" class="card-img-top" alt="Travis Transport">
+              <div class="card-body">
+                <h5 class="card-title">
+                   <a href="maps/transport.html">Travis Transport</a>
+                </h5>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col">
+            <div class="card h-90 border">
+              <img src="../img/maps-photo/image5.jpg" class="card-img-top" alt="Travis School">
+              <div class="card-body">
+                <h5 class="card-title">
+                   <a href="maps/school.html">Travis School</a>
+                </h5>
+              </div>
+            </div>
+          </div>
+          
         </div>
       </div>
     </div>
+  </div>
+</div>
+
 
     <footer>
-      <p id="legal" class="center-block text-center">
-        <small>&copy;</small> <span class="copyright-year"></span>
-        Jinpeng Li
-      </p>
-    </footer>
+<p id="legal" class="center-block text-center">
+  <small>&copy;</small> <span class="copyright-year"></span>
+ Jinpeng Li
+</p>
+</footer>
+
 
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>

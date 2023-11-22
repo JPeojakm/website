@@ -26,16 +26,52 @@ h3 {
 }
 
 h1 {
-  font-family: 'Black Ops One', sans-serif;
+  font-family: sans-serif;
   font-weight: 200;
 }
 
 p {
-  font-family: 'Urbanist', sans-serif;
-  font-weight: 200;
-  font-size: large;
+  font-family: sans-serif;
+  font-weight: 300;
 }
 
 .badge-container .badge {
   margin-right: 5px;
+}
+
+.container-fluid {
+  max-width: 80%;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.intro {
+  h1 {
+    font-family: 'Acme', sans-serif;
+    font-weight: normal;
+    font-size: 40px;
+  }
+  
+  p {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: normal;
+    font-size: 30px;
+    margin-top: 20px;
+  }
+
+  .special-link {
+    font-weight: bold; 
+    color: #7BD75B; 
+    transition: transform 0.3s ease; 
+  
+    &:hover {
+      transform: scale(1.5);
+    }
+  }
+  
+}
+
+
+footer {
+  margin-top: 40px;
 }
