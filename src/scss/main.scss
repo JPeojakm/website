@@ -60,7 +60,7 @@ p {
     margin-top: 20px;
   }
 
-  .special-link {
+  .link {
     font-weight: bold; 
     color: #7BD75B; 
     transition: transform 0.3s ease; 
@@ -72,19 +72,19 @@ p {
   
 }
 
-// Custom Badge Colors
+
 .badge {
   &.longhorn {
-    background-color: #CC5500; // Custom orange color for Longhorn
-    color: white; // Text color
+    background-color: #CC5500; 
+    color: white; 
   }
   &.data-journalism {
-    background-color: #F84C06; // Custom blue color for NewNewHuman
-    color: white; // Text color
+    background-color: #F84C06; 
+    color: white; 
   }
   &.cooking {
-    background-color: #F5C8A7; // Custom green color for WeekendCooking
-    color: white; // Text color
+    background-color: #F5C8A7; 
+    color: white; 
   }
 }
 

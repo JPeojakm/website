@@ -28,9 +28,7 @@
       "array": "maps",
       "slug": "slug",
       "path": "maps"
-    }
-  ],
-  "to_bake": [
+    },
     {
       "template": "bake-map",
       "data": "portfolio",
