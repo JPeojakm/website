@@ -29,5 +29,14 @@
       "slug": "slug",
       "path": "maps"
     }
+  ],
+  "to_bake": [
+    {
+      "template": "bake-map",
+      "data": "portfolio",
+      "array": "dataviz",
+      "slug": "slug",
+      "path": "dataviz"
+    }
   ]
 }

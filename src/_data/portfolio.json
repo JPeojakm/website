@@ -54,6 +54,18 @@
       "title": "GDP",
       "label": "R-ggplot",
       "blurb": "The raw data showcases various key economic indicators for different countries from 1990 to 2017. I have chosen the Gross Domestic Product (GDP), life expectancy at birth and population as a crucial data point to visualize the economic development of countries over the past 30 years. For this purpose, I primarily utilized the gganimate package in R to create animated GIFs."
+    },
+    {
+      "slug": "beeswarm",
+      "title": "citydev",
+      "label": "Svelte.js",
+      "blurb": "The raw data showcases various key economic indicators for different countries from 1990 to 2017. I have chosen the Gross Domestic Product (GDP), life expectancy at birth and population as a crucial data point to visualize the economic development of countries over the past 30 years. For this purpose, I primarily utilized the gganimate package in R to create animated GIFs."
+    },
+    {
+      "slug": "globe",
+      "title": "pop",
+      "label": "Svelte.js",
+      "blurb": "The raw data showcases various key economic indicators for different countries from 1990 to 2017. I have chosen the Gross Domestic Product (GDP), life expectancy at birth and population as a crucial data point to visualize the economic development of countries over the past 30 years. For this purpose, I primarily utilized the gganimate package in R to create animated GIFs."
     }
   ]
 }
