@@ -43,11 +43,12 @@ p {
   max-width: 80%;
   padding-right: 0;
   padding-left: 0;
+  margin-top: 20px;
 }
 
 .intro {
   h1 {
-    font-family: 'Acme', sans-serif;
+    font-family: 'Rubik Pixels', sans-serif;
     font-weight: normal;
     font-size: 40px;
   }
@@ -71,7 +72,48 @@ p {
   
 }
 
+// Custom Badge Colors
+.badge {
+  &.longhorn {
+    background-color: #CC5500; // Custom orange color for Longhorn
+    color: white; // Text color
+  }
+  &.data-journalism {
+    background-color: #F84C06; // Custom blue color for NewNewHuman
+    color: white; // Text color
+  }
+  &.cooking {
+    background-color: #F5C8A7; // Custom green color for WeekendCooking
+    color: white; // Text color
+  }
+}
+
+.badge-container {
+  // Add space between buttons/badges
+  .btn {
+    margin-right: 0.5rem; // Space to the right of each button
+    margin-bottom: 0.5rem; // Space below each button, in case they wrap
+
+    &:last-child {
+      margin-right: 0; // Remove right margin from the last button
+    }
+  }
+
+  .btn-credit {
+    background-color: #0097b2; /* Custom green */
+    border-color: #01849b; /* Slightly darker green border */
+    color: white; /* White text */
+  }
+  
+  .btn-label {
+    background-color: #7ed957; /* Custom light blue */
+    border-color: #6ebf4b; /* Slightly darker blue border */
+    color: white; /* White text */
+  }
+  
+}
+
 
 footer {
-  margin-top: 40px;
+  margin-top: 60px;
 }
