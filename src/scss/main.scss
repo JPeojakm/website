@@ -89,26 +89,25 @@ p {
 }
 
 .badge-container {
-  // Add space between buttons/badges
   .btn {
-    margin-right: 0.5rem; // Space to the right of each button
-    margin-bottom: 0.5rem; // Space below each button, in case they wrap
+    margin-right: 0.5rem; 
+    margin-bottom: 0.5rem; 
 
     &:last-child {
-      margin-right: 0; // Remove right margin from the last button
+      margin-right: 0; 
     }
   }
 
   .btn-credit {
-    background-color: #0097b2; /* Custom green */
-    border-color: #01849b; /* Slightly darker green border */
-    color: white; /* White text */
+    background-color: #0097b2;
+    border-color: #01849b; 
+    color: white; 
   }
   
   .btn-label {
-    background-color: #7ed957; /* Custom light blue */
-    border-color: #6ebf4b; /* Slightly darker blue border */
-    color: white; /* White text */
+    background-color: #7ed957; 
+    border-color: #6ebf4b;
+    color: white; 
   }
   
 }
