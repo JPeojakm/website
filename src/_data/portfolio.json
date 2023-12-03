@@ -41,6 +41,7 @@
       "slug": "h1b",
       "title": "H1b",
       "label": "Datawrapper; R",
+      "image": "",
       "blurb": "After obtaining his physics doctorate in physics degree from an Ivy League institution, Leo Zheng found it challenging to secure a job in the U.S. For eight months, he repeated the same routine every day: waking up early, browsing through LinkedIn, and submitting a job application every thirty minutes. As he grew increasingly hopeless and contemplated returning to China, he received an unexpected offer from Apple."
     },
     {
@@ -66,6 +67,64 @@
       "title": "pop",
       "label": "Svelte.js",
       "blurb": "The raw data showcases various key economic indicators for different countries from 1990 to 2017. I have chosen the Gross Domestic Product (GDP), life expectancy at birth and population as a crucial data point to visualize the economic development of countries over the past 30 years. For this purpose, I primarily utilized the gganimate package in R to create animated GIFs."
+    }
+  ],
+  "infographic": [
+    {
+      "slug": "new-evmakers-performance",
+      "title": "When will the new energy EVmaker achieve profitability?",
+      "image1": "image_1_1",
+      "caption1": "Li Auto(red) turns profitable in Q4 2021; XPeng and NIO continue to incur losses",
+      "image2": "image_1_2",
+      "caption2": "XPeng(blue) Motors' 2021 delivery volume surpasses NIO and Li Auto",
+      "image3": "image_1_3",
+      "caption3": "XPeng Motors' gross margin is lower than its industry peers",
+      "blurb": "The automotive industry, particularly new automakers like Xpeng, NIO, and Li Auto, faced severe supply chain challenges in 2021. Rising upstream raw material costs, chip shortages, tight battery supplies, and disruptions caused by sporadic pandemic outbreaks have been key hurdles.\n\nDespite these challenges, Xpeng, NIO, and Li Auto are in a crucial phase of improving profitability. Their substantial R&D investments have led to strategic losses in the short term, but increasing per-vehicle profit margins suggest a potential approach towards the breakeven point in the future.\n\nIn terms of delivery volume, Xiaopeng Motors delivered 98,200 vehicles in 2021, outperforming NIO's 91,400 vehicles and Li Auto's 90,500 vehicles. However, NIO's delivery volume slightly lagged, with Nezha Auto, a second-tier competitor, selling over 18,000 vehicles in the first two months of 2022, surpassing NIO's 15,800 vehicles. Notably, Li Auto has achieved profitability.\n\nRevenue growth and profit improvement trends are upward for these automakers. NIO reported a full-year revenue of $5.42 billion in 2021, up 122% year-on-year, and a net loss narrowed by 24.3%. In terms of gross margin performance, Xpeng's new vehicle gross margin stands at 11.5%, showing an 8 percentage point increase from 2020. This improvement is attributed to product portfolio expansion, material cost reduction, and XPILOT software sales revenue. Li Auto leads with the highest new vehicle gross margin at 20.6%, closely followed by NIO at 20.1%.\n\nLi Auto's performance in Q4 2021 was particularly strong, turning a profit with a net gain of $44.33 million. The company delivered 35,000 vehicles during the quarter, achieving a vehicle gross profit margin that exceeded market expectations.\n\nDespite the ongoing chip shortage and rising battery costs, Xpeng and NIO remain optimistic. He Xiaopeng, the founder of Xpeng Auto, views these challenges as temporary and an opportunity for the company to refine its capabilities, aiming for a gross margin of over 25%.\n\nCITIC Securities' research suggests that these automakers are in an accelerating phase of profitability improvement. While significant R&D investments continue to cause short-term strategic losses, their steadily increasing single-car gross profit demonstrates their potential to reach break-even in the future."
+    },
+    {
+      "slug": "anta-lining-performance",
+      "title": "Who Prevailed in Performance Last Year between ANTA and Li-Ning?",
+      "image1": "image_2_1",
+      "caption1": "Anta's performance growth slowed down in the second half of 2021, but remains at a high level",
+      "image2": "image_2_2",
+      "caption2": "Anta's DTC (Direct-to-Consumer) transformation yields significant results",
+      "image3": "image_2_4",
+      "caption3": "Profit margin trends of Anta(red) and Li Ning",
+      "blurb": "Leading Domestic Sports and Casual Apparel Brands ANTA and Li-Ning Experienced Significant Performance Improvement Last Year, but Growth Slowed in the Second Half and Stock Prices Have Been Declining Since Q3.\n\nAccording to the latest financial report, ANTA's revenue for 2021 was RMB 49.328 billion, a YoY increase of 38.90%. Compared to Nike Greater China's sales in the 2021 fiscal year, which were only RMB 1.9 billion higher, ANTA's revenue surpassed Adidas Greater China and Lululemon's full-year revenue for the 2021 fiscal year, which were RMB 32.161 billion and RMB 39.7 billion, respectively. Li-Ning's full-year revenue was RMB 22.572 billion, a YoY growth rate of 56.13%.\nThe DTC (Direct-To-Customer) transformation was the main reason for ANTA's performance improvement. The DTC transformation mainly targeted external channels, significantly reducing the proportion of distributors, increasing direct sales efforts, reducing intermediate links, and expanding profit margins.\nPreviously, ANTA's main wholesale distribution model involved selling products wholesale to distributors for exclusive distribution. In 2020, there were too many uncertain factors affecting offline stores due to the pandemic, and distributor purchases led to strong short-term market-oriented positioning.\nAs ANTA's offline store expansion space became saturated, the group began to consider DTC transformation. In the 18 regions where the DTC transformation was launched, ANTA adopted a mixed operating model, which involved recovering distributor stores and converting them into group-owned stores, while retaining some high-performing franchise stores.\nUnlike ANTA's \"single focus, multiple brands\" strategy, Li-Ning continues to adhere to its \"single brand, multiple categories\" approach, developing towards both specialization and trendiness. During the reporting period, the company's revenue from sports fashion products grew at the fastest rate of 71%, accounting for 43% of total revenue. The creativity of this category is well received by young consumers. In terms of specialization, the company's basketball and running series had revenue growth rates of 53% and 46%, respectively."
+    },
+    {
+      "slug": "ctal-market-value",
+      "title": "Is CATL Leading Position Under Threat Amid Fierce Competition?",
+      "image1": "image_3_1",
+      "caption1": "CATL's market value falls below the trillion yuan mark",
+      "image2": "image_3_2",
+      "caption2": "CATL's first-quarter performance falls far short of expectations, with net profit dropping by 20%",
+      "image3": "image_3_3",
+      "caption3": "CATL's revenue and net profit in 2021 show high year-on-year growth",
+      "blurb": "CATL, a global leader in electric vehicle batteries, faced contrasting fortunes between its 2021 annual performance and the first quarter of 2022. Despite an impressive 2021 with revenue soaring to $195.53 billion (up 159.06%) and a net profit of $2.39 billion (up 185.34%), the first quarter of 2022 showed a different trend. The revenue for Q1 2022 increased significantly to $7.3 billion (up 153.9%), but the net profit took a hit, falling to $223.5 million, a 20% decrease. This was far below expectations and marked the first quarter-over-quarter decline since 2020. Additionally, the non-GAAP net profit also declined by 41.6% to $147 million.\n\nThe company's gross profit margin for Q1 2022 was 14.48%, a decrease of 10.88 percentage points from the previous quarter, and below market expectations. This led to a sharp 11.4% fall in CATL's stock price on May 5th.\n\nThe downturn in Q1 2022 can be attributed to multiple factors. There was significant pressure from rising upstream costs and weaker downstream demand from automakers. CATL's revenue primarily comes from power battery systems, energy storage systems, and battery materials. In 2021, these segments contributed 70.19%, 10.45%, and 11.86% of the revenue, respectively. The core revenue source, the power battery business, saw revenue growth of 132.06% to $13.73 billion. However, in 2022, CATL's cost advantage lessened, leading to a leveling of profit margins compared to other domestic battery manufacturers.\n\nIn the backdrop of a high-growth new energy vehicle market in 2021, CATL faced stiff competition. The company not only had to contend with the expansion of overseas battery giants but also with the rise of domestic second- and third-tier battery manufacturers and increased efforts by car companies to develop their own battery strategies. This competition put pressure on profit margins and market share. Despite maintaining the top global market share in early 2021, CATL's position was increasingly challenged by both international and domestic competitors, including innovative Chinese companies like SVOLT, EVE Energy, and Farasis Energy, which saw significant growth in their market shares and installation rates."
+    },
+    {
+      "slug": "smic-net-profit",
+      "title": "SMIC Navigates Supply Chain Disruptions Amid Global Challenges",
+      "label": "Svelte.js",
+      "image1": "image_5",
+      "caption1": "SMIC's Q1 net profit continues to grow significantly",
+      "blurb": "The global integrated circuit industry faces uncertainty due to the COVID-19 pandemic and the Ukraine-Russia conflict, impacting supply chains and operational dynamics. Despite these challenges, China's leading chipmaker, Semiconductor Manufacturing International Corporation (SMIC), reported impressive performance in the first quarter. This success was attributed to proactive capacity optimization and allocation adjustments made earlier. However, the long logistics chain has disrupted its existing business lines.\n\nSMIC's recent quarterly report showcased significant growth, with revenue soaring to $1.78 billion, a 62.6% increase from the previous year. The net profit for shareholders also saw a substantial rise to $426.45 million, up 175.5% year-on-year. Notably, the company's gross margin reached 40.7%, exceeding its guidance range of 36%-38%.\n\nAs the consumer electronics chip market enters a destocking phase and demand slows, the pandemic has led to a decreased capacity utilization rate for SMIC. Additionally, maintenance delays and rising raw material costs could potentially impact the company's performance in the coming second quarter. Analysts warn that SMIC may face an adjustment period extending beyond six months, given the ongoing disruptions in the supply chain and escalating raw material costs. This situation underscores the need for agility and strategic foresight in navigating the complex and evolving landscape of the global semiconductor industry."
+    },
+    {
+      "slug": "star-market-index",
+      "title": "China’s Star Market Navigates Restricted Shares Release Wave",
+      "label": "Svelte.js",
+      "image1": "image_8",
+      "caption1": "Recent fluctuations in the Science and Technology 50 Index",
+      "blurb": "The Star Market, China’s sci-tech innovation board, is currently experiencing a notable wave of restricted shares being released. This event surpasses the scale and concentration observed in the previous two rounds, with \"big restricted shares\" playing a major role. This situation implies a more prolonged emotional impact on the market. However, contrary to market expectations, the actual willingness to actively reduce holdings may be lower.\n\nReflecting on the last two years, the concentrated lifting of restrictions has had a visible effect on the stock price trends and rhythms of the Star Market in July. The primary influence has been emotional, with investor sentiments driving market dynamics. Despite this emotional undercurrent, the actual pressure from reduced holdings has remained relatively modest. The market has demonstrated a pattern of resilience, frequently exhibiting a \"V\"-shaped characteristic where stock prices rapidly recover following sharp declines.\n\nMarket analysts and institutions believe that the current rebound trend of the sci-tech innovation board is at its midpoint. This assessment suggests that, despite the initial emotional reactions to the lifting of restrictions, the Star Market may continue to show resilience and potential for recovery in the latter half of this phase. ​"
+    },
+    {
+      "slug": "alibaba-revenue",
+      "title": "Alibaba Records Slowest Quarterly Revenue Growth: Why Are Major Banks Bullish?",
+      "image1": "image_7",
+      "caption1": "Alibaba records its lowest revenue growth rate since listing",
+      "blurb": "Alibaba's first quarter revenue growth was the slowest since its listing, reaching $30.61 billion, a modest 9% increase year-on-year. This figure, albeit higher than Bloomberg's estimate of $30.09 billion, indicates a deceleration in the company's revenue growth.\n\nThe non-GAAP net profit for the first quarter, excluding items such as antitrust fines and impairment losses from the same period last year, was $2.97 billion, a notable 24% drop year-on-year. This decline is attributed to increased investments in TaocaiCai and Tmall, ongoing pandemic impacts, and the effects of asset impairment losses and special provisions for Sun Art Retail.\n\nLooking at Alibaba's performance for the 2022 fiscal year, the results were not particularly striking. Under non-GAAP standards, the net profit was $20.46 billion, marking a 21% year-on-year decrease, a significant decline of 51 percentage points from the previous fiscal year.\n\nDespite these figures indicating a slowdown in growth and profit, major banks maintain a bullish stance on Alibaba's future prospects. This optimism may be rooted in the company's ability to navigate through challenging market conditions and its potential for long-term growth, especially considering its significant market presence and ongoing strategic investments. ​"
     }
   ]
 }

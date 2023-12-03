@@ -1,0 +1,35 @@
+{% extends '_templates/base.njk' %}
+
+{% set relative_path = "../" %}
+
+{% block page_title %}{{ title }}{% endblock %}
+
+{% block page_description %}{{ title }} by {{ label }}{% endblock %}
+
+{% block content %}
+<article class="container">
+  <div class="row">
+    <!-- Images and Captions Column -->
+    <div class="col-sm-4">
+      {% if image1 %}
+      <img src="{{ relative_path }}img/infographic-photo/{{ image1 }}.jpg" alt="{{ caption1 }}" class="img-fluid mb-4">
+      <p>{{ caption1 }}</p>
+      {% endif %}
+      {% if image2 %}
+      <img src="{{ relative_path }}img/infographic-photo/{{ image2 }}.jpg" alt="{{ caption2 }}" class="img-fluid mb-4">
+      <p>{{ caption2 }}</p>
+      {% endif %}
+      {% if image3 %}
+      <img src="{{ relative_path }}img/infographic-photo/{{ image3 }}.jpg" alt="{{ caption3 }}" class="img-fluid mb-4">
+      <p>{{ caption3 }}</p>
+      {% endif %}
+    </div>
+
+    <!-- Blurb Column -->
+    <div class="col-sm-8">
+        <h1>{{ title }}</h1>
+        <p>{{ blurb | safe }}</p>
+    </div>
+  </div>
+</article>
+{% endblock %}

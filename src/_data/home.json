@@ -3,6 +3,7 @@
     {
       "name": "Vacant Land",
       "credit": "Project",
+      "aggre-link": "",
       "label": "GIS",
       "title": "Evaluate Cleveland Re-use vacant land project",
       "source": "",
@@ -11,6 +12,7 @@
     {
       "name": "H-1B",
       "credit": "Project",
+      "aggre-link": "",
       "label": "Data analysis",
       "title": "How the H-1B Visa Process Creates Challenges for International Students in the US",
       "source": "https://jpeojakm.github.io/portfolio/h-1b.html",
@@ -19,6 +21,7 @@
     {
       "name": "CATL",
       "credit": "Caixin Media",
+      "aggre-link": "",
       "label": "Infographic",
       "title": "CATL Q1 Results Fall Short: Leadership at Risk in Competitive Market?",
       "source": "https://jpeojakm.github.io/portfolio/infogra3.html",
@@ -27,6 +30,7 @@
     {
       "name": "EV",
       "credit": "Reporting Texas",
+      "aggre-link": "",
       "label": "Writing",
       "title": "EV Charging Set to Expand in Rural Texas in Next Five Years ",
       "source": "https://www.reportingtexas.com/electric-vehicle-charging-set-to-expand-in-rural-texas-in-next-five-years/",
@@ -98,7 +102,7 @@
       "label": "Politic",
       "title": "Chinese Americans March in Austin, Call for Withdraw of Bills",
       "source": "https://www.reportingtexas.com/chinese-american-march-in-austin-calls-for-withdraw-of-bills/",
-      "image": "image1.jpg"
+      "image": "chinese-americans.jpg"
     },
     {
       "name": "UTtiktok",
@@ -107,7 +111,7 @@
       "label": "Tech",
       "title": "UT Bans TikTok Due to Security Concerns, But Some Professors Wary",
       "source": "https://www.reportingtexas.com/citing-cybersecurity-risks-ut-bans-tiktok-but-some-professors-wary/",
-      "image": "image2.jpg"
+      "image": "ut-bans.jpg"
     },
     {
       "name": "Election",
@@ -116,7 +120,7 @@
       "label": "Politic",
       "title": "How Asian Texans Are Working to Improve Their Community’s Political Engagement, Representation",
       "source": "https://www.reportingtexas.com/how-asian-texans-are-working-to-improve-their-communitys-political-engagement-representation/",
-      "image": "image3.jpg"
+      "image": "how-asian.jpg"
     },
     {
       "name": "EV",
@@ -125,7 +129,7 @@
       "label": "Business",
       "title": "Electric Vehicle Charging Set to Expand in Rural Texas in Next Five Years ",
       "source": "https://www.reportingtexas.com/electric-vehicle-charging-set-to-expand-in-rural-texas-in-next-five-years/",
-      "image": "image4.jpg"
+      "image": "electric-vehicles.jpg"
     }
   ]
 }

@@ -1,16 +1,6 @@
 {
   "files": [
     {
-      "fileId": "1RgMhjtkXlbbf9uzSzy_xPRKwxcVZIZqVytgM_JoU4E4",
-      "type": "doc",
-      "name": "library"
-    },
-    {
-      "fileId": "1gDwO-32cgpBDn_0niV0iu6TqQTaRDr4nmSqnT53magY",
-      "type": "sheet",
-      "name": "bookstores"
-    },
-    {
       "fileId": "1EUeJtpbqwxAGmZdOGLRZSO1D7bRZV2UdfB9E8k2Yog4",
       "type": "sheet",
       "name": "home"
@@ -35,6 +25,13 @@
       "array": "dataviz",
       "slug": "slug",
       "path": "dataviz"
+    },
+    {
+      "template": "bake-infographic",
+      "data": "portfolio",
+      "array": "infographic",
+      "slug": "slug",
+      "path": "infographic"
     }
   ]
 }
