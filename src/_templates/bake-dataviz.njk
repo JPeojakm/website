@@ -1,0 +1,25 @@
+{% extends '_templates/base.njk' %}
+
+{% set relative_path = "../" %}
+
+{% block page_title %}{{ title }}{% endblock %}
+
+{% block page_description %}{{ title }} by {{ label }}{% endblock %}
+
+{% block content %}
+<article class="container">
+  <div class="row">
+    <!-- Images and Captions Column -->
+    <div class="col-sm-4">
+      <img src="{{ relative_path }}img/data-viz-photo/{{ dataviz.image }}.{{ dataviz.format }}" alt="{{ dataviz.title }}" class="img-fluid mb-4">
+      <p>{{ dataviz.caption }}</p>
+    </div>
+
+    <!-- Blurb Column -->
+    <div class="col-sm-8">
+        <h1>{{ title }}</h1>
+        <p>{{ blurb | safe }}</p>
+    </div>
+  </div>
+</article>
+{% endblock %}

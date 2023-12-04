@@ -32,6 +32,13 @@
       "array": "infographic",
       "slug": "slug",
       "path": "infographic"
+    },
+    {
+      "template": "bake-dataviz",
+      "data": "portfolio",
+      "array": "dataviz",
+      "slug": "slug",
+      "path": "dataviz"
     }
   ]
 }

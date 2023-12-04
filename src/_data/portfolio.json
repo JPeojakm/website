@@ -40,32 +40,49 @@
     {
       "slug": "h1b",
       "title": "H1b",
-      "label": "Datawrapper; R",
-      "image": "",
+      "label": "data visual story",
+      "image": "h-1b",
+      "format": "jpg",
       "blurb": "After obtaining his physics doctorate in physics degree from an Ivy League institution, Leo Zheng found it challenging to secure a job in the U.S. For eight months, he repeated the same routine every day: waking up early, browsing through LinkedIn, and submitting a job application every thirty minutes. As he grew increasingly hopeless and contemplated returning to China, he received an unexpected offer from Apple."
     },
     {
       "slug": "covid",
       "title": "Covid-19",
       "label": "R-ggplot",
+      "image": "covid_case_death_rates",
+      "format": "jpg",
       "blurb": "In this series of data visualizations on COVID, I primarily utilized the ggplot2, scales, and patchwork packages in R for presentation. The data focuses on the daily COVID timeline data for cases and deaths in each US state and territory, sourced from The New York Times. Prior to visualization, a cleaning process was conducted."
     },
     {
-      "slug": "GDP",
-      "title": "GDP",
-      "label": "R-ggplot",
+      "slug": "coconut",
+      "title": "coconut",
+      "label": "Adobe",
+      "image": "coconut",
+      "format": "jpg",
       "blurb": "The raw data showcases various key economic indicators for different countries from 1990 to 2017. I have chosen the Gross Domestic Product (GDP), life expectancy at birth and population as a crucial data point to visualize the economic development of countries over the past 30 years. For this purpose, I primarily utilized the gganimate package in R to create animated GIFs."
     },
     {
-      "slug": "beeswarm",
-      "title": "citydev",
-      "label": "Svelte.js",
+      "slug": "suide",
+      "title": "suide",
+      "label": "Data visual story",
+      "image": "suicide",
+      "format": "jpg",
       "blurb": "The raw data showcases various key economic indicators for different countries from 1990 to 2017. I have chosen the Gross Domestic Product (GDP), life expectancy at birth and population as a crucial data point to visualize the economic development of countries over the past 30 years. For this purpose, I primarily utilized the gganimate package in R to create animated GIFs."
     },
     {
       "slug": "globe",
-      "title": "pop",
+      "title": "globe population",
       "label": "Svelte.js",
+      "image": "globe",
+      "format": "gif",
+      "blurb": "The raw data showcases various key economic indicators for different countries from 1990 to 2017. I have chosen the Gross Domestic Product (GDP), life expectancy at birth and population as a crucial data point to visualize the economic development of countries over the past 30 years. For this purpose, I primarily utilized the gganimate package in R to create animated GIFs."
+    },
+    {
+      "slug": "us-pop",
+      "title": "US population",
+      "label": "Svelte.js",
+      "image": "pop",
+      "format": "gif",
       "blurb": "The raw data showcases various key economic indicators for different countries from 1990 to 2017. I have chosen the Gross Domestic Product (GDP), life expectancy at birth and population as a crucial data point to visualize the economic development of countries over the past 30 years. For this purpose, I primarily utilized the gganimate package in R to create animated GIFs."
     }
   ],
