@@ -1,0 +1,55 @@
+.section {
+  background-color: #1a1a1a; /* Dark background */
+  color: #ffffff; /* White text */
+  padding: 50px 0; /* Spacing above and below the section */
+}
+
+.image-container {
+  text-align: center; /* Centering the images */
+}
+
+.first-image {
+  max-width: 100%; /* Ensuring image is responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.second-image {
+  max-width: 100%; /* Ensuring image is responsive */
+  height: auto; /* Maintain aspect ratio */
+  /* Add any necessary positioning styles to overlay images as needed */
+}
+
+.text-container p.tags {
+  color: #aaaaaa; /* Light grey text for tags */
+  margin-bottom: 10px; /* Spacing below tags */
+}
+
+.text-container h2 {
+  margin-bottom: 20px; /* Spacing below the heading */
+}
+
+.btn-primary {
+  background-color: #0044cc; /* Example primary color for the button */
+  color: #ffffff; /* White text for the button */
+  border: none; /* No border for the button */
+  padding: 10px 20px; /* Padding inside the button */
+  text-transform: uppercase; /* Uppercase text for the button */
+  border-radius: 5px; /* Rounded corners for the button */
+  text-decoration: none; /* Remove underline from the link */
+  display: inline-block; /* Needed to apply padding and margins to the link */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.btn-primary:hover {
+  background-color: #003399; /* Darken the button on hover */
+}
+
+/* Add responsive styles as needed */
+@media (max-width: 768px) {
+  .image-container, .text-container {
+    text-align: center; /* Center elements on smaller screens */
+  }
+  .btn-primary {
+    margin-top: 20px; /* Add spacing above the button on smaller screens */
+  }
+}

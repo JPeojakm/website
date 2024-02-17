@@ -62,6 +62,7 @@
   },
   "dependencies": {
     "bootstrap": "^5.3.0",
+    "froala-editor": "^4.1.4",
     "jquery": "^3.6.0"
   }
 }

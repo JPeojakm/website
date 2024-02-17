@@ -1,0 +1,32 @@
+{
+  "sections": [
+    {
+      "imagePath": "banner.png",
+      "imageAlt": "1024 music app",
+      "tags": "UX Research, UX Design, Interaction Design",
+      "title": "Creating Interaction Design for Organic Music Discovery Mobile",
+      "slug": "Musicapp"
+    },
+    {
+      "imagePath": "path-to-your-second-image.jpg",
+      "imageAlt": "Second Image Description",
+      "tags": "UX Research, UX Design, Interaction Design",
+      "title": "Creating Interaction Design for Organic Music Discovery Mobile",
+      "caseLink": "https://martinanderson.ai/"
+    },
+    {
+      "imagePath": "path-to-your-second-image.jpg",
+      "imageAlt": "Second Image Description",
+      "tags": "UX Research, UX Design, Interaction Design",
+      "title": "Creating Interaction Design for Organic Music Discovery Mobile",
+      "caseLink": "Musicapp.html"
+    },
+    {
+      "imagePath": "path-to-your-second-image.jpg",
+      "imageAlt": "Second Image Description",
+      "tags": "UX Research, UX Design, Interaction Design",
+      "title": "Creating Interaction Design for Organic Music Discovery Mobile",
+      "caseLink": "Musicapp.html"
+    }
+  ]
+}
