@@ -1,48 +1,61 @@
+
+
 .section {
-  background-color: #1a1a1a; /* Dark background */
+  border-bottom: 1px solid #ccc; // 添加横线，颜色可以根据网站设计调整
+  margin-bottom: 20px; // 增加间隔，根据实际需要调整
+  padding: 20px 0; 
+
+  &:last-child {
+    border-bottom: none; // 最后一个项目不需要横线
+  }
+
+  background-color: transparent; /* Dark background */
   color: #ffffff; /* White text */
   padding: 50px 0; /* Spacing above and below the section */
 }
 
+
+.section-container {
+  flex: 0 1 80%; /* 左侧占据70%的宽度 */
+}
+
+.right-space {
+  flex: 0 1 20%; /* 右侧占据30%的宽度 */
+}
+
+
 .image-container {
-  text-align: center; /* Centering the images */
+  width: 90%; /* 容器宽度占满父元素 */
+  overflow: hidden; /* 隐藏超出容器的图片部分 */
+  position: relative; /* 设置相对定位，为后续的宽高比调整作准备 */
+  padding-top: 55%; /* 16:9的宽高比，9 / 16 = 0.5625 */
+  border-radius: 15px; /* 根据需要调整，使得容器四角变圆 */
+
+  .project-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 保证图片覆盖整个容器，同时维持比例 */
+    border-radius: 15px; /* 图片四角变圆，确保与容器一致 */
+  }
 }
 
-.first-image {
-  max-width: 100%; /* Ensuring image is responsive */
-  height: auto; /* Maintain aspect ratio */
+.text-container {
+  padding-left: 20px; /* 在文字左侧增加间距 */
+  padding-right: 20px; /* 在文字右侧增加间距，如果需要的话 */
+  
+  p.tags {
+    color: #aaaaaa; /* Light grey text for tags */
+    margin-bottom: 10px; /* Spacing below tags */
+  }
+
+  h2 {
+    margin-bottom: 20px; /* Spacing below the heading */
+  }
 }
 
-.second-image {
-  max-width: 100%; /* Ensuring image is responsive */
-  height: auto; /* Maintain aspect ratio */
-  /* Add any necessary positioning styles to overlay images as needed */
-}
-
-.text-container p.tags {
-  color: #aaaaaa; /* Light grey text for tags */
-  margin-bottom: 10px; /* Spacing below tags */
-}
-
-.text-container h2 {
-  margin-bottom: 20px; /* Spacing below the heading */
-}
-
-.btn-primary {
-  background-color: #0044cc; /* Example primary color for the button */
-  color: #ffffff; /* White text for the button */
-  border: none; /* No border for the button */
-  padding: 10px 20px; /* Padding inside the button */
-  text-transform: uppercase; /* Uppercase text for the button */
-  border-radius: 5px; /* Rounded corners for the button */
-  text-decoration: none; /* Remove underline from the link */
-  display: inline-block; /* Needed to apply padding and margins to the link */
-  transition: background-color 0.3s ease; /* Smooth background color transition */
-}
-
-.btn-primary:hover {
-  background-color: #003399; /* Darken the button on hover */
-}
 
 /* Add responsive styles as needed */
 @media (max-width: 768px) {
