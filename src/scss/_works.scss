@@ -1,0 +1,44 @@
+.works-intro {
+  padding-left: 2rem; // 左内边距，为小屏幕设定
+  padding-right: 2rem; // 右内边距，保持对称
+  display: flex; // 使用Flexbox以便于布局
+  flex-direction: column; // 子元素垂直排列
+
+  @media (min-width: 768px) {
+    padding-left: 9rem; // 大屏幕的左内边距
+    padding-right: 6rem; // 大屏幕的右内边距
+    padding-top: 1rem; // 大屏幕的顶部内边距
+    padding-bottom: 0.5rem; // 大屏幕的底部内边距
+  }
+
+  h1 {
+    margin-top: 1rem; // 默认的上边距
+    margin-bottom: 1rem; // h1和p之间的间距
+
+    @media (max-width: 768px) {
+      margin-top: 0.5rem; // 小屏幕时减少顶部边距
+    }
+  }
+
+  p {
+    max-width: 800px; // 控制宽度以约束每行的词数
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: normal;
+    margin-left: 1rem; // 保证与h1左对齐
+    margin-right: 1rem; // 保证右边有一定间距，避免文本贴边
+  }
+}
+
+.works-sections {
+  h2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    @media(min-width: 768px) { // Adjustments for tablets and above
+      margin-left: 10rem;
+      margin-top: 3rem; // More whitespace for larger screens
+      margin-bottom: 3rem;
+    }
+  }
+}
