@@ -1,0 +1,81 @@
+{% extends '_templates/base.njk' %}
+
+{% block page_title %}Works{% endblock %}
+
+{% block page_description %}Some practices for data journalism{% endblock %}
+
+{% block content %}
+<div class="works-intro">
+  <h1>My Projects</h1>
+  <p>A few of my selected works and projects. My portfolio largely consists of javascript-based web projects, but occasionally will showcase other things that happen when I push buttons on a keyboard.</p>
+</div>
+
+<div class="works-sections">
+  <!-- Data and Graphics -->
+  <section class="data-graphics">
+    <h2>Data and Graphics</h2>
+    <div class="container-fluid">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+         {% for dataviz in portfolio.dataviz %}
+           <div class="col">
+             <div class="card h-90 border">
+               <img src="img/data-viz-photo/{{ dataviz.image }}.{{ dataviz.format }}" class="card-img-top" alt="{{ dataviz.title }}">
+               <div class="card-body">
+                 <h5 class="card-title subpage-card-title">
+                 <a href="dataviz/{{ dataviz.slug }}.html">{{ dataviz.title }}</a>
+                 </h5>
+                 <div class="badge-container">
+                   <a class="btn btn-credit btn-sm rounded-pill" role="button">{{ dataviz.label }}</a>
+                 </div>
+               </div>
+             </div>
+          </div>
+          {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <!-- Cartography Projects -->
+  <section class="cartography-projects">
+    <h2>Cartography Projects</h2>
+    <div class="container-fluid">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+       {% for map in portfolio.maps %}
+          <div class="col">
+            <div class="card h-90 border">
+              <img src="img/maps-photo/{{ map.image }}.jpg" class="card-img-top" alt="{{ map.title }}">
+              <div class="card-body">
+                <h5 class="card-title subpage-card-title">
+                   <a href="maps/{{ map.slug }}.html">{{ map.title }}</a>
+                </h5>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <!-- Writing and Notes -->
+  <section class="writing-notes">
+    <h2>Writings and Notes</h2>
+    <div class="container-fluid">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        {% for writing in home.writing %}
+        <div class="col">
+          <div class="hover-card">
+            <img src="img/writing-photo/{{ writing.image }}" class="card-img" alt="{{ writing.title }}">
+            <div class="overlay">
+              <div class="text">
+                <h5>{{ writing.title }}</h5>
+                <a href="{{ writing.source }}" class="btn btn-success">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+</div>
+{% endblock %}

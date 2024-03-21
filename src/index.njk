@@ -24,41 +24,4 @@
   </div>
 </div>
 
-<div class="container-fluid">
-  <!-- Project Portfolio Title and Divider -->
-  <div class="text-center mt-4 mb-4">
-    <hr> <!-- This is the dividing line -->
-  </div>
-
-  <!-- Interaction Design Sections -->
- <div class="content-container" style="display: flex;">
-  <!-- Project Sections Container -->
-  <div class="section-container" style="flex: 0 1 70%;">
-    {% for section in index.sections %}
-    <div class="section">
-      <div class="container">
-        <div class="row align-items-center">
-          <!-- Left: Image Area -->
-          <div class="col-md-6">
-            <div class="image-container">
-              <img src="img/musicapp_img/{{ section.imagePath }}" alt="{{ section.imageAlt }}" class="project-image">
-            </div>
-          </div>
-          <!-- Right: Text Area -->
-          <div class="col-md-6">
-            <div class="text-container">
-              <p class="tags">{{ section.tags }}</p>
-              <a href="{{ section.caseLink }}" class="title-link"><h2>{{ section.title }}</h2></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    {% endfor %}
-  </div>
-  <!-- Right-Side Space (Empty or for additional content) -->
-  <div class="right-space">
-    <!-- Content for the right side or leave empty for space -->
-  </div>
-</div>
 {% endblock %}
