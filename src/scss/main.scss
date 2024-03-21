@@ -22,18 +22,20 @@
 @import 'nav';
 @import 'index';
 @import 'works';
+@import 'musicapp';
 
 h3 {
   font-size: 1.5rem;
+  font-family: "Inconsolata", monospace;
 }
 
 h1 {
-  font-family: "Courier Prime", monospace;
+  font-family: "Inconsolata", monospace;
   font-weight: 400;
 }
 
 p {
-  font-family: sans-serif;
+  font-family: "Lora", serif;
   font-weight: 300;
 }
 
@@ -48,71 +50,6 @@ p {
   margin-top: 20px;
 }
 
-.intro {
-  h1 {
-    font-family: 'Courier Prime', sans-serif;
-    font-weight: normal;
-    font-size: 40px;
-  }
-  
-  p {
-    font-family: 'Courier Prime', sans-serif;
-    font-weight: normal;
-    font-size: 30px;
-    margin-top: 20px;
-  }
-
-  .link {
-    font-weight: bold; 
-    color: #7BD75B; 
-    transition: transform 0.3s ease; 
-  
-    &:hover {
-      transform: scale(1.5);
-    }
-  }
-  
-}
-
-
-.badge {
-  &.longhorn {
-    background-color: #CC5500; 
-    color: white; 
-  }
-  &.data-journalism {
-    background-color: #F84C06; 
-    color: white; 
-  }
-  &.cooking {
-    background-color: #F5C8A7; 
-    color: white; 
-  }
-}
-
-.badge-container {
-  .btn {
-    margin-right: 0.5rem; 
-    margin-bottom: 0.5rem; 
-
-    &:last-child {
-      margin-right: 0; 
-    }
-  }
-
-  .btn-credit {
-    background-color: #0097b2;
-    border-color: #01849b; 
-    color: white; 
-  }
-  
-  .btn-label {
-    background-color: #7ed957; 
-    border-color: #6ebf4b;
-    color: white; 
-  }
-  
-}
 
 
 footer {

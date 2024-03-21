@@ -1,0 +1,97 @@
+.music-container {
+  background-color: #f9f9f6; 
+  margin: 20px auto; // 上下保留间距，水平居中
+  padding: 40px; // 内部间距
+  max-width: 1000px; // 最大宽度
+  border-radius: 8px; // 圆角边框
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+
+  h1, h2, h4 {
+    color: #333;
+    font-family: "Inconsolata", monospace;
+  }
+
+  h2, h4 {
+    margin-top: 20px; // 标准化标题的顶部间距，如果h4确实需要更大的间距，可以单独设置
+  }
+
+  h4 {
+    margin-top: 50px; // 保留h4的特定间距，如果需要与h2不同的间距
+  }
+
+  p, table, ul, ol, figure img {
+    margin-bottom: 20px; // 为figure img添加统一的底部间距
+  }
+
+  ul, ol {
+    padding-left: 20px;
+    li {
+      margin-bottom: 5px;
+    }
+  }
+
+  blockquote {
+    background-color: #f9f9f9;
+    border-left: 5px solid #ccc;
+    margin: 20px 0;
+    padding: 10px 20px;
+  }
+}
+
+// 合并表格样式，避免重复
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  th, td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+  }
+
+  th {
+    color: #333;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: #f8f8f8;
+  }
+
+  tr:last-child td {
+    border-bottom: none;
+  }
+}
+
+// 统一图片样式
+figure img {
+  display: block;
+  max-width: 600px; // 限制最大宽度
+  width: 100%; // 保证小图片也能居中显示
+  height: auto;
+  margin: 0 auto 30px; // 统一底部间距
+  border-radius: 10px;
+}
+.banner-image {
+  display: block; // 确保图片不会与其他元素并排
+  max-width: 100%; // 限制图片最大宽度为容器宽度
+  height: auto; // 保持图片比例
+  margin: 0 auto; // 图片居中显示
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+// 为图片标题添加样式
+figcaption {
+  text-align: center;
+  margin-top: 8px;
+  color: #333;
+  font-size: 0.9em;
+}

@@ -34,6 +34,7 @@
   h2 {
     margin-top: 2rem;
     margin-bottom: 2rem;
+    font-family: "Inconsolata", monospace;
 
     @media(min-width: 768px) { // Adjustments for tablets and above
       margin-left: 10rem;
@@ -41,4 +42,6 @@
       margin-bottom: 3rem;
     }
   }
+
+  
 }

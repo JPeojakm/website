@@ -1,59 +1,67 @@
-
-
-.section {
-  border-bottom: 1px solid #ccc; // 添加横线，颜色可以根据网站设计调整
-  margin-bottom: 20px; // 增加间隔，根据实际需要调整
-  padding: 20px 0; 
-
-  &:last-child {
-    border-bottom: none; // 最后一个项目不需要横线
+.intro {
+  h1 {
+    font-family: "Inconsolata", monospace;
+    font-weight: normal;
+    font-size: 40px;
   }
-
-  background-color: transparent; /* Dark background */
-  color: #ffffff; /* White text */
-  padding: 50px 0; /* Spacing above and below the section */
-}
-
-
-.section-container {
-  flex: 0 1 80%; /* 左侧占据70%的宽度 */
-}
-
-.right-space {
-  flex: 0 1 20%; /* 右侧占据30%的宽度 */
-}
-
-
-.image-container {
-  width: 90%; /* 容器宽度占满父元素 */
-  overflow: hidden; /* 隐藏超出容器的图片部分 */
-  position: relative; /* 设置相对定位，为后续的宽高比调整作准备 */
-  padding-top: 55%; /* 16:9的宽高比，9 / 16 = 0.5625 */
-  border-radius: 15px; /* 根据需要调整，使得容器四角变圆 */
-
-  .project-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* 保证图片覆盖整个容器，同时维持比例 */
-    border-radius: 15px; /* 图片四角变圆，确保与容器一致 */
-  }
-}
-
-.text-container {
-  padding-left: 20px; /* 在文字左侧增加间距 */
-  padding-right: 20px; /* 在文字右侧增加间距，如果需要的话 */
   
-  p.tags {
-    color: #aaaaaa; /* Light grey text for tags */
-    margin-bottom: 10px; /* Spacing below tags */
+  p {
+    font-family: "Inconsolata", monospace;
+    font-weight: normal;
+    font-size: 30px;
+    margin-top: 20px;
   }
 
-  h2 {
-    margin-bottom: 20px; /* Spacing below the heading */
+  .link {
+    font-weight: bold; 
+    color: #7BD75B; 
+    transition: transform 0.3s ease; 
+  
+    &:hover {
+      transform: scale(1.5);
+    }
   }
+  
+}
+
+
+.badge {
+  &.newsman {
+    background-color: #CC5500; 
+    color: white; 
+  }
+  &.dataviz {
+    background-color: #F84C06; 
+    color: white; 
+  }
+  &.ai {
+    background-color: #F5C8A7; 
+    color: white; 
+  }
+}
+
+.badge-container {
+  .btn {
+    margin-right: 0.5rem; 
+    margin-bottom: 0.5rem; 
+
+    &:last-child {
+      margin-right: 0; 
+    }
+  }
+
+  .btn-credit {
+    background-color: #0097b2;
+    border-color: #01849b; 
+    color: white; 
+  }
+  
+  .btn-label {
+    background-color: #7ed957; 
+    border-color: #6ebf4b;
+    color: white; 
+  }
+  
 }
 
 
