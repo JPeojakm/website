@@ -23,6 +23,7 @@
 @import 'index';
 @import 'works';
 @import 'musicapp';
+@import 'about';
 
 h3 {
   font-size: 1.5rem;
@@ -117,8 +118,3 @@ footer {
   box-sizing: border-box;
 }
 
-
-.about-container p {
-  font-size: 1.2rem; /* 调整为您希望的字体大小 */
-  font-family: "Roboto", sans-serif;
-}
