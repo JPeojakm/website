@@ -16,33 +16,35 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg">
-  <div class="container-fluid d-flex justify-content-between">
-    <div>
-      <a class="navbar-brand" href="index.html">
-        <img src="img/profile.svg" alt="profile">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </div>
+  <div class="container-fluid d-flex justify-content-between align-items-center">
+    
+    <!-- Toggler for Mobile View -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
+    <!-- Navbar Links on the Right -->
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
-     <ul class="navbar-nav">
+      <ul class="navbar-nav"> <!-- 'ms-auto' will push the navigation to the right -->
         <li class="nav-item">
           <a class="nav-link" href="works.html">Works</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="infographic.html">Infographic</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="about.html">About</a>
         </li>
       </ul>
     </div>
+    
+    <!-- Newsletter Link on the Left -->
+    <a href="https://theabacus.substack.com/" class="newsletter-signup">Sign Up for My Newsletter >></a>
 
-    <form class="d-flex" role="search">
-    <a href="https://theabacus.substack.com/" class="btn btn-outline-success">Join the newsletter</a>
-</form>
+    <!-- Navbar Brand in the Center -->
+     <!--
+      <a class="navbar-brand" href="index.html">
+      <img src="img/profile.svg" alt="profile">
+    </a>
+    -->
+
   </div>
 </nav>
 
@@ -50,7 +52,7 @@
     
 <div class="works-intro">
   <h1>My Projects</h1>
-  <p>A few of my selected works and projects. My portfolio largely consists of javascript-based web projects, but occasionally will showcase other things that happen when I push buttons on a keyboard.</p>
+  <p>A few of my selected works and projects. Some of them were completed during my graduate studies at UT.</p>
 </div>
 
 <div class="works-sections">
@@ -83,20 +85,6 @@
                  </h5>
                  <div class="badge-container">
                    <a class="btn btn-credit btn-sm rounded-pill" role="button">R-ggplot</a>
-                 </div>
-               </div>
-             </div>
-          </div>
-          
-           <div class="col">
-             <div class="card h-90 border">
-               <img src="img/data-viz-photo/coconut.jpg" class="card-img-top" alt="coconut">
-               <div class="card-body">
-                 <h5 class="card-title subpage-card-title">
-                 <a href="dataviz/coconut.html">coconut</a>
-                 </h5>
-                 <div class="badge-container">
-                   <a class="btn btn-credit btn-sm rounded-pill" role="button">Adobe</a>
                  </div>
                </div>
              </div>
@@ -144,6 +132,76 @@
              </div>
           </div>
           
+           <div class="col">
+             <div class="card h-90 border">
+               <img src="img/data-viz-photo/image_1_1.jpg" class="card-img-top" alt="When will the new energy EVmaker achieve profitability?">
+               <div class="card-body">
+                 <h5 class="card-title subpage-card-title">
+                 <a href="dataviz/new-evmakers-performance.html">When will the new energy EVmaker achieve profitability?</a>
+                 </h5>
+                 <div class="badge-container">
+                   <a class="btn btn-credit btn-sm rounded-pill" role="button"></a>
+                 </div>
+               </div>
+             </div>
+          </div>
+          
+           <div class="col">
+             <div class="card h-90 border">
+               <img src="img/data-viz-photo/image_2_1.jpg" class="card-img-top" alt="Who Prevailed in Performance Last Year between ANTA and Li-Ning?">
+               <div class="card-body">
+                 <h5 class="card-title subpage-card-title">
+                 <a href="dataviz/anta-lining-performance.html">Who Prevailed in Performance Last Year between ANTA and Li-Ning?</a>
+                 </h5>
+                 <div class="badge-container">
+                   <a class="btn btn-credit btn-sm rounded-pill" role="button"></a>
+                 </div>
+               </div>
+             </div>
+          </div>
+          
+           <div class="col">
+             <div class="card h-90 border">
+               <img src="img/data-viz-photo/image_3_1.jpg" class="card-img-top" alt="Is CATL Leading Position Under Threat Amid Fierce Competition?">
+               <div class="card-body">
+                 <h5 class="card-title subpage-card-title">
+                 <a href="dataviz/ctal-market-value.html">Is CATL Leading Position Under Threat Amid Fierce Competition?</a>
+                 </h5>
+                 <div class="badge-container">
+                   <a class="btn btn-credit btn-sm rounded-pill" role="button"></a>
+                 </div>
+               </div>
+             </div>
+          </div>
+          
+           <div class="col">
+             <div class="card h-90 border">
+               <img src="img/data-viz-photo/image_5.jpg" class="card-img-top" alt="SMIC Navigates Supply Chain Disruptions Amid Global Challenges">
+               <div class="card-body">
+                 <h5 class="card-title subpage-card-title">
+                 <a href="dataviz/smic-net-profit.html">SMIC Navigates Supply Chain Disruptions Amid Global Challenges</a>
+                 </h5>
+                 <div class="badge-container">
+                   <a class="btn btn-credit btn-sm rounded-pill" role="button">Svelte.js</a>
+                 </div>
+               </div>
+             </div>
+          </div>
+          
+           <div class="col">
+             <div class="card h-90 border">
+               <img src="img/data-viz-photo/image_7.jpg" class="card-img-top" alt="Alibaba Records Slowest Quarterly Revenue Growth: Why Are Major Banks Bullish?">
+               <div class="card-body">
+                 <h5 class="card-title subpage-card-title">
+                 <a href="dataviz/alibaba-revenue.html">Alibaba Records Slowest Quarterly Revenue Growth: Why Are Major Banks Bullish?</a>
+                 </h5>
+                 <div class="badge-container">
+                   <a class="btn btn-credit btn-sm rounded-pill" role="button"></a>
+                 </div>
+               </div>
+             </div>
+          </div>
+          
       </div>
     </div>
   </section>
@@ -154,6 +212,17 @@
     <div class="container-fluid">
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
        
+          <div class="col">
+            <div class="card h-90 border">
+              <img src="img/maps-photo/Arizona_heat.jpg" class="card-img-top" alt="Extreme Heat And Migration: Insights From The Arizona Border">
+              <div class="card-body">
+                <h5 class="card-title subpage-card-title">
+                   <a href="maps/arizona_heat.html">Extreme Heat And Migration: Insights From The Arizona Border</a>
+                </h5>
+              </div>
+            </div>
+          </div>
+          
           <div class="col">
             <div class="card h-90 border">
               <img src="img/maps-photo/image1.jpg" class="card-img-top" alt="Re-use vacant land">
@@ -171,39 +240,6 @@
               <div class="card-body">
                 <h5 class="card-title subpage-card-title">
                    <a href="maps/event_venue.html">event venue</a>
-                </h5>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col">
-            <div class="card h-90 border">
-              <img src="img/maps-photo/image3.jpg" class="card-img-top" alt="wc landuse">
-              <div class="card-body">
-                <h5 class="card-title subpage-card-title">
-                   <a href="maps/wc_landuse.html">wc landuse</a>
-                </h5>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col">
-            <div class="card h-90 border">
-              <img src="img/maps-photo/image4.jpg" class="card-img-top" alt="Travis Transport">
-              <div class="card-body">
-                <h5 class="card-title subpage-card-title">
-                   <a href="maps/transport.html">Travis Transport</a>
-                </h5>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col">
-            <div class="card h-90 border">
-              <img src="img/maps-photo/image5.jpg" class="card-img-top" alt="Travis School">
-              <div class="card-body">
-                <h5 class="card-title subpage-card-title">
-                   <a href="maps/school.html">Travis School</a>
                 </h5>
               </div>
             </div>

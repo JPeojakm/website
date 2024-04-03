@@ -1,6 +1,12 @@
 {
   "maps": [
     {
+      "slug": "arizona_heat",
+      "title": "Extreme Heat And Migration: Insights From The Arizona Border",
+      "image": "Arizona_heat",
+      "blurb": "The US Southwestern border is increasingly recognized as one of the world's most perilous land crossings. Alongside the myriad challenges faced by undocumented migrants, extreme heatwaves have emerged as a formidable barrier. Recently, there's been an increase in deaths caused by extreme heat, as noted by U.S. Customs and Border Protection. \n\n  As a data reporter, I hope to provide more quantitative analysis and map visualizations to support these migrant stories. My project aims to understand how rising global temperatures affect migrant movements in this region. It will look at how water and emergency beacons are spread across the area, with the goal of finding ways to make the journey safer for migrants. \n\n  Firstly, here is some background. I gathered weather data from NOAA and migrant information from the International Organization for Migration (IOM) and used R to analyze them. As Figure 1 shows, from 2019 to 2023, during the hottest months of June to September, there has been a notable increase in deaths among migrants trying to cross borders without permission. So, how do rising temperatures influence migration patterns along the Arizona border?\n\n  We define missing migrants as individuals who attempt to cross borders without authorization and are later found deceased by non-governmental organizations (NGOs) or patrol officers, without definitive identification at the time of discovery. Heat-related missing migrants are those whose deaths are inferred to be caused by heat, after excluding known causes like violence or drowning.\n\n  Since data on missing migrants is difficult to obtain and the specific reasons for their disappearance are often unknown, I reached out to the International Organization for Migration and an Arizona local NGO, Humane Borders, for their datasets. To increase accuracy, I focused on missing migrant cases from June to September, the hottest months in Arizona. I also narrowed down the data to include cases that could be related to heat-related causes of death.\n\n  Figure 2 provides very rich information, through this map, we can get some facts about Arizona: 1) Arizona is characterized by limited water sources and cities concentrated in the central region. 2) Tucson has become one of the fastest-growing cities in recent years due to immigration. 3) It has two patrol stations. 4) Rescue Beacons are primarily located in the lower-left corner, in Yuma County.\n\n  I use the Heat Index and Geographically Weighted Regression (GWR) as the main methods for this research. For my research on the impact of heat, I initially planned to use temperature and other weather data. However, I realized that this data might not clearly show trends over five years. \n\n  Then, I discovered the Heat Index in a research paper. Heat Index made by the nonprofit First Street Foundation, calculates the heat risk facing each property in the contiguous United States over the next 30 years, the length of a typical mortgage, providing some of the most detailed nationwide estimates. It uses an average temperature value over seven years, making it a more objective choice for my project. To analyze the data, I'm applying a weighted approach to the Heat Index.\n\n  As the map indicates, the deep red areas represent the hottest regions, while the lighter colored areas are relatively cooler. However, it's important to note that when looking at the national map, Arizona tends to be overall warmer in the summer. The colorful points on the map represent missing migrants, with different colors indicating different years.\n\n  Finally, I conducted a Geographically Weighted Regression (GWR), combining factors such as heat, distance from cities, and the presence of rescue beacons, to see how they influence migrant safety. I gained some insights from the results. Migrants should avoid walking in the FID4, 1, and 51 census tracts to minimize health risks. Additionally, NGOs and the US Border Patrol should consider installing more beacons eastward to enhance safety.\n\n  So far, this is all my work. I sent the results to Humane Borders, hoping it can contribute to their efforts in helping undocumented immigrants protect their lives. Of course, this project has many limitations, such as my inability to verify the migrant data since statistics on heat-related deaths are hard to compile. Also, the heat index data was last updated in July, not including data for August and September.\n\n  In the future, I aim to extend the study to encompass the entire US southern border for a more comprehensive analysis."
+    },
+    {
       "slug": "vacant_land",
       "title": "Re-use vacant land",
       "label": "Geographically Weighted Regression analysis",
@@ -13,27 +19,6 @@
       "label": "Geocoding; Spatial analysis",
       "image": "image2",
       "blurb": "This report aims to assist FLUX, an annual artist event in Pittsburgh, Pennsylvania, in identifying an optimal venue that balances both the event's budget constraints and the convenience of attendees. Our approach involved using the Average Nearest Neighbor method to analyze the addresses of past attendees to discern clusters of households. A Hot Spot analysis was also conducted to determine the most suitable zip codes based on our findings."
-    },
-    {
-      "slug": "wc_landuse",
-      "title": "wc landuse",
-      "label": "Georeferencing",
-      "image": "image3",
-      "blurb": "To gain a deeper understanding of how land use in the west campus has evolved over time and to predict its potential future changes, we compared land use situations from different periods. Additionally, we collected coordinate data for various amenities to integrate into the base map, thereby practicing georeferencing methods."
-    },
-    {
-      "slug": "transport",
-      "title": "Travis Transport",
-      "label": "Georeferencing",
-      "image": "image4",
-      "blurb": "To gain a deeper understanding of how land use in the west campus has evolved over time and to predict its potential future changes, we compared land use situations from different periods. Additionally, we collected coordinate data for various amenities to integrate into the base map, thereby practicing georeferencing methods."
-    },
-    {
-      "slug": "school",
-      "title": "Travis School",
-      "label": "Georeferencing",
-      "image": "image5",
-      "blurb": "To gain a deeper understanding of how land use in the west campus has evolved over time and to predict its potential future changes, we compared land use situations from different periods. Additionally, we collected coordinate data for various amenities to integrate into the base map, thereby practicing georeferencing methods."
     }
   ],
   "dataviz": [
@@ -52,14 +37,6 @@
       "image": "covid_case_death_rates",
       "format": "jpg",
       "blurb": "In this series of data visualizations on COVID, I primarily utilized the ggplot2, scales, and patchwork packages in R for presentation. The data focuses on the daily COVID timeline data for cases and deaths in each US state and territory, sourced from The New York Times. Prior to visualization, a cleaning process was conducted."
-    },
-    {
-      "slug": "coconut",
-      "title": "coconut",
-      "label": "Adobe",
-      "image": "coconut",
-      "format": "jpg",
-      "blurb": "The raw data showcases various key economic indicators for different countries from 1990 to 2017. I have chosen the Gross Domestic Product (GDP), life expectancy at birth and population as a crucial data point to visualize the economic development of countries over the past 30 years. For this purpose, I primarily utilized the gganimate package in R to create animated GIFs."
     },
     {
       "slug": "suide",
@@ -84,13 +61,12 @@
       "image": "pop",
       "format": "gif",
       "blurb": "The raw data showcases various key economic indicators for different countries from 1990 to 2017. I have chosen the Gross Domestic Product (GDP), life expectancy at birth and population as a crucial data point to visualize the economic development of countries over the past 30 years. For this purpose, I primarily utilized the gganimate package in R to create animated GIFs."
-    }
-  ],
-  "infographic": [
+    },
     {
       "slug": "new-evmakers-performance",
       "title": "When will the new energy EVmaker achieve profitability?",
-      "image1": "image_1_1",
+      "image": "image_1_1",
+      "format": "jpg",
       "caption1": "Li Auto(red) turns profitable in Q4 2021; XPeng and NIO continue to incur losses",
       "image2": "image_1_2",
       "caption2": "XPeng(blue) Motors' 2021 delivery volume surpasses NIO and Li Auto",
@@ -101,7 +77,8 @@
     {
       "slug": "anta-lining-performance",
       "title": "Who Prevailed in Performance Last Year between ANTA and Li-Ning?",
-      "image1": "image_2_1",
+      "image": "image_2_1",
+      "format": "jpg",
       "caption1": "Anta's performance growth slowed down in the second half of 2021, but remains at a high level",
       "image2": "image_2_2",
       "caption2": "Anta's DTC (Direct-to-Consumer) transformation yields significant results",
@@ -112,8 +89,9 @@
     {
       "slug": "ctal-market-value",
       "title": "Is CATL Leading Position Under Threat Amid Fierce Competition?",
-      "image1": "image_3_1",
+      "image": "image_3_1",
       "caption1": "CATL's market value falls below the trillion yuan mark",
+      "format": "jpg",
       "image2": "image_3_2",
       "caption2": "CATL's first-quarter performance falls far short of expectations, with net profit dropping by 20%",
       "image3": "image_3_3",
@@ -124,22 +102,16 @@
       "slug": "smic-net-profit",
       "title": "SMIC Navigates Supply Chain Disruptions Amid Global Challenges",
       "label": "Svelte.js",
-      "image1": "image_5",
+      "image": "image_5",
+      "format": "jpg",
       "caption1": "SMIC's Q1 net profit continues to grow significantly",
       "blurb": "The global integrated circuit industry faces uncertainty due to the COVID-19 pandemic and the Ukraine-Russia conflict, impacting supply chains and operational dynamics. Despite these challenges, China's leading chipmaker, Semiconductor Manufacturing International Corporation (SMIC), reported impressive performance in the first quarter. This success was attributed to proactive capacity optimization and allocation adjustments made earlier. However, the long logistics chain has disrupted its existing business lines.\n\nSMIC's recent quarterly report showcased significant growth, with revenue soaring to $1.78 billion, a 62.6% increase from the previous year. The net profit for shareholders also saw a substantial rise to $426.45 million, up 175.5% year-on-year. Notably, the company's gross margin reached 40.7%, exceeding its guidance range of 36%-38%.\n\nAs the consumer electronics chip market enters a destocking phase and demand slows, the pandemic has led to a decreased capacity utilization rate for SMIC. Additionally, maintenance delays and rising raw material costs could potentially impact the company's performance in the coming second quarter. Analysts warn that SMIC may face an adjustment period extending beyond six months, given the ongoing disruptions in the supply chain and escalating raw material costs. This situation underscores the need for agility and strategic foresight in navigating the complex and evolving landscape of the global semiconductor industry."
     },
     {
-      "slug": "star-market-index",
-      "title": "China’s Star Market Navigates Restricted Shares Release Wave",
-      "label": "Svelte.js",
-      "image1": "image_8",
-      "caption1": "Recent fluctuations in the Science and Technology 50 Index",
-      "blurb": "The Star Market, China’s sci-tech innovation board, is currently experiencing a notable wave of restricted shares being released. This event surpasses the scale and concentration observed in the previous two rounds, with \"big restricted shares\" playing a major role. This situation implies a more prolonged emotional impact on the market. However, contrary to market expectations, the actual willingness to actively reduce holdings may be lower.\n\nReflecting on the last two years, the concentrated lifting of restrictions has had a visible effect on the stock price trends and rhythms of the Star Market in July. The primary influence has been emotional, with investor sentiments driving market dynamics. Despite this emotional undercurrent, the actual pressure from reduced holdings has remained relatively modest. The market has demonstrated a pattern of resilience, frequently exhibiting a \"V\"-shaped characteristic where stock prices rapidly recover following sharp declines.\n\nMarket analysts and institutions believe that the current rebound trend of the sci-tech innovation board is at its midpoint. This assessment suggests that, despite the initial emotional reactions to the lifting of restrictions, the Star Market may continue to show resilience and potential for recovery in the latter half of this phase. ​"
-    },
-    {
       "slug": "alibaba-revenue",
       "title": "Alibaba Records Slowest Quarterly Revenue Growth: Why Are Major Banks Bullish?",
-      "image1": "image_7",
+      "image": "image_7",
+      "format": "jpg",
       "caption1": "Alibaba records its lowest revenue growth rate since listing",
       "blurb": "Alibaba's first quarter revenue growth was the slowest since its listing, reaching $30.61 billion, a modest 9% increase year-on-year. This figure, albeit higher than Bloomberg's estimate of $30.09 billion, indicates a deceleration in the company's revenue growth.\n\nThe non-GAAP net profit for the first quarter, excluding items such as antitrust fines and impairment losses from the same period last year, was $2.97 billion, a notable 24% drop year-on-year. This decline is attributed to increased investments in TaocaiCai and Tmall, ongoing pandemic impacts, and the effects of asset impairment losses and special provisions for Sun Art Retail.\n\nLooking at Alibaba's performance for the 2022 fiscal year, the results were not particularly striking. Under non-GAAP standards, the net profit was $20.46 billion, marking a 21% year-on-year decrease, a significant decline of 51 percentage points from the previous fiscal year.\n\nDespite these figures indicating a slowdown in growth and profit, major banks maintain a bullish stance on Alibaba's future prospects. This optimism may be rooted in the company's ability to navigate through challenging market conditions and its potential for long-term growth, especially considering its significant market presence and ongoing strategic investments. ​"
     }

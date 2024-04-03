@@ -11,9 +11,23 @@
 
   .nav-link {
     color: white; 
-    font-size: 1.2rem;
+    font-size: 24px;
     font-family: "Inconsolata", monospace;
     font-weight: normal;
+  }
+
+  .newsletter-signup {
+    font-family: "Inconsolata", monospace;
+    font-size: 24px;
+    color: #FE5A24; /* Use the appropriate color */
+    text-decoration: none; /* Removes underline */
+    padding: 5px 10px; /* Adjust as needed */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .newsletter-signup:hover {
+    color: #C9302C; /* Darker shade for hover effect */
+    text-decoration: underline; /* Underline on hover for effect */
   }
 
   // For smaller devices
