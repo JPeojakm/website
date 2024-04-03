@@ -59,62 +59,17 @@ footer {
 }
 
 
-// The following code is for the  dataviz and infographic page
-.subpage-card-title a {
-  color: black; 
-  text-decoration: none; 
+.card-body {
+  font-family: "Inconsolata", sans-serif; // 你可以根据需要更换字体
+  color: #333; // 深灰色
+  
+  // 当鼠标悬停在链接上时改变颜色
+  .card-link {
+    color: inherit; // 使链接继承.card-title的颜色
+    text-decoration: none; // 去除下划线
+    
+    &:hover, &:focus {
+      color: #777; // 浅灰色
+    }
+  }
 }
-
-.subpage-card-title a:hover {
-  color: grey; 
-  text-decoration: underline; 
-}
-
-
-// The following code is for the writing page
-.hover-card {
-  position: relative;
-  overflow: hidden;
-}
-
-.hover-card .card-img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  transition: transform 0.5s ease;
-}
-
-.hover-card .overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.7); /* Dark overlay */
-  overflow: hidden;
-  width: 100%;
-  height: 0;
-  transition: .5s ease;
-}
-
-.hover-card:hover .card-img {
-  transform: scale(1.1);
-}
-
-.hover-card:hover .overlay {
-  height: 100%;
-}
-
-.hover-card .text {
-  color: white;
-  font-size: 8px;
-  width: 90%;
-  font-family: 'Exo 2', sans-serif;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  padding-top: 10px;
-  box-sizing: border-box;
-}
-

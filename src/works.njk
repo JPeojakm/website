@@ -18,15 +18,12 @@
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
          {% for dataviz in portfolio.dataviz %}
            <div class="col">
-             <div class="card h-90 border">
+             <div class="card h-90">
                <img src="img/data-viz-photo/{{ dataviz.image }}.{{ dataviz.format }}" class="card-img-top" alt="{{ dataviz.title }}">
                <div class="card-body">
-                 <h5 class="card-title subpage-card-title">
-                 <a href="dataviz/{{ dataviz.slug }}.html">{{ dataviz.title }}</a>
+                 <h5 class="card-title">
+                 <a href="dataviz/{{ dataviz.slug }}.html" class="card-link">{{ dataviz.heading }}</a>
                  </h5>
-                 <div class="badge-container">
-                   <a class="btn btn-credit btn-sm rounded-pill" role="button">{{ dataviz.label }}</a>
-                 </div>
                </div>
              </div>
           </div>
@@ -42,11 +39,11 @@
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
        {% for map in portfolio.maps %}
           <div class="col">
-            <div class="card h-90 border">
+            <div class="card h-90">
               <img src="img/maps-photo/{{ map.image }}.jpg" class="card-img-top" alt="{{ map.title }}">
               <div class="card-body">
-                <h5 class="card-title subpage-card-title">
-                   <a href="maps/{{ map.slug }}.html">{{ map.title }}</a>
+                <h5 class="card-title">
+                   <a href="maps/{{ map.slug }}.html" class="card-link">{{ map.title }}</a>
                 </h5>
               </div>
             </div>
@@ -56,22 +53,16 @@
     </div>
   </section>
 
-<!-- Interaction Design -->
-  <section class="Interaction Design">
+  <!-- Interaction Design -->
+  <section class="interaction-design">
     <h2>Interaction Design</h2>
     <div class="container-fluid">
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
         <div class="col">
         <div class="card h-100">
-          <!-- Card Image -->
           <img src="img/musicapp_img/banner.png" class="card-img-top" alt="Music App">
-          <!-- Card Body -->
           <div class="card-body">
-            <h5 class="card-title">Music App</h5>
-          </div>
-          <!-- Card Footer -->
-          <div class="card-footer">
-            <a href="Musicapp.html" class="btn btn-primary">Go to Music App</a>
+              <h5 class="card-title"><a href="Musicapp.html" class="card-link">Music App</a></h5>
           </div>
         </div>
       </div>
@@ -86,13 +77,12 @@
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
         {% for writing in home.writing %}
         <div class="col">
-          <div class="hover-card">
-            <img src="img/writing-photo/{{ writing.image }}" class="card-img" alt="{{ writing.title }}">
-            <div class="overlay">
-              <div class="text">
-                <h5>{{ writing.title }}</h5>
-                <a href="{{ writing.source }}" class="btn btn-success">Read More</a>
-              </div>
+          <div class="card hover-card">
+            <img src="img/writing-photo/{{ writing.image }}" class="card-img-top" alt="{{ writing.title }}">
+            <div class="card-body">
+              <h5 class="card-title">
+               <a href="{{ writing.source }}" class="card-link">{{ writing.name }}</a>
+              </h5>
             </div>
           </div>
         </div>
