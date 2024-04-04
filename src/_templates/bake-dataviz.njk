@@ -18,7 +18,12 @@
     <!-- Blurb Column -->
     <div class="col-sm-8">
         <h1>{{ title }}</h1>
-        <p>{{ blurb | safe }}</p>
+         {% set paragraphs = blurb.split('\n') %}
+      {% for paragraph in paragraphs %}
+        {% if paragraph %}
+          <p>{{ paragraph }}</p>
+        {% endif %}
+      {% endfor %}
     </div>
   </div>
 </article>

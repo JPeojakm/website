@@ -8,17 +8,17 @@
     },
     {
       "slug": "vacant_land",
-      "title": "Re-use vacant land",
+      "title": "Re-use Cleveland Vacant Land",
       "label": "Geographically Weighted Regression analysis",
       "image": "image1",
-      "blurb": "As many rust-belt cities grapple with the challenges of shrinking populations, the City of Cleveland is at a pivotal juncture. Vacant lands, a byproduct of this demographic shift, present both a challenge and an opportunity. This study aims to evaluate the effectiveness of Cleveland’s neighborhood revitalization strategy in repurposing these lands. Utilizing the Opportunity Index compiled by the Kirwan Institute for Race and Ethnicity, along with Geographically Weighted Regression analysis, we will assess the correlation between areas of high vacancy and low opportunity. This analysis is not only pivotal for local urban development but also forms a crucial part of our application for additional program funding from the U.S. Department of Housing and Urban Development. The hypothesis driving this research posits that Cleveland’s vacant land reuse program is adept at identifying areas with high vacancy rates and low opportunity indices, thereby targeting interventions where they are most needed."
+      "blurb": "Cleveland, Ohio - along with many other post-industrial rust-belt cities—has a unique problem: how to cope with a shrinking population. The city has experienced a 56% reduction in overall population since 1950, leaving the city with nearly 20,000 neglected vacant lots. Cleveland has been attempting to “re-use” vacant land in creative ways through municipal “landbanking.” Vacant land re-use projects include small-scale economic development, residential construction, community gardens, public parks, and environmental remediation. The impact of these projects can be significant in terms of improving neighborhood quality of life for residents.\n\nThis project involves creating maps to support a grant application to the U.S. Department of Housing and Urban Development (HUD). The city is seeking funding to support its vacant-land re-use strategy and aims to showcase the progress made to date. I will demonstrate whether the strategy of neighborhood revitalization through vacant-land reuse is reaching Cleveland’s most vulnerable (and vacant!) neighborhoods.\n\nI am tasked specifically with evaluating the success of vacant land re-use in relation to the overall social opportunity index and then delving more deeply into projects that could impact public health."
     },
     {
       "slug": "event_venue",
       "title": "event venue",
       "label": "Geocoding; Spatial analysis",
       "image": "image2",
-      "blurb": "This report aims to assist FLUX, an annual artist event in Pittsburgh, Pennsylvania, in identifying an optimal venue that balances both the event's budget constraints and the convenience of attendees. Our approach involved using the Average Nearest Neighbor method to analyze the addresses of past attendees to discern clusters of households. A Hot Spot analysis was also conducted to determine the most suitable zip codes based on our findings."
+      "blurb": "FLUX is an acclaimed annual art event in Pittsburgh, Pennsylvania, that highlights emerging artists. This year, faced with budget cuts, the event organizers have hired a marketing analyst to efficiently target potential attendees using limited data on past participation. \n\nThe analyst's task is to analyze spatial data to find where previous attendees live, identifying clusters for focused marketing and at least one zip code for concentrated outreach. Additionally, the analyst may suggest a suitable location for the next event. This approach uses geocoding, cluster analysis, and hot spot analysis to overcome budget constraints and maintain the event's high standard."
     }
   ],
   "dataviz": [
