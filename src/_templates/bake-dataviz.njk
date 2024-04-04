@@ -11,8 +11,23 @@
   <div class="row">
     <!-- Images and Captions Column -->
     <div class="col-sm-4">
-      <img src="{{ relative_path }}img/data-viz-photo/{{ dataviz.image }}.{{ dataviz.format }}" alt="{{ dataviz.title }}" class="img-fluid mb-4">
-      <p>{{ dataviz.caption }}</p>
+        <!-- Image 1 -->
+    {% if dataviz['image1'] and dataviz['image1_format'] and dataviz['image1_caption'] %}
+    <img src="{{ relative_path }}img/data-viz-photo/{{ dataviz['image1'] }}.{{ dataviz['image1_format'] }}" alt="Image 1" class="img-fluid mb-4">
+    <p>{{ dataviz['image1_caption'] }}</p>
+    {% endif %}
+
+    <!-- Image 2 -->
+    {% if dataviz['image2'] and dataviz['image2_format'] and dataviz['image2_caption'] %}
+    <img src="{{ relative_path }}img/data-viz-photo/{{ dataviz['image2'] }}.{{ dataviz['image2_format'] }}" alt="Image 2" class="img-fluid mb-4">
+    <p>{{ dataviz['image2_caption'] }}</p>
+    {% endif %}
+
+    <!-- Image 3 -->
+    {% if dataviz['image3'] and dataviz['image3_format'] and dataviz['image3_caption'] %}
+    <img src="{{ relative_path }}img/data-viz-photo/{{ dataviz['image3'] }}.{{ dataviz['image3_format'] }}" alt="Image 3" class="img-fluid mb-4">
+    <p>{{ dataviz['image3_caption'] }}</p>
+    {% endif %}
     </div>
 
     <!-- Blurb Column -->
