@@ -19,7 +19,7 @@
          {% for dataviz in portfolio.dataviz %}
            <div class="col">
              <div class="card h-90">
-               <img src="img/data-viz-photo/{{ dataviz.image1 }}.{{ dataviz.image1_format }}" class="card-img-top" alt="{{ dataviz.title }}">
+               <img src="img/data-viz-photo/{{ dataviz.filename }}" class="card-img-top" alt="{{ dataviz.title }}">
                <div class="card-body">
                  <h5 class="card-title">
                  <a href="dataviz/{{ dataviz.slug }}.html" class="card-link">{{ dataviz.heading }}</a>
