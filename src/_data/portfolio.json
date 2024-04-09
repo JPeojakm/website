@@ -4,21 +4,92 @@
       "slug": "arizona_heat",
       "title": "Extreme Heat And Migration: Insights From The Arizona Border",
       "image": "Arizona_heat",
-      "blurb": "The US Southwestern border is increasingly recognized as one of the world's most perilous land crossings. Alongside the myriad challenges faced by undocumented migrants, extreme heatwaves have emerged as a formidable barrier. Recently, there's been an increase in deaths caused by extreme heat, as noted by U.S. Customs and Border Protection. \n\n  As a data reporter, I hope to provide more quantitative analysis and map visualizations to support these migrant stories. My project aims to understand how rising global temperatures affect migrant movements in this region. It will look at how water and emergency beacons are spread across the area, with the goal of finding ways to make the journey safer for migrants. \n\n  Firstly, here is some background. I gathered weather data from NOAA and migrant information from the International Organization for Migration (IOM) and used R to analyze them. As Figure 1 shows, from 2019 to 2023, during the hottest months of June to September, there has been a notable increase in deaths among migrants trying to cross borders without permission. So, how do rising temperatures influence migration patterns along the Arizona border?\n\n  We define missing migrants as individuals who attempt to cross borders without authorization and are later found deceased by non-governmental organizations (NGOs) or patrol officers, without definitive identification at the time of discovery. Heat-related missing migrants are those whose deaths are inferred to be caused by heat, after excluding known causes like violence or drowning.\n\n  Since data on missing migrants is difficult to obtain and the specific reasons for their disappearance are often unknown, I reached out to the International Organization for Migration and an Arizona local NGO, Humane Borders, for their datasets. To increase accuracy, I focused on missing migrant cases from June to September, the hottest months in Arizona. I also narrowed down the data to include cases that could be related to heat-related causes of death.\n\n  Figure 2 provides very rich information, through this map, we can get some facts about Arizona: 1) Arizona is characterized by limited water sources and cities concentrated in the central region. 2) Tucson has become one of the fastest-growing cities in recent years due to immigration. 3) It has two patrol stations. 4) Rescue Beacons are primarily located in the lower-left corner, in Yuma County.\n\n  I use the Heat Index and Geographically Weighted Regression (GWR) as the main methods for this research. For my research on the impact of heat, I initially planned to use temperature and other weather data. However, I realized that this data might not clearly show trends over five years. \n\n  Then, I discovered the Heat Index in a research paper. Heat Index made by the nonprofit First Street Foundation, calculates the heat risk facing each property in the contiguous United States over the next 30 years, the length of a typical mortgage, providing some of the most detailed nationwide estimates. It uses an average temperature value over seven years, making it a more objective choice for my project. To analyze the data, I'm applying a weighted approach to the Heat Index.\n\n  As the map indicates, the deep red areas represent the hottest regions, while the lighter colored areas are relatively cooler. However, it's important to note that when looking at the national map, Arizona tends to be overall warmer in the summer. The colorful points on the map represent missing migrants, with different colors indicating different years.\n\n  Finally, I conducted a Geographically Weighted Regression (GWR), combining factors such as heat, distance from cities, and the presence of rescue beacons, to see how they influence migrant safety. I gained some insights from the results. Migrants should avoid walking in the FID4, 1, and 51 census tracts to minimize health risks. Additionally, NGOs and the US Border Patrol should consider installing more beacons eastward to enhance safety.\n\n  So far, this is all my work. I sent the results to Humane Borders, hoping it can contribute to their efforts in helping undocumented immigrants protect their lives. Of course, this project has many limitations, such as my inability to verify the migrant data since statistics on heat-related deaths are hard to compile. Also, the heat index data was last updated in July, not including data for August and September.\n\n  In the future, I aim to extend the study to encompass the entire US southern border for a more comprehensive analysis."
+      "description": [
+        {
+          "type": "text",
+          "value": "The US Southwestern border is increasingly recognized as one of the world's most perilous land crossings. Alongside the myriad challenges faced by undocumented migrants, extreme heatwaves have emerged as a formidable barrier. Recently, there's been an increase in deaths caused by extreme heat, as noted by U.S. Customs and Border Protection."
+        },
+        {
+          "type": "text",
+          "value": "As a data reporter, I hope to provide more quantitative analysis and map visualizations to support these migrant stories. My project aims to understand how rising global temperatures affect migrant movements in this region. It will look at how water and emergency beacons are spread across the area, with the goal of finding ways to make the journey safer for migrants."
+        },
+        {
+          "type": "text",
+          "value": "Firstly, here is some background. I gathered weather data from NOAA and migrant information from the International Organization for Migration (IOM) and used R to analyze them. As Figure 1 shows, from 2019 to 2023, during the hottest months of June to September, there has been a notable increase in deaths among migrants trying to cross borders without permission. So, how do rising temperatures influence migration patterns along the Arizona border?"
+        },
+        {
+          "type": "text",
+          "value": "We define missing migrants as individuals who attempt to cross borders without authorization and are later found deceased by non-governmental organizations (NGOs) or patrol officers, without definitive identification at the time of discovery. Heat-related missing migrants are those whose deaths are inferred to be caused by heat, after excluding known causes like violence or drowning."
+        },
+        {
+          "type": "text",
+          "value": "Since data on missing migrants is difficult to obtain and the specific reasons for their disappearance are often unknown, I reached out to the International Organization for Migration and an Arizona local NGO, Humane Borders, for their datasets. To increase accuracy, I focused on missing migrant cases from June to September, the hottest months in Arizona. I also narrowed down the data to include cases that could be related to heat-related causes of death."
+        },
+        {
+          "type": "text",
+          "value": "Figure 2 provides very rich information, through this map, we can get some facts about Arizona: 1) Arizona is characterized by limited water sources and cities concentrated in the central region. 2) Tucson has become one of the fastest-growing cities in recent years due to immigration. 3) It has two patrol stations. 4) Rescue Beacons are primarily located in the lower-left corner, in Yuma County."
+        },
+        {
+          "type": "text",
+          "value": "I use the Heat Index and Geographically Weighted Regression (GWR) as the main methods for this research. For my research on the impact of heat, I initially planned to use temperature and other weather data. However, I realized that this data might not clearly show trends over five years."
+        },
+        {
+          "type": "text",
+          "value": "Then, I discovered the Heat Index in a research paper. Heat Index made by the nonprofit First Street Foundation, calculates the heat risk facing each property in the contiguous United States over the next 30 years, the length of a typical mortgage, providing some of the most detailed nationwide estimates. It uses an average temperature value over seven years, making it a more objective choice for my project. To analyze the data, I'm applying a weighted approach to the Heat Index."
+        },
+        {
+          "type": "text",
+          "value": "As the map indicates, the deep red areas represent the hottest regions, while the lighter colored areas are relatively cooler. However, it's important to note that when looking at the national map, Arizona tends to be overall warmer in the summer. The colorful points on the map represent missing migrants, with different colors indicating different years."
+        },
+        {
+          "type": "text",
+          "value": "Finally, I conducted a Geographically Weighted Regression (GWR), combining factors such as heat, distance from cities, and the presence of rescue beacons, to see how they influence migrant safety. I gained some insights from the results. Migrants should avoid walking in the FID4, 1, and 51 census tracts to minimize health risks. Additionally, NGOs and the US Border Patrol should consider installing more beacons eastward to enhance safety."
+        },
+        {
+          "type": "text",
+          "value": "So far, this is all my work. I sent the results to Humane Borders, hoping it can contribute to their efforts in helping undocumented immigrants protect their lives. Of course, this project has many limitations, such as my inability to verify the migrant data since statistics on heat-related deaths are hard to compile. Also, the heat index data was last updated in July, not including data for August and September."
+        },
+        {
+          "type": "text",
+          "value": "In the future, I aim to extend the study to encompass the entire US southern border for a more comprehensive analysis."
+        }
+      ]
     },
     {
       "slug": "vacant_land",
       "title": "Re-use Cleveland Vacant Land",
       "label": "Geographically Weighted Regression analysis",
       "image": "image1",
-      "blurb": "Cleveland, Ohio - along with many other post-industrial rust-belt cities—has a unique problem: how to cope with a shrinking population. The city has experienced a 56% reduction in overall population since 1950, leaving the city with nearly 20,000 neglected vacant lots. Cleveland has been attempting to “re-use” vacant land in creative ways through municipal “landbanking.” Vacant land re-use projects include small-scale economic development, residential construction, community gardens, public parks, and environmental remediation. The impact of these projects can be significant in terms of improving neighborhood quality of life for residents.\n\nThis project involves creating maps to support a grant application to the U.S. Department of Housing and Urban Development (HUD). The city is seeking funding to support its vacant-land re-use strategy and aims to showcase the progress made to date. I will demonstrate whether the strategy of neighborhood revitalization through vacant-land reuse is reaching Cleveland’s most vulnerable (and vacant!) neighborhoods.\n\nI am tasked specifically with evaluating the success of vacant land re-use in relation to the overall social opportunity index and then delving more deeply into projects that could impact public health."
+      "description": [
+        {
+          "type": "text",
+          "value": "Cleveland, Ohio - along with many other post-industrial rust-belt cities—has a unique problem: how to cope with a shrinking population. The city has experienced a 56% reduction in overall population since 1950, leaving the city with nearly 20,000 neglected vacant lots. Cleveland has been attempting to “re-use” vacant land in creative ways through municipal “landbanking.” Vacant land re-use projects include small-scale economic development, residential construction, community gardens, public parks, and environmental remediation. The impact of these projects can be significant in terms of improving neighborhood quality of life for residents."
+        },
+        {
+          "type": "text",
+          "value": "This project involves creating maps to support a grant application to the U.S. Department of Housing and Urban Development (HUD). The city is seeking funding to support its vacant-land re-use strategy and aims to showcase the progress made to date. I will demonstrate whether the strategy of neighborhood revitalization through vacant-land reuse is reaching Cleveland’s most vulnerable (and vacant!) neighborhoods."
+        },
+        {
+          "type": "text",
+          "value": "I am tasked specifically with evaluating the success of vacant land re-use in relation to the overall social opportunity index and then delving more deeply into projects that could impact public health."
+        }
+      ]
     },
     {
       "slug": "event_venue",
       "title": "event venue",
       "label": "Geocoding; Spatial analysis",
       "image": "image2",
-      "blurb": "FLUX is an acclaimed annual art event in Pittsburgh, Pennsylvania, that highlights emerging artists. This year, faced with budget cuts, the event organizers have hired a marketing analyst to efficiently target potential attendees using limited data on past participation. \n\nThe analyst's task is to analyze spatial data to find where previous attendees live, identifying clusters for focused marketing and at least one zip code for concentrated outreach. Additionally, the analyst may suggest a suitable location for the next event. This approach uses geocoding, cluster analysis, and hot spot analysis to overcome budget constraints and maintain the event's high standard."
+      "description": [
+        {
+          "type": "text",
+          "value": "FLUX is an acclaimed annual art event in Pittsburgh, Pennsylvania, that highlights emerging artists. This year, faced with budget cuts, the event organizers have hired a marketing analyst to efficiently target potential attendees using limited data on past participation."
+        },
+        {
+          "type": "text",
+          "value": "The analyst's task is to analyze spatial data to find where previous attendees live, identifying clusters for focused marketing and at least one zip code for concentrated outreach. Additionally, the analyst may suggest a suitable location for the next event. This approach uses geocoding, cluster analysis, and hot spot analysis to overcome budget constraints and maintain the event's high standard."
+        }
+      ]
     }
   ],
   "dataviz": [
@@ -36,7 +107,92 @@
       "image3": "h1b_applications",
       "image3_format": "png",
       "image3_caption": "Over 60% of H-1B visa applicants work in CS-related jobs",
-      "blurb": "After obtaining his physics doctorate in physics degree from an Ivy League institution, Leo Zheng found it challenging to secure a job in the U.S. For eight months, he repeated the same routine every day: waking up early, browsing through LinkedIn, and submitting a job application every thirty minutes. As he grew increasingly hopeless and contemplated returning to China, he received an unexpected offer from Apple.\n\n\n\n  But this still did not guarantee that he could stay and work in the U.S.\n\n  In the 2022 fiscal year, over 478,000 individuals like Zheng submitted their H-1B visa petitions to the U.S. Citizenship and Immigration Services (USCIS), the federal agency that awards H-1B visas. Because of the overwhelming number of H-1B applications, the agency conducts a lottery system to determine which applications they will review. Ultimately, only 26.36% of the applicants qualified for review, a percentage that continues to decrease year after year.\n\n  In 2020, the Trump administration implemented an overhaul of the H-1B visa program by moving the registration process online. This change resulted in a reduction of the petition fees to a mere $10. If an applicant was chosen in the lottery, they would be required to pay all the related visa fees to ensure that their application was reviewed in detail.\n\n  Prior to this change, U.S. employers had to create full petitions for their candidates, which incurred costly fees to file, and then enter a lottery that usually commenced on April 1st.\n\n​​  The new registration system, however, significantly reduced the barriers to entry, potentially leading to the submission of duplicate applications.\n\n  USCIS found that a few companies entered the same applicants into the lottery multiple times to artificially increase their chances of winning a visa. This caused a record-high demand of 781,000 entries for 85,000 visa slots this year.\n\n  “Many individuals attempted to game the system by submitting multiple applications through different companies, causing a massive surge of 300,000 additional applications in 2023,\" said Chuck Guo, an immigration lawyer with six years of experience. \"This is unfair and dilutes the chances of others in the lottery.\"\n\n  After graduation, international students typically use their \"Optional Practical Training\" to find a job, and then apply for an H-1B visa to legally work in the U.S. The H-1B visa, established in 1990, has been the primary way for companies to hire foreign employees with college degrees, including those who studied in the U.S.\n\n  \"For the past 30 years, the U.S. has not updated its immigration laws, despite the population doubling and the economy growing twice as large during that time. However, the number of H-1B visas has not significantly increased.” said Guo.\n\n  According to Guo, he has noticed a significant increase in the scrutiny of legal immigrants by the immigration agency, resulting in longer processing times and unresponsive departments.\n\n  There are also certain trends among H-1B applicants in terms of the cities and professions they apply for.\n\n  Zheng explains that although international students studying STEM majors and eligible for three chances to participate in the H-1B lottery during their OPT period, they often work for positions such as \"software engineer\" or \"data scientist\" at large tech companies. In the past five years, over 60% of H-1B applicants have been employed in computer science and data science roles.\n\n  Additionally, H-1B applicants have relatively high average salaries. For instance, in 2022, H-1B applicants in California earned an average annual salary of over $120,000, with those in Washington and New York following closely behind at $114,000 and $97,000, respectively.\n\n  \"This is a trend. The H-1B visa requires applicants to have a bachelor's degree or higher, so positions are often located in big cities. And the legal and immigration fees are not small amounts, so it's usually larger companies that apply,\" said Guo.\n\n  Both Texas and the Bay Area had three cities where employers filed more than 10,000 H-1B petitions in 2022. In Texas, the cities were Austin, Plano, and Dallas. Meanwhile, New York City had the highest number of H-1B petitions filed by employers, with over 30,000.\n\n  Even if you are selected for the H-1B lottery, it does not guarantee that you will receive the visa.\n\n  Zheng encountered a problem when he applied for his H-1B visa. The immigration agency determined that his doctoral degree was not in line with data science and requested additional documentation.\n\n  In recent years, the government has gradually lifted restrictions on H-1B visas, resulting in a higher approval rate during this period. In the 2022 fiscal year, the approval rate was 98%.\n\n  The government has proposed increasing the registration fee to $215, which is expected to be effective for next year's lottery. Additionally, the agency intends to draft regulations to prevent future fraud.\n\n  To attract global talent, Guo believes that the United States should have a more comprehensive and fair consideration for legal immigrants."
+      "description": [
+        {
+          "type": "text",
+          "value": "After obtaining his physics doctorate in physics degree from an Ivy League institution, Leo Zheng found it challenging to secure a job in the U.S. For eight months, he repeated the same routine every day: waking up early, browsing through LinkedIn, and submitting a job application every thirty minutes. As he grew increasingly hopeless and contemplated returning to China, he received an unexpected offer from Apple."
+        },
+        {
+          "type": "text",
+          "value": "But this still did not guarantee that he could stay and work in the U.S."
+        },
+        {
+          "type": "text",
+          "value": "In the 2022 fiscal year, over 478,000 individuals like Zheng submitted their H-1B visa petitions to the U.S. Citizenship and Immigration Services (USCIS), the federal agency that awards H-1B visas. Because of the overwhelming number of H-1B applications, the agency conducts a lottery system to determine which applications they will review. Ultimately, only 26.36% of the applicants qualified for review, a percentage that continues to decrease year after year."
+        },
+        {
+          "type": "text",
+          "value": "In 2020, the Trump administration implemented an overhaul of the H-1B visa program by moving the registration process online. This change resulted in a reduction of the petition fees to a mere $10. If an applicant was chosen in the lottery, they would be required to pay all the related visa fees to ensure that their application was reviewed in detail."
+        },
+        {
+          "type": "text",
+          "value": "Prior to this change, U.S. employers had to create full petitions for their candidates, which incurred costly fees to file, and then enter a lottery that usually commenced on April 1st."
+        },
+        {
+          "type": "text",
+          "value": "​​  The new registration system, however, significantly reduced the barriers to entry, potentially leading to the submission of duplicate applications."
+        },
+        {
+          "type": "text",
+          "value": "USCIS found that a few companies entered the same applicants into the lottery multiple times to artificially increase their chances of winning a visa. This caused a record-high demand of 781,000 entries for 85,000 visa slots this year."
+        },
+        {
+          "type": "text",
+          "value": "“Many individuals attempted to game the system by submitting multiple applications through different companies, causing a massive surge of 300,000 additional applications in 2023,\" said Chuck Guo, an immigration lawyer with six years of experience. \"This is unfair and dilutes the chances of others in the lottery.\""
+        },
+        {
+          "type": "text",
+          "value": "After graduation, international students typically use their \"Optional Practical Training\" to find a job, and then apply for an H-1B visa to legally work in the U.S. The H-1B visa, established in 1990, has been the primary way for companies to hire foreign employees with college degrees, including those who studied in the U.S."
+        },
+        {
+          "type": "text",
+          "value": "\"For the past 30 years, the U.S. has not updated its immigration laws, despite the population doubling and the economy growing twice as large during that time. However, the number of H-1B visas has not significantly increased.” said Guo."
+        },
+        {
+          "type": "text",
+          "value": "According to Guo, he has noticed a significant increase in the scrutiny of legal immigrants by the immigration agency, resulting in longer processing times and unresponsive departments."
+        },
+        {
+          "type": "text",
+          "value": "There are also certain trends among H-1B applicants in terms of the cities and professions they apply for."
+        },
+        {
+          "type": "text",
+          "value": "Zheng explains that although international students studying STEM majors and eligible for three chances to participate in the H-1B lottery during their OPT period, they often work for positions such as \"software engineer\" or \"data scientist\" at large tech companies. In the past five years, over 60% of H-1B applicants have been employed in computer science and data science roles."
+        },
+        {
+          "type": "text",
+          "value": "Additionally, H-1B applicants have relatively high average salaries. For instance, in 2022, H-1B applicants in California earned an average annual salary of over $120,000, with those in Washington and New York following closely behind at $114,000 and $97,000, respectively."
+        },
+        {
+          "type": "text",
+          "value": "\"This is a trend. The H-1B visa requires applicants to have a bachelor's degree or higher, so positions are often located in big cities. And the legal and immigration fees are not small amounts, so it's usually larger companies that apply,\" said Guo."
+        },
+        {
+          "type": "text",
+          "value": "Both Texas and the Bay Area had three cities where employers filed more than 10,000 H-1B petitions in 2022. In Texas, the cities were Austin, Plano, and Dallas. Meanwhile, New York City had the highest number of H-1B petitions filed by employers, with over 30,000."
+        },
+        {
+          "type": "text",
+          "value": "Even if you are selected for the H-1B lottery, it does not guarantee that you will receive the visa."
+        },
+        {
+          "type": "text",
+          "value": "Zheng encountered a problem when he applied for his H-1B visa. The immigration agency determined that his doctoral degree was not in line with data science and requested additional documentation."
+        },
+        {
+          "type": "text",
+          "value": "In recent years, the government has gradually lifted restrictions on H-1B visas, resulting in a higher approval rate during this period. In the 2022 fiscal year, the approval rate was 98%."
+        },
+        {
+          "type": "text",
+          "value": "The government has proposed increasing the registration fee to $215, which is expected to be effective for next year's lottery. Additionally, the agency intends to draft regulations to prevent future fraud."
+        },
+        {
+          "type": "text",
+          "value": "To attract global talent, Guo believes that the United States should have a more comprehensive and fair consideration for legal immigrants."
+        }
+      ]
     },
     {
       "slug": "suicide",
@@ -46,7 +202,80 @@
       "image1": "suicide",
       "image1_format": "jpg",
       "image1_caption": "States with higher suicide rates are concentrated in the Midwest.",
-      "blurb": "For the past 15 years, Bobby Carter has visited all of Lubbock's high schools at the beginning of each school year to tell teachers and counselors about the crisis intervention services offered by StarCare Lubbock, the state-designated local authority for mental health services for the five-county area.\n\n“We also have a strong collaboration with the police department, and they know to contact us any time they encounter a college-aged student off-campus who is experiencing a crisis,” said Carter, the director of StarCare’s diversion programs, as he sat in his truck, sporting a thick beard and a hat.\n\nBut due to the heavy stigma associated with mental health issues and the high cost of treatment, officials say many people in Lubbock are hesitant to seek help for their children's mental health.\n\nA 2019 <a href=\"https://www.ttuhsc.edu/medicine/psychiatry/documents/LubbockTransmissionFinalReportandRecommendations.pdf\">report</a> on mental health care in the Lubbock area by the Meadows Mental Health Policy Institute estimated that approximately 20,000 children and youth in Lubbock County had mental health or substance disorders and that 4,000 of them had experienced serious emotional disturbances. Among 12- to 17-year-olds, the report estimated nine new cases each year of first episode psychosis, a mental state characterized by a break with reality. For 18- to 34-year-olds, it estimated 40 new cases a year.\n\n“There is no first episode psychosis (FEP) program to identify and treat people experiencing a psychotic disorder at the earliest possible point – an important gap, especially in a community with a large college-age population,” the report noted.\n\nBut that soon changed. StarCare Specialty Health, the sole local mental health authority in Lubbock, partnered with Texas Tech University in March 2020 to launch a first episode of psychosis program, a treatment regimen of psychotherapy, medication and family education and support that is regarded as highly effective at preventing youth suicide. It is one of 29 such programs around the state designed to slow, stop and potentially reverse the effects of psychosis.\n\nThe StarCare FEP program serves patients who have experienced psychotic symptoms for the first time within the past two years. \"I believe we have also served a few individuals with major depressive disorder and psychotic features,\" said Carter.\n\nStarCare’s FEP program is financed by a grant from the Texas Health and Human Services Commission. The program is capable of catering to a maximum of 20 people ages 15 and 30. Additionally, every participant in the program is committed to a three-year term of service.\n\nBut currently the Lubbock FEP program only has six young adults in their early twenties enrolled, despite StarCare's extensive community outreach efforts, such as providing services and training for local school districts and participating in radio or TV interviews.\n\n\"In West Texas where there is a conservative mindset,\" said Carter, \"There is a significant portion of the population with a 'pull yourself up by your bootstraps' mentality, so I think that's where a lot of the resistance comes from.\"\n\nNegative stigma has led many people to avoid seeking help from hospitals or local mental health authorities like StarCare. The FEP program has implemented a proactive approach. Case managers regularly visit patients in their homes on a weekly basis, which greatly addresses the issue of patients not wanting to go to the hospital.\n\n\"Much of our work is driven by the needs of the local community,\" said Marle Antu, director of behavioral health services for StarCare and a licensed clinician, \"Different communities have unique needs, and we strive to provide tailored services accordingly.\"\n\nDr. Wail Amor, an assistant professor at Texas Tech Physicians, is involved in the FEP project. According to Amor, the psychiatric care they provide involves evaluating new and follow-up patients, prescribing or refilling medications, and referring patients for psychotherapy, substance use, and medical services.\n\nThe FEP team is led by a professional counselor and includes two case managers who provide direct community outreach to patients. The program also has a peer provider who can relate to patients through lived experiences and works closely with the team. Carter noted that the peer provider can connect with patients on a deeper level than a case manager might be able to.\n\nPeople can currently participate in the FEP program at no cost, Antu said, regardless of whether they have medical insurance or not, thanks to state funding.\n\n“I think we’ve seen a tremendous amount of success with our FEP program,” said Carter, “Main goal for this program is we do work with college age people who are not necessarily enrolled in school. We want to help them go back to school or to help them find a job where they can live.”\n\nWhile there is currently no specific data supporting the effectiveness of the FEP program in the Lubbock area, Amor recommends it for young adults struggling with mental illness and psychotic symptoms.\n\n\"Patients can expect exceptional support through the FEP program, with the team lead overseeing the delivery of personalized services that may include medication delivery, home visits, and telepsychiatry appointments,\" Amor said."
+      "description": [
+        {
+          "type": "text",
+          "value": "For the past 15 years, Bobby Carter has visited all of Lubbock's high schools at the beginning of each school year to tell teachers and counselors about the crisis intervention services offered by StarCare Lubbock, the state-designated local authority for mental health services for the five-county area."
+        },
+        {
+          "type": "text",
+          "value": "“We also have a strong collaboration with the police department, and they know to contact us any time they encounter a college-aged student off-campus who is experiencing a crisis,” said Carter, the director of StarCare’s diversion programs, as he sat in his truck, sporting a thick beard and a hat."
+        },
+        {
+          "type": "text",
+          "value": "But due to the heavy stigma associated with mental health issues and the high cost of treatment, officials say many people in Lubbock are hesitant to seek help for their children's mental health."
+        },
+        {
+          "type": "text",
+          "value": "A 2019 <a href=\"https://www.ttuhsc.edu/medicine/psychiatry/documents/LubbockTransmissionFinalReportandRecommendations.pdf\">report</a> on mental health care in the Lubbock area by the Meadows Mental Health Policy Institute estimated that approximately 20,000 children and youth in Lubbock County had mental health or substance disorders and that 4,000 of them had experienced serious emotional disturbances. Among 12- to 17-year-olds, the report estimated nine new cases each year of first episode psychosis, a mental state characterized by a break with reality. For 18- to 34-year-olds, it estimated 40 new cases a year."
+        },
+        {
+          "type": "text",
+          "value": "“There is no first episode psychosis (FEP) program to identify and treat people experiencing a psychotic disorder at the earliest possible point – an important gap, especially in a community with a large college-age population,” the report noted."
+        },
+        {
+          "type": "text",
+          "value": "But that soon changed. StarCare Specialty Health, the sole local mental health authority in Lubbock, partnered with Texas Tech University in March 2020 to launch a first episode of psychosis program, a treatment regimen of psychotherapy, medication and family education and support that is regarded as highly effective at preventing youth suicide. It is one of 29 such programs around the state designed to slow, stop and potentially reverse the effects of psychosis."
+        },
+        {
+          "type": "text",
+          "value": "The StarCare FEP program serves patients who have experienced psychotic symptoms for the first time within the past two years. \"I believe we have also served a few individuals with major depressive disorder and psychotic features,\" said Carter."
+        },
+        {
+          "type": "text",
+          "value": "StarCare’s FEP program is financed by a grant from the Texas Health and Human Services Commission. The program is capable of catering to a maximum of 20 people ages 15 and 30. Additionally, every participant in the program is committed to a three-year term of service."
+        },
+        {
+          "type": "text",
+          "value": "But currently the Lubbock FEP program only has six young adults in their early twenties enrolled, despite StarCare's extensive community outreach efforts, such as providing services and training for local school districts and participating in radio or TV interviews."
+        },
+        {
+          "type": "text",
+          "value": "\"In West Texas where there is a conservative mindset,\" said Carter, \"There is a significant portion of the population with a 'pull yourself up by your bootstraps' mentality, so I think that's where a lot of the resistance comes from.\""
+        },
+        {
+          "type": "text",
+          "value": "Negative stigma has led many people to avoid seeking help from hospitals or local mental health authorities like StarCare. The FEP program has implemented a proactive approach. Case managers regularly visit patients in their homes on a weekly basis, which greatly addresses the issue of patients not wanting to go to the hospital."
+        },
+        {
+          "type": "text",
+          "value": "\"Much of our work is driven by the needs of the local community,\" said Marle Antu, director of behavioral health services for StarCare and a licensed clinician, \"Different communities have unique needs, and we strive to provide tailored services accordingly.\""
+        },
+        {
+          "type": "text",
+          "value": "Dr. Wail Amor, an assistant professor at Texas Tech Physicians, is involved in the FEP project. According to Amor, the psychiatric care they provide involves evaluating new and follow-up patients, prescribing or refilling medications, and referring patients for psychotherapy, substance use, and medical services."
+        },
+        {
+          "type": "text",
+          "value": "The FEP team is led by a professional counselor and includes two case managers who provide direct community outreach to patients. The program also has a peer provider who can relate to patients through lived experiences and works closely with the team. Carter noted that the peer provider can connect with patients on a deeper level than a case manager might be able to."
+        },
+        {
+          "type": "text",
+          "value": "People can currently participate in the FEP program at no cost, Antu said, regardless of whether they have medical insurance or not, thanks to state funding."
+        },
+        {
+          "type": "text",
+          "value": "“I think we’ve seen a tremendous amount of success with our FEP program,” said Carter, “Main goal for this program is we do work with college age people who are not necessarily enrolled in school. We want to help them go back to school or to help them find a job where they can live.”"
+        },
+        {
+          "type": "text",
+          "value": "While there is currently no specific data supporting the effectiveness of the FEP program in the Lubbock area, Amor recommends it for young adults struggling with mental illness and psychotic symptoms."
+        },
+        {
+          "type": "text",
+          "value": "\"Patients can expect exceptional support through the FEP program, with the team lead overseeing the delivery of personalized services that may include medication delivery, home visits, and telepsychiatry appointments,\" Amor said."
+        }
+      ]
     },
     {
       "slug": "gradlife",
@@ -62,7 +291,96 @@
       "image3": "grad_seu",
       "image3_format": "png",
       "image3_caption": "The highest-paying degree at SEU is Finance and Financial Management Services.",
-      "blurb": "On a Wednesday morning in April, the Littlefield Fountain on the University of Texas at Austin’s campus was packed with graduates donning sashes and taking photos. Some raise glasses of champagne and bid farewell to the ivory tower, setting off towards the world.\n\nSeveral of those soon-to-be graduates said they excited for the future, but somewhat apprehensive about the current state of the job market\n\nThe unemployment rate for college graduates age 20-24 was 5.4% in March, up from 2.3% December 2021 and indicating that graduates will encounter stiffer competition when seeking employment.\n\nZac Schulwolf, 23, is set to graduate with a master degree in computer science.\n\n“I went to a tech industry party in San Francisco, and after a few rounds of drinks, someone asked how many of (the attendees) still had jobs. It was shocking to hear that even some of the new grads had already been laid off,” Schulwolf said.\n\nAmid the uncertain job market, some UT students are choosing alternative paths such as pursuing graduate school, taking on gig work, or starting their own business instead of directly entering the workforce.\n\nChristy Nguyen, 21, is graduating with a degree in biology. She intends to return to her hometown of Dallas to seek a medical position in a clinic and eventually apply to medical school.\n\n\"As a senior, I felt like a big fish in the sea,\" Nguyen said. \"But when I started searching for jobs, I realized I had lost control over my fate. With so many experienced professionals in the world, we are all competing for the same positions. I can no longer consider myself a big fish.\"\n\nNguyen believes that for her first job, she needs to get her foot in the door and be willing to \"lower the bar.\"\n\nKrystal Won, 21, will graduate with a degree in journalism. Originally from South Korea, Won received a summer school offer from Columbia University's Lede program. After applying to nearly 40 jobs, she only received one interview. \"Even though I’m in the best journalism school, I still feel like I'm in a passive position during the job search,\" Won said.\n\n“I see many job seekers opting for internship and fellowship opportunities, rather than full time work, for multiple reasons.” said Avianne Ernest, the assistant director of Moody Career Center. “After surviving the pandemic, I think it's completely appropriate to wade in the water of students‘ career search.”\n\nEven though some giant companies are experiencing notable layoffs, they can provide stable financial and clear career promotion path, which is still a priority choice for some senior students. \"We're in an economic recession, and stability is important,\" said Aviadne Campos, 22, will graduate with a degree in marketing, who hopes to work for a big consumer company or consulting agency.\n\nCampos sees the economic downturn after the pandemic as a test of companies' management abilities. \"I look into how companies are managing their employees during pandemic,\" said Campos. \"I will observe if the company has the ability to retain employees, who they prioritize, and what they deem as important.\"\n\nErnest has observed that many students, like Campos, are prioritizing job security and financial stability after the pandemic. “In Moody college of communication, the desire for freelance and contract work has decreased as they have seen family and friends experience furloughs and layoffs,” said Ernest.\n\nHowever, some students believe that the only certain thing is uncertainty, and that working for a startup might better develop their ability to adapt to change.\n\nSchulwolf plans to be a digital nomad this summer, remembers when he was a freshman and everyone wanted to work for Facebook. \"But that started phasing out,\" he said.\n\n\"Working for a startup means being part of a small dynamic team where you could be doing cybersecurity, product development, user interviews, sales, and a bunch of different things,\" Schulwolf explained. \"Everything is constantly changing. Being able to adapt quickly and learn fast can be super important.\"\n\nSchulwolf started his own recruitment company called Forward Jobs during his senior year, and even though he later withdrew, the experience helped him discover his career aspirations. \"If I work for a startup, I look for a founder I can really trust or who has already had a successful exit,\" he explained.\n\nThese students want to emphasize that not immediately entering the job market should not be viewed as laziness, and taking a step back can help them gain clarity on their career paths.\n\nDespite the pressures and anxieties that come with graduation approaching in May, they are not panicking.\n\nWhen Schulwolf shared with his friends his desire to build personal projects after college, he was met with skepticism. \"They said, 'You can't even afford that' and 'Go throw it away!'\" Despite this, he knew he couldn’t stop.\n\n\"I'm a career-oriented person. I need something I can put my heart and soul into, where I can drop everything else and go all in, you know?\" He said, \"That's kind of what I'm looking for in my young 20s.\""
+      "description": [
+        {
+          "type": "text",
+          "value": "On a Wednesday morning in April, the Littlefield Fountain on the University of Texas at Austin’s campus was packed with graduates donning sashes and taking photos. Some raise glasses of champagne and bid farewell to the ivory tower, setting off towards the world."
+        },
+        {
+          "type": "text",
+          "value": "Several of those soon-to-be graduates said they excited for the future, but somewhat apprehensive about the current state of the job market"
+        },
+        {
+          "type": "text",
+          "value": "The unemployment rate for college graduates age 20-24 was 5.4% in March, up from 2.3% December 2021 and indicating that graduates will encounter stiffer competition when seeking employment."
+        },
+        {
+          "type": "text",
+          "value": "Zac Schulwolf, 23, is set to graduate with a master degree in computer science."
+        },
+        {
+          "type": "text",
+          "value": "“I went to a tech industry party in San Francisco, and after a few rounds of drinks, someone asked how many of (the attendees) still had jobs. It was shocking to hear that even some of the new grads had already been laid off,” Schulwolf said."
+        },
+        {
+          "type": "text",
+          "value": "Amid the uncertain job market, some UT students are choosing alternative paths such as pursuing graduate school, taking on gig work, or starting their own business instead of directly entering the workforce."
+        },
+        {
+          "type": "text",
+          "value": "Christy Nguyen, 21, is graduating with a degree in biology. She intends to return to her hometown of Dallas to seek a medical position in a clinic and eventually apply to medical school."
+        },
+        {
+          "type": "text",
+          "value": "\"As a senior, I felt like a big fish in the sea,\" Nguyen said. \"But when I started searching for jobs, I realized I had lost control over my fate. With so many experienced professionals in the world, we are all competing for the same positions. I can no longer consider myself a big fish.\""
+        },
+        {
+          "type": "text",
+          "value": "Nguyen believes that for her first job, she needs to get her foot in the door and be willing to \"lower the bar.\""
+        },
+        {
+          "type": "text",
+          "value": "Krystal Won, 21, will graduate with a degree in journalism. Originally from South Korea, Won received a summer school offer from Columbia University's Lede program. After applying to nearly 40 jobs, she only received one interview. \"Even though I’m in the best journalism school, I still feel like I'm in a passive position during the job search,\" Won said."
+        },
+        {
+          "type": "text",
+          "value": "“I see many job seekers opting for internship and fellowship opportunities, rather than full time work, for multiple reasons.” said Avianne Ernest, the assistant director of Moody Career Center. “After surviving the pandemic, I think it's completely appropriate to wade in the water of students‘ career search.”"
+        },
+        {
+          "type": "text",
+          "value": "Even though some giant companies are experiencing notable layoffs, they can provide stable financial and clear career promotion path, which is still a priority choice for some senior students. \"We're in an economic recession, and stability is important,\" said Aviadne Campos, 22, will graduate with a degree in marketing, who hopes to work for a big consumer company or consulting agency."
+        },
+        {
+          "type": "text",
+          "value": "Campos sees the economic downturn after the pandemic as a test of companies' management abilities. \"I look into how companies are managing their employees during pandemic,\" said Campos. \"I will observe if the company has the ability to retain employees, who they prioritize, and what they deem as important.\""
+        },
+        {
+          "type": "text",
+          "value": "Ernest has observed that many students, like Campos, are prioritizing job security and financial stability after the pandemic. “In Moody college of communication, the desire for freelance and contract work has decreased as they have seen family and friends experience furloughs and layoffs,” said Ernest."
+        },
+        {
+          "type": "text",
+          "value": "However, some students believe that the only certain thing is uncertainty, and that working for a startup might better develop their ability to adapt to change."
+        },
+        {
+          "type": "text",
+          "value": "Schulwolf plans to be a digital nomad this summer, remembers when he was a freshman and everyone wanted to work for Facebook. \"But that started phasing out,\" he said."
+        },
+        {
+          "type": "text",
+          "value": "\"Working for a startup means being part of a small dynamic team where you could be doing cybersecurity, product development, user interviews, sales, and a bunch of different things,\" Schulwolf explained. \"Everything is constantly changing. Being able to adapt quickly and learn fast can be super important.\""
+        },
+        {
+          "type": "text",
+          "value": "Schulwolf started his own recruitment company called Forward Jobs during his senior year, and even though he later withdrew, the experience helped him discover his career aspirations. \"If I work for a startup, I look for a founder I can really trust or who has already had a successful exit,\" he explained."
+        },
+        {
+          "type": "text",
+          "value": "These students want to emphasize that not immediately entering the job market should not be viewed as laziness, and taking a step back can help them gain clarity on their career paths."
+        },
+        {
+          "type": "text",
+          "value": "Despite the pressures and anxieties that come with graduation approaching in May, they are not panicking."
+        },
+        {
+          "type": "text",
+          "value": "When Schulwolf shared with his friends his desire to build personal projects after college, he was met with skepticism. \"They said, 'You can't even afford that' and 'Go throw it away!'\" Despite this, he knew he couldn’t stop."
+        },
+        {
+          "type": "text",
+          "value": "\"I'm a career-oriented person. I need something I can put my heart and soul into, where I can drop everything else and go all in, you know?\" He said, \"That's kind of what I'm looking for in my young 20s.\""
+        }
+      ]
     },
     {
       "slug": "covid",
@@ -78,7 +396,32 @@
       "image3": "covid_case_death_rates",
       "image3_format": "jpg",
       "image3_caption": "Trend lines are useful for illustrating the relationship between two variables.",
-      "blurb": "In this series of data visualizations on COVID, I primarily utilized the ggplot2, scales, and patchwork packages in R for presentation. The data focuses on the daily COVID timeline data for cases and deaths in each US state and territory, sourced from The New York Times. Prior to visualization, a cleaning process was conducted.\n\nTo create graphic panels containing multiple charts, I employed the patchwork package. Additionally, I calculated the seven-day rolling averages for daily reported COVID cases and deaths for each state and territory. Subsequently, I filtered the timeline data to include only the states with a population of more than 15 million.\n\nIn the next set of charts, I aim to study the confirmed cases and death cases in Texas due to COVID and combine them into a single chart.\n\nCertainly! Trend lines are useful for illustrating the relationship between two variables, especially in scatter plots and bubble plots. To begin, I will create a bubble plot to investigate the correlation between case rates and death rates across US states and territories. Subsequently, I will incorporate a line to depict linear regression.\n\nConsidering the large number of data points, I will highlight the key states by labeling their names. Moreover, I will use color and labels to emphasize a subset of the points while keeping the rest of the data visible on the chart.\n\nThis visualization was developed under the guidance of Professor Peter Aldhous."
+      "description": [
+        {
+          "type": "text",
+          "value": "In this series of data visualizations on COVID, I primarily utilized the ggplot2, scales, and patchwork packages in R for presentation. The data focuses on the daily COVID timeline data for cases and deaths in each US state and territory, sourced from The New York Times. Prior to visualization, a cleaning process was conducted."
+        },
+        {
+          "type": "text",
+          "value": "To create graphic panels containing multiple charts, I employed the patchwork package. Additionally, I calculated the seven-day rolling averages for daily reported COVID cases and deaths for each state and territory. Subsequently, I filtered the timeline data to include only the states with a population of more than 15 million."
+        },
+        {
+          "type": "text",
+          "value": "In the next set of charts, I aim to study the confirmed cases and death cases in Texas due to COVID and combine them into a single chart."
+        },
+        {
+          "type": "text",
+          "value": "Certainly! Trend lines are useful for illustrating the relationship between two variables, especially in scatter plots and bubble plots. To begin, I will create a bubble plot to investigate the correlation between case rates and death rates across US states and territories. Subsequently, I will incorporate a line to depict linear regression."
+        },
+        {
+          "type": "text",
+          "value": "Considering the large number of data points, I will highlight the key states by labeling their names. Moreover, I will use color and labels to emphasize a subset of the points while keeping the rest of the data visible on the chart."
+        },
+        {
+          "type": "text",
+          "value": "This visualization was developed under the guidance of Professor Peter Aldhous."
+        }
+      ]
     },
     {
       "slug": "globe",
@@ -87,7 +430,12 @@
       "label": "Svelte.js",
       "image1": "globe",
       "image1_format": "gif",
-      "blurb": "The raw data showcases various key economic indicators for different countries from 1990 to 2017. I have chosen the Gross Domestic Product (GDP), life expectancy at birth and population as a crucial data point to visualize the economic development of countries over the past 30 years. For this purpose, I primarily utilized the gganimate package in R to create animated GIFs."
+      "description": [
+        {
+          "type": "text",
+          "value": "The raw data showcases various key economic indicators for different countries from 1990 to 2017. I have chosen the Gross Domestic Product (GDP), life expectancy at birth and population as a crucial data point to visualize the economic development of countries over the past 30 years. For this purpose, I primarily utilized the gganimate package in R to create animated GIFs."
+        }
+      ]
     },
     {
       "slug": "us-pop",
@@ -96,7 +444,12 @@
       "label": "Svelte.js",
       "image1": "pop",
       "image1_format": "gif",
-      "blurb": "The raw data showcases various key economic indicators for different countries from 1990 to 2017. I have chosen the Gross Domestic Product (GDP), life expectancy at birth and population as a crucial data point to visualize the economic development of countries over the past 30 years. For this purpose, I primarily utilized the gganimate package in R to create animated GIFs."
+      "description": [
+        {
+          "type": "text",
+          "value": "The raw data showcases various key economic indicators for different countries from 1990 to 2017. I have chosen the Gross Domestic Product (GDP), life expectancy at birth and population as a crucial data point to visualize the economic development of countries over the past 30 years. For this purpose, I primarily utilized the gganimate package in R to create animated GIFs."
+        }
+      ]
     },
     {
       "slug": "new-evmakers-performance",
@@ -112,7 +465,36 @@
       "image3": "image_1_3",
       "image3_format": "jpg",
       "image3_caption": "XPeng Motors' gross margin is lower than its industry peers.",
-      "blurb": "The automotive industry, particularly new automakers like Xpeng, NIO, and Li Auto, faced severe supply chain challenges in 2021. Rising upstream raw material costs, chip shortages, tight battery supplies, and disruptions caused by sporadic pandemic outbreaks have been key hurdles.\n\nDespite these challenges, Xpeng, NIO, and Li Auto are in a crucial phase of improving profitability. Their substantial R&D investments have led to strategic losses in the short term, but increasing per-vehicle profit margins suggest a potential approach towards the breakeven point in the future.\n\nIn terms of delivery volume, Xiaopeng Motors delivered 98,200 vehicles in 2021, outperforming NIO's 91,400 vehicles and Li Auto's 90,500 vehicles. However, NIO's delivery volume slightly lagged, with Nezha Auto, a second-tier competitor, selling over 18,000 vehicles in the first two months of 2022, surpassing NIO's 15,800 vehicles. Notably, Li Auto has achieved profitability.\n\nRevenue growth and profit improvement trends are upward for these automakers. NIO reported a full-year revenue of $5.42 billion in 2021, up 122% year-on-year, and a net loss narrowed by 24.3%. In terms of gross margin performance, Xpeng's new vehicle gross margin stands at 11.5%, showing an 8 percentage point increase from 2020. This improvement is attributed to product portfolio expansion, material cost reduction, and XPILOT software sales revenue. Li Auto leads with the highest new vehicle gross margin at 20.6%, closely followed by NIO at 20.1%.\n\nLi Auto's performance in Q4 2021 was particularly strong, turning a profit with a net gain of $44.33 million. The company delivered 35,000 vehicles during the quarter, achieving a vehicle gross profit margin that exceeded market expectations.\n\nDespite the ongoing chip shortage and rising battery costs, Xpeng and NIO remain optimistic. He Xiaopeng, the founder of Xpeng Auto, views these challenges as temporary and an opportunity for the company to refine its capabilities, aiming for a gross margin of over 25%.\n\nCITIC Securities' research suggests that these automakers are in an accelerating phase of profitability improvement. While significant R&D investments continue to cause short-term strategic losses, their steadily increasing single-car gross profit demonstrates their potential to reach break-even in the future."
+      "description": [
+        {
+          "type": "text",
+          "value": "The automotive industry, particularly new automakers like Xpeng, NIO, and Li Auto, faced severe supply chain challenges in 2021. Rising upstream raw material costs, chip shortages, tight battery supplies, and disruptions caused by sporadic pandemic outbreaks have been key hurdles."
+        },
+        {
+          "type": "text",
+          "value": "Despite these challenges, Xpeng, NIO, and Li Auto are in a crucial phase of improving profitability. Their substantial R&D investments have led to strategic losses in the short term, but increasing per-vehicle profit margins suggest a potential approach towards the breakeven point in the future."
+        },
+        {
+          "type": "text",
+          "value": "In terms of delivery volume, Xiaopeng Motors delivered 98,200 vehicles in 2021, outperforming NIO's 91,400 vehicles and Li Auto's 90,500 vehicles. However, NIO's delivery volume slightly lagged, with Nezha Auto, a second-tier competitor, selling over 18,000 vehicles in the first two months of 2022, surpassing NIO's 15,800 vehicles. Notably, Li Auto has achieved profitability."
+        },
+        {
+          "type": "text",
+          "value": "Revenue growth and profit improvement trends are upward for these automakers. NIO reported a full-year revenue of $5.42 billion in 2021, up 122% year-on-year, and a net loss narrowed by 24.3%. In terms of gross margin performance, Xpeng's new vehicle gross margin stands at 11.5%, showing an 8 percentage point increase from 2020. This improvement is attributed to product portfolio expansion, material cost reduction, and XPILOT software sales revenue. Li Auto leads with the highest new vehicle gross margin at 20.6%, closely followed by NIO at 20.1%."
+        },
+        {
+          "type": "text",
+          "value": "Li Auto's performance in Q4 2021 was particularly strong, turning a profit with a net gain of $44.33 million. The company delivered 35,000 vehicles during the quarter, achieving a vehicle gross profit margin that exceeded market expectations."
+        },
+        {
+          "type": "text",
+          "value": "Despite the ongoing chip shortage and rising battery costs, Xpeng and NIO remain optimistic. He Xiaopeng, the founder of Xpeng Auto, views these challenges as temporary and an opportunity for the company to refine its capabilities, aiming for a gross margin of over 25%."
+        },
+        {
+          "type": "text",
+          "value": "CITIC Securities' research suggests that these automakers are in an accelerating phase of profitability improvement. While significant R&D investments continue to cause short-term strategic losses, their steadily increasing single-car gross profit demonstrates their potential to reach break-even in the future."
+        }
+      ]
     },
     {
       "slug": "anta-lining-performance",
@@ -128,7 +510,32 @@
       "image3": "image_2_4",
       "image3_format": "jpg",
       "image3_caption": "Profit margin trends of Anta(red) and Li Ning",
-      "blurb": "Leading Domestic Sports and Casual Apparel Brands ANTA and Li-Ning Experienced Significant Performance Improvement Last Year, but Growth Slowed in the Second Half and Stock Prices Have Been Declining Since Q3.\n\nAccording to the latest financial report, ANTA's revenue for 2021 was RMB 49.328 billion, a YoY increase of 38.90%. Compared to Nike Greater China's sales in the 2021 fiscal year, which were only RMB 1.9 billion higher, ANTA's revenue surpassed Adidas Greater China and Lululemon's full-year revenue for the 2021 fiscal year, which were RMB 32.161 billion and RMB 39.7 billion, respectively. Li-Ning's full-year revenue was RMB 22.572 billion, a YoY growth rate of 56.13%.\nThe DTC (Direct-To-Customer) transformation was the main reason for ANTA's performance improvement. The DTC transformation mainly targeted external channels, significantly reducing the proportion of distributors, increasing direct sales efforts, reducing intermediate links, and expanding profit margins.\nPreviously, ANTA's main wholesale distribution model involved selling products wholesale to distributors for exclusive distribution. In 2020, there were too many uncertain factors affecting offline stores due to the pandemic, and distributor purchases led to strong short-term market-oriented positioning.\nAs ANTA's offline store expansion space became saturated, the group began to consider DTC transformation. In the 18 regions where the DTC transformation was launched, ANTA adopted a mixed operating model, which involved recovering distributor stores and converting them into group-owned stores, while retaining some high-performing franchise stores.\nUnlike ANTA's \"single focus, multiple brands\" strategy, Li-Ning continues to adhere to its \"single brand, multiple categories\" approach, developing towards both specialization and trendiness. During the reporting period, the company's revenue from sports fashion products grew at the fastest rate of 71%, accounting for 43% of total revenue. The creativity of this category is well received by young consumers. In terms of specialization, the company's basketball and running series had revenue growth rates of 53% and 46%, respectively."
+      "description": [
+        {
+          "type": "text",
+          "value": "Leading Domestic Sports and Casual Apparel Brands ANTA and Li-Ning Experienced Significant Performance Improvement Last Year, but Growth Slowed in the Second Half and Stock Prices Have Been Declining Since Q3."
+        },
+        {
+          "type": "text",
+          "value": "According to the latest financial report, ANTA's revenue for 2021 was RMB 49.328 billion, a YoY increase of 38.90%. Compared to Nike Greater China's sales in the 2021 fiscal year, which were only RMB 1.9 billion higher, ANTA's revenue surpassed Adidas Greater China and Lululemon's full-year revenue for the 2021 fiscal year, which were RMB 32.161 billion and RMB 39.7 billion, respectively. Li-Ning's full-year revenue was RMB 22.572 billion, a YoY growth rate of 56.13%."
+        },
+        {
+          "type": "text",
+          "value": "The DTC (Direct-To-Customer) transformation was the main reason for ANTA's performance improvement. The DTC transformation mainly targeted external channels, significantly reducing the proportion of distributors, increasing direct sales efforts, reducing intermediate links, and expanding profit margins."
+        },
+        {
+          "type": "text",
+          "value": "Previously, ANTA's main wholesale distribution model involved selling products wholesale to distributors for exclusive distribution. In 2020, there were too many uncertain factors affecting offline stores due to the pandemic, and distributor purchases led to strong short-term market-oriented positioning."
+        },
+        {
+          "type": "text",
+          "value": "As ANTA's offline store expansion space became saturated, the group began to consider DTC transformation. In the 18 regions where the DTC transformation was launched, ANTA adopted a mixed operating model, which involved recovering distributor stores and converting them into group-owned stores, while retaining some high-performing franchise stores."
+        },
+        {
+          "type": "text",
+          "value": "Unlike ANTA's \"single focus, multiple brands\" strategy, Li-Ning continues to adhere to its \"single brand, multiple categories\" approach, developing towards both specialization and trendiness. During the reporting period, the company's revenue from sports fashion products grew at the fastest rate of 71%, accounting for 43% of total revenue. The creativity of this category is well received by young consumers. In terms of specialization, the company's basketball and running series had revenue growth rates of 53% and 46%, respectively."
+        }
+      ]
     },
     {
       "slug": "ctal-market-value",
@@ -145,7 +552,24 @@
       "image3": "image_3_3",
       "image3_format": "jpg",
       "image3_caption": "CATL's revenue and net profit in 2021 show high year-on-year growth",
-      "blurb": "CATL, a global leader in electric vehicle batteries, faced contrasting fortunes between its 2021 annual performance and the first quarter of 2022. Despite an impressive 2021 with revenue soaring to $195.53 billion (up 159.06%) and a net profit of $2.39 billion (up 185.34%), the first quarter of 2022 showed a different trend. The revenue for Q1 2022 increased significantly to $7.3 billion (up 153.9%), but the net profit took a hit, falling to $223.5 million, a 20% decrease. This was far below expectations and marked the first quarter-over-quarter decline since 2020. Additionally, the non-GAAP net profit also declined by 41.6% to $147 million.\n\nThe company's gross profit margin for Q1 2022 was 14.48%, a decrease of 10.88 percentage points from the previous quarter, and below market expectations. This led to a sharp 11.4% fall in CATL's stock price on May 5th.\n\nThe downturn in Q1 2022 can be attributed to multiple factors. There was significant pressure from rising upstream costs and weaker downstream demand from automakers. CATL's revenue primarily comes from power battery systems, energy storage systems, and battery materials. In 2021, these segments contributed 70.19%, 10.45%, and 11.86% of the revenue, respectively. The core revenue source, the power battery business, saw revenue growth of 132.06% to $13.73 billion. However, in 2022, CATL's cost advantage lessened, leading to a leveling of profit margins compared to other domestic battery manufacturers.\n\nIn the backdrop of a high-growth new energy vehicle market in 2021, CATL faced stiff competition. The company not only had to contend with the expansion of overseas battery giants but also with the rise of domestic second- and third-tier battery manufacturers and increased efforts by car companies to develop their own battery strategies. This competition put pressure on profit margins and market share. Despite maintaining the top global market share in early 2021, CATL's position was increasingly challenged by both international and domestic competitors, including innovative Chinese companies like SVOLT, EVE Energy, and Farasis Energy, which saw significant growth in their market shares and installation rates."
+      "description": [
+        {
+          "type": "text",
+          "value": "CATL, a global leader in electric vehicle batteries, faced contrasting fortunes between its 2021 annual performance and the first quarter of 2022. Despite an impressive 2021 with revenue soaring to $195.53 billion (up 159.06%) and a net profit of $2.39 billion (up 185.34%), the first quarter of 2022 showed a different trend. The revenue for Q1 2022 increased significantly to $7.3 billion (up 153.9%), but the net profit took a hit, falling to $223.5 million, a 20% decrease. This was far below expectations and marked the first quarter-over-quarter decline since 2020. Additionally, the non-GAAP net profit also declined by 41.6% to $147 million."
+        },
+        {
+          "type": "text",
+          "value": "The company's gross profit margin for Q1 2022 was 14.48%, a decrease of 10.88 percentage points from the previous quarter, and below market expectations. This led to a sharp 11.4% fall in CATL's stock price on May 5th."
+        },
+        {
+          "type": "text",
+          "value": "The downturn in Q1 2022 can be attributed to multiple factors. There was significant pressure from rising upstream costs and weaker downstream demand from automakers. CATL's revenue primarily comes from power battery systems, energy storage systems, and battery materials. In 2021, these segments contributed 70.19%, 10.45%, and 11.86% of the revenue, respectively. The core revenue source, the power battery business, saw revenue growth of 132.06% to $13.73 billion. However, in 2022, CATL's cost advantage lessened, leading to a leveling of profit margins compared to other domestic battery manufacturers."
+        },
+        {
+          "type": "text",
+          "value": "In the backdrop of a high-growth new energy vehicle market in 2021, CATL faced stiff competition. The company not only had to contend with the expansion of overseas battery giants but also with the rise of domestic second- and third-tier battery manufacturers and increased efforts by car companies to develop their own battery strategies. This competition put pressure on profit margins and market share. Despite maintaining the top global market share in early 2021, CATL's position was increasingly challenged by both international and domestic competitors, including innovative Chinese companies like SVOLT, EVE Energy, and Farasis Energy, which saw significant growth in their market shares and installation rates."
+        }
+      ]
     }
   ]
 }

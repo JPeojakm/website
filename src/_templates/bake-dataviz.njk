@@ -2,52 +2,23 @@
 
 {% set relative_path = "../" %}
 
+{% from '_macros/prose.njk' import prose %}
+
 {% block page_title %}{{ title }}{% endblock %}
 
 {% block page_description %}{{ title }} by {{ label }}{% endblock %}
 
 {% block content %}
 <article class="container">
-  <!-- Heading -->
   <div class="row">
     <div class="col-12">
       <h1>{{ title }}</h1>
     </div>
   </div>
 
-  <!-- Contents and Images -->
   <div class="row">
     <div class="col-12">
-      {% set paragraphs = blurb.split('\n') %}
-      {% set imageCounter = 1 %}
-      {% set imagesInserted = 0 %}
-      {% for paragraph in paragraphs %}
-        <p>{{ paragraph }}</p>
-        {% if loop.index == 2 or loop.index == 5 %}
-          {% if imageCounter <= 3 %}
-            {% set image = dataviz['image' ~ imageCounter] %}
-            {% set format = dataviz['image' ~ imageCounter ~ '_format'] %}
-            {% set caption = dataviz['image' ~ imageCounter ~ '_caption'] %}
-            {% if image and format and caption %}
-              <img src="{{ relative_path }}img/data-viz-photo/{{ image }}.{{ format }}" alt="Image {{ imageCounter }}" class="img-fluid mb-4">
-              <p>{{ caption }}</p>
-              {% set imageCounter = imageCounter + 1 %}
-              {% set imagesInserted = imagesInserted + 1 %}
-            {% endif %}
-          {% endif %}
-        {% endif %}
-      {% endfor %}
-
-      <!-- the rest of images -->
-      {% for i in range(imagesInserted + 1, 4) %}
-        {% set image = dataviz['image' ~ i] %}
-        {% set format = dataviz['image' ~ i ~ '_format'] %}
-        {% set caption = dataviz['image' ~ i ~ '_caption'] %}
-        {% if image and format and caption %}
-          <img src="{{ relative_path }}img/data-viz-photo/{{ image }}.{{ format }}" alt="Image {{ i }}" class="img-fluid mb-4">
-          <p>{{ caption }}</p>
-        {% endif %}
-      {% endfor %}
+      {{ prose(description) }}
     </div>
   </div>
 </article>

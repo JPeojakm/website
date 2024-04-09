@@ -2,6 +2,8 @@
 
 {% set relative_path = "../" %}
 
+{% from '_macros/prose.njk' import prose %} {# Import the prose macro #}
+
 {% block page_title %}{{ title }}{% endblock %}
 
 {% block page_description %}{{ title }} by {{ label }}{% endblock %}
@@ -14,13 +16,7 @@
     </div>
     <div class="col-sm-8">
       <h1>{{ title }}</h1>
-      <!-- Manually splitting and looping through paragraphs -->
-      {% set paragraphs = blurb.split('\n') %}
-      {% for paragraph in paragraphs %}
-        {% if paragraph %}
-          <p>{{ paragraph }}</p>
-        {% endif %}
-      {% endfor %}
+      {{ prose(description) }} 
     </div>
   </div>
 </article>
