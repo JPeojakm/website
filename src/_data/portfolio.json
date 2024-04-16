@@ -133,12 +133,6 @@
           "value": "​​  The new registration system, however, significantly reduced the barriers to entry, potentially leading to the submission of duplicate applications."
         },
         {
-          "type": "iframe",
-          "value": {
-            "url": ""
-          }
-        },
-        {
           "type": "text",
           "value": "USCIS found that a few companies entered the same applicants into the lottery multiple times to artificially increase their chances of winning a visa. This caused a record-high demand of 781,000 entries for 85,000 visa slots this year."
         },
@@ -484,27 +478,6 @@
       ]
     },
     {
-      "slug": "globe",
-      "title": "globe population",
-      "heading": "Global Population Visualization",
-      "label": "Svelte.js",
-      "filename": "globe.gif",
-      "description": [
-        {
-          "type": "text",
-          "value": "The raw data showcases various key economic indicators for different countries from 1990 to 2017. I have chosen the Gross Domestic Product (GDP), life expectancy at birth and population as a crucial data point to visualize the economic development of countries over the past 30 years. For this purpose, I primarily utilized the gganimate package in R to create animated GIFs."
-        },
-        {
-          "type": "img",
-          "value": {
-            "filename": "../img/data-viz-photo/globe.gif",
-            "caption": "global population",
-            "alt": "globe population"
-          }
-        }
-      ]
-    },
-    {
       "slug": "us-pop",
       "title": "US population",
       "heading": "US Population New Change",
@@ -513,7 +486,91 @@
       "description": [
         {
           "type": "text",
-          "value": "The raw data showcases various key economic indicators for different countries from 1990 to 2017. I have chosen the Gross Domestic Product (GDP), life expectancy at birth and population as a crucial data point to visualize the economic development of countries over the past 30 years. For this purpose, I primarily utilized the gganimate package in R to create animated GIFs."
+          "value": "This visualization was created using Svelte.js. You can find the code here."
+        },
+        {
+          "type": "text",
+          "value": "In June 2023, the Census Bureau released new population data. I used Svelte.js to create this visualization. The data granularity extends to the county level. After processing the entire dataset in R, I selected the top 100 counties based on population to compare the changes from 2020 to 2022, hoping to discern post-pandemic migration trends across different parts of the United States."
+        },
+        {
+          "type": "text",
+          "value": "How I Made This Visualization:"
+        },
+        {
+          "type": "text",
+          "value": "Exploring visualization options. The states are divided into four main regions according to the 1950 Census Bureau standards: Northeast, South, Midwest, and West, represented in the visualization by blue, pink, yellow, and grey respectively."
+        },
+        {
+          "type": "text",
+          "value": "Each bubble represents a county. You can arrange the bubbles by state location. Click anywhere on the chart to interact. To enhance user interaction, the chart is responsive, includes hover interactions, and features meaningful peripheral elements."
+        },
+        {
+          "type": "text",
+          "value": "My data.js looks like this:"
+        },
+        {
+          "type": "county",
+          "value": "Harris County, Texas"
+        },
+        {
+          "type": "pop2022",
+          "value": "4780913"
+        },
+        {
+          "type": "pop2020",
+          "value": "4734505"
+        },
+        {
+          "type": "change",
+          "value": "0.980208068"
+        },
+        {
+          "type": "location",
+          "value": "South"
+        },
+        {
+          "type": "text",
+          "value": "Using D3-force for Svelte Visualizations"
+        },
+        {
+          "type": "text",
+          "value": "Before using D3-force, I generally apply fixed x and y positions to each circle. D3-force, like a physics engine, determines the position of each circle. I was inspired by Ben Tanen’s tutorial on ObservableHQ."
+        },
+        {
+          "type": "text",
+          "value": "For this chart, I wanted three forces: forceX, forceY, and forceCollide. I mapped the population change percentage column to the forceX when grouped by region and the forceY force. ForceCollide ensures no two circles overlap."
+        },
+        {
+          "type": "text",
+          "value": "Drawing Circles"
+        },
+        {
+          "type": "text",
+          "value": "I use SVG to draw circles. One important aspect is to use an {#each} block to iterate over our data. We also use the “g” element to wrap our inner chart, allowing us to add axes later and position them correctly."
+        },
+        {
+          "type": "text",
+          "value": "Making Circles Reactive and Responsive"
+        },
+        {
+          "type": "text",
+          "value": "I’m actually very confused about using the .on('tick') function. My bubbles always don’t fit in the window. The issue here is that the simulation is re-instantiated every time any of its constituent elements change. Because we are using $: to instantiate the simulation, we essentially overwrite the previous simulation with a new one every time we resize the window."
+        },
+        {
+          "type": "text",
+          "value": "Connecting Data with Circles"
+        },
+        {
+          "type": "text",
+          "value": "So far, I’ve connected each circle's y-position to its location and its x-position to its population change percentage. In this step, I connected the circle’s color to its grouping variable, which is location, and also connected the radius to its change percentage variable."
+        },
+        {
+          "type": "text",
+          "value": "Adding Legend and Tooltip"
+        },
+        {
+          "type": "text",
+          "value": "This step is more routine, designed to make the visualization more interactive. It only requires adding hover listeners."
         },
         {
           "type": "img",
@@ -521,6 +578,111 @@
             "filename": "../img/data-viz-photo/pop.gif",
             "caption": "population change",
             "alt": "population change"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "globe",
+      "title": "globe population",
+      "heading": "Global Population Visualization",
+      "label": "Svelte.js",
+      "filename": "globe.gif",
+      "description": [
+        {
+          "type": "text",
+          "value": "This visualization was created using Svelte.js. You can find the code here."
+        },
+        {
+          "type": "text",
+          "value": "It’s another population project, but unlike the previous one, this time I aimed to visualize global population data. Creating an interactive globe was an ideal choice, allowing users to click and drag the globe to see population numbers for each country."
+        },
+        {
+          "type": "text",
+          "value": "The geographic data we used is from 110m.json files. The data format is as follows:"
+        },
+        {
+          "type": "country",
+          "value": "Aruba"
+        },
+        {
+          "type": "code",
+          "value": "AW"
+        },
+        {
+          "type": "id",
+          "value": "533"
+        },
+        {
+          "type": "population",
+          "value": "107195"
+        },
+        {
+          "type": "text",
+          "value": "Here, \"id\" represents the ISO code, which I'll use to link the data. This is more reliable than using the country name."
+        },
+        {
+          "type": "text",
+          "value": "<strong>D3-Geo</strong>"
+        },
+        {
+          "type": "text",
+          "value": "I employed d3-geo for this project. D3-geo helps plot a set of values onto corresponding geographic locations. The general approach to using d3-geo involves four steps: 1) Create a projection function; 2) Create a path generator; 3) Render the country paths; 4) Add a globe."
+        },
+        {
+          "type": "text",
+          "value": "Responsive"
+        },
+        {
+          "type": "text",
+          "value": "Similar to the bubble visualization, we just need to create a .chart-container and use a dimension binding equal to the width."
+        },
+        {
+          "type": "text",
+          "value": "Styling the Globe"
+        },
+        {
+          "type": "text",
+          "value": "The next step is to add background color and fill the globe. I also added a subtle glow to the globe, achieved using an SVG drop shadow with feOffset, feGaussianBlur, and feMerge."
+        },
+        {
+          "type": "text",
+          "value": "Adding Data to the Globe"
+        },
+        {
+          "type": "text",
+          "value": "We now have a globe, but the data isn't embedded yet. In addition to importing data, I created a color scale that adjusts the fill of each country based on population density. The brighter the color, the lower the population, and vice versa."
+        },
+        {
+          "type": "text",
+          "value": "Rotating"
+        },
+        {
+          "type": "text",
+          "value": "This animation is a bit complex. I envision that when the user is not interacting with the page, the globe will automatically rotate. Once an interaction event is triggered, the user can drag the globe to explore different countries."
+        },
+        {
+          "type": "text",
+          "value": "For auto-rotation, I use d3-timer. We're instantiating the rotation to be 0, and then updating it by 0.5 degrees every second."
+        },
+        {
+          "type": "text",
+          "value": "For drag functionality, I use d3-drag. This module allows us to add drag events to any DOM element. It's worth noting that we set the rotation on the x-axis first—don't forget to add yRotation. Additionally, for a globe, adding inertia is better. I use a spring function for this; the spring works by taking an initial value and a set of options, including stiffness and damping."
+        },
+        {
+          "type": "text",
+          "value": "Other works"
+        },
+        {
+          "type": "text",
+          "value": "To enhance the experience further, we still have many things we can do, like styling the cursor when the user is dragging the globe or adding interactive tooltips to provide more information."
+        },
+        {
+          "type": "img",
+          "value": {
+            "filename": "../img/data-viz-photo/globe.gif",
+            "caption": "global population",
+            "alt": "globe population"
           }
         }
       ]

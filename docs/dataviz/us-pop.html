@@ -81,12 +81,90 @@
       <div class="row">
         <div class="col-12">
           <p>
-            The raw data showcases various key economic indicators for different
-            countries from 1990 to 2017. I have chosen the Gross Domestic
-            Product (GDP), life expectancy at birth and population as a crucial
-            data point to visualize the economic development of countries over
-            the past 30 years. For this purpose, I primarily utilized the
-            gganimate package in R to create animated GIFs.
+            This visualization was created using Svelte.js. You can find the
+            code here.
+          </p>
+
+          <p>
+            In June 2023, the Census Bureau released new population data. I used
+            Svelte.js to create this visualization. The data granularity extends
+            to the county level. After processing the entire dataset in R, I
+            selected the top 100 counties based on population to compare the
+            changes from 2020 to 2022, hoping to discern post-pandemic migration
+            trends across different parts of the United States.
+          </p>
+
+          <p>How I Made This Visualization:</p>
+
+          <p>
+            Exploring visualization options. The states are divided into four
+            main regions according to the 1950 Census Bureau standards:
+            Northeast, South, Midwest, and West, represented in the
+            visualization by blue, pink, yellow, and grey respectively.
+          </p>
+
+          <p>
+            Each bubble represents a county. You can arrange the bubbles by
+            state location. Click anywhere on the chart to interact. To enhance
+            user interaction, the chart is responsive, includes hover
+            interactions, and features meaningful peripheral elements.
+          </p>
+
+          <p>My data.js looks like this:</p>
+
+          Harris County, Texas 4780913 4734505 0.980208068 South
+
+          <p>Using D3-force for Svelte Visualizations</p>
+
+          <p>
+            Before using D3-force, I generally apply fixed x and y positions to
+            each circle. D3-force, like a physics engine, determines the
+            position of each circle. I was inspired by Ben Tanen’s tutorial on
+            ObservableHQ.
+          </p>
+
+          <p>
+            For this chart, I wanted three forces: forceX, forceY, and
+            forceCollide. I mapped the population change percentage column to
+            the forceX when grouped by region and the forceY force. ForceCollide
+            ensures no two circles overlap.
+          </p>
+
+          <p>Drawing Circles</p>
+
+          <p>
+            I use SVG to draw circles. One important aspect is to use an {#each}
+            block to iterate over our data. We also use the “g” element to wrap
+            our inner chart, allowing us to add axes later and position them
+            correctly.
+          </p>
+
+          <p>Making Circles Reactive and Responsive</p>
+
+          <p>
+            I’m actually very confused about using the .on('tick') function. My
+            bubbles always don’t fit in the window. The issue here is that the
+            simulation is re-instantiated every time any of its constituent
+            elements change. Because we are using $: to instantiate the
+            simulation, we essentially overwrite the previous simulation with a
+            new one every time we resize the window.
+          </p>
+
+          <p>Connecting Data with Circles</p>
+
+          <p>
+            So far, I’ve connected each circle's y-position to its location and
+            its x-position to its population change percentage. In this step, I
+            connected the circle’s color to its grouping variable, which is
+            location, and also connected the radius to its change percentage
+            variable.
+          </p>
+
+          <p>Adding Legend and Tooltip</p>
+
+          <p>
+            This step is more routine, designed to make the visualization more
+            interactive. It only requires adding hover listeners.
           </p>
 
           <img
