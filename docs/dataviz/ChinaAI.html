@@ -2,8 +2,8 @@
 <html lang="en">
   <!-- A Intro to Coding for Journalists class project -->
   <head>
-    <title>JP Li | globe population</title>
-    <meta name="description" content="globe population by Svelte.js" />
+    <title>JP Li | AI-talent</title>
+    <meta name="description" content="AI-talent by D3" />
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
@@ -74,108 +74,90 @@
     <article class="container">
       <div class="row">
         <div class="col-12">
-          <h1>globe population</h1>
+          <h1>AI-talent</h1>
         </div>
       </div>
 
       <div class="row">
         <div class="col-12">
           <p>
-            This visualization was created using Svelte.js. You can find the
-            code here.
+            Read the original story on The Abacus here:
+            https://theabacus.substack.com/p/hiring-data-tells-you-top-10-chinese
           </p>
 
           <p>
-            It’s another population project, but unlike the previous one, this
-            time I aimed to visualize global population data. Creating an
-            interactive globe was an ideal choice, allowing users to click and
-            drag the globe to see population numbers for each country.
+            I used MaiMai's report, a leading Chinese recruitment site, to
+            analyze the AI job market and talent strategies of Chinese
+            companies. Their latest insights (as of Oct 23) were quite
+            revealing.
           </p>
 
           <p>
-            The geographic data we used is from 110m.json files. The data format
-            is as follows:
+            First, let's look at the most in-demand AI positions in China.
+            MaiMai's Talent supply-demand rate reveals that for two consecutive
+            years, Autonomous Driving Systems Engineer, with a supply-demand
+            ratio of 0.38, is the most sought-after role. This means there are
+            about 2 candidates for every 5 positions.
           </p>
 
           <img
-            src="../img/data-viz-photo/globe_data.png"
-            alt="globe data"
+            src="../img/data-viz-photo/AI_talent2.webp"
+            alt="major-Chinese-company"
             class="img-fluid"
           />
 
           <p>
-            Here, "id" represents the ISO code, which I'll use to link the data.
-            This is more reliable than using the country name.
-          </p>
-
-          <p>D3-Geo</p>
-
-          <p>
-            I employed d3-geo for this project. D3-geo helps plot a set of
-            values onto corresponding geographic locations. The general approach
-            to using d3-geo involves four steps: 1) Create a projection
-            function; 2) Create a path generator; 3) Render the country paths;
-            4) Add a globe.
-          </p>
-
-          <p>Responsive</p>
-
-          <p>
-            Similar to the bubble visualization, we just need to create a
-            .chart-container and use a dimension binding equal to the width.
-          </p>
-
-          <p>Styling the Globe</p>
-
-          <p>
-            The next step is to add background color and fill the globe. I also
-            added a subtle glow to the globe, achieved using an SVG drop shadow
-            with feOffset, feGaussianBlur, and feMerge.
-          </p>
-
-          <p>Adding Data to the Globe</p>
-
-          <p>
-            We now have a globe, but the data isn't embedded yet. In addition to
-            importing data, I created a color scale that adjusts the fill of
-            each country based on population density. The brighter the color,
-            the lower the population, and vice versa.
-          </p>
-
-          <p>Rotating</p>
-
-          <p>
-            This animation is a bit complex. I envision that when the user is
-            not interacting with the page, the globe will automatically rotate.
-            Once an interaction event is triggered, the user can drag the globe
-            to explore different countries.
+            While there's some easing in AI role shortages compared to 2022,
+            with speech recognition and AI engineers catching up quickly,
+            algorithm engineers still have a supply-demand ratio below 0.5.
           </p>
 
           <p>
-            For auto-rotation, I use d3-timer. We're instantiating the rotation
-            to be 0, and then updating it by 0.5 degrees every second.
+            And we have some new positions this year: ChatGPT Researchers! I
+            wasn't sure what this job entails, so I checked some job search
+            apps. The descriptions are vague, mostly about training chatbots for
+            specific applications using ChatGPT. Despite the ambiguity, ChatGPT
+            Researchers top the high-salary list with an average monthly wage of
+            $10,000. (I promise to find some ChatGPT researchers to talk to for
+            a future story!)
           </p>
 
           <p>
-            For drag functionality, I use d3-drag. This module allows us to add
-            drag events to any DOM element. It's worth noting that we set the
-            rotation on the x-axis first—don't forget to add yRotation.
-            Additionally, for a globe, adding inertia is better. I use a spring
-            function for this; the spring works by taking an initial value and a
-            set of options, including stiffness and damping.
-          </p>
-
-          <p>Other works</p>
-
-          <p>
-            To enhance the experience further, we still have many things we can
-            do, like styling the cursor when the user is dragging the globe or
-            adding interactive tooltips to provide more information.
+            Next, let's check out the top 10 Chinese companies racing for AI
+            talent.
           </p>
 
           <img
-            src="../img/data-viz-photo/globe.gif"
-            alt="globe population"
+            src="../img/data-viz-photo/ AI_talent3.webp"
+            alt="AI position"
+            class="img-fluid"
+          />
+
+          <p>
+            ByteDance is at the top again for posting the most AI jobs, even
+            though they've slowed down a bit in the last two years. According to
+            the report, this tech giant is a major player in the internet
+            industry for both attracting and sourcing talent.
+          </p>
+
+          <p>
+            Even smaller internet firms like Xiaohongshu and Meituan are diving
+            into the AI talent hunt.
+          </p>
+
+          <p>
+            As the chart shows, Alibaba's back in the game, picking up the pace
+            in AI hiring. With their new CEO, Eddie Yongming Wu, on board since
+            September, they're all about putting users first and driving with
+            AI. Their AI job posts have shot up 4.6 times since 2022. Most of
+            these gigs are at their e-commerce giant TaoTian Group, where
+            they're crazy about hiring algorithm engineers – the demand's grown
+            more than ten times over the past year
+          </p>
+
+          <img
+            src="../img/data-viz-photo/AI_talent1.webp"
+            alt="AI talent race"
             class="img-fluid"
           />
         </div>

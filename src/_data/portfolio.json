@@ -421,6 +421,75 @@
       ]
     },
     {
+      "slug": "ChinaAI",
+      "title": "AI-talent",
+      "heading": "Top 10 Chinese Company in the race to hire AI Talent",
+      "label": "D3",
+      "filename": "AI_talent1.webp",
+      "description": [
+        {
+          "type": "text",
+          "value": "Read the original story on The Abacus here: https://theabacus.substack.com/p/hiring-data-tells-you-top-10-chinese"
+        },
+        {
+          "type": "text",
+          "value": "I used MaiMai's report, a leading Chinese recruitment site, to analyze the AI job market and talent strategies of Chinese companies. Their latest insights (as of Oct 23) were quite revealing."
+        },
+        {
+          "type": "text",
+          "value": "First, let's look at the most in-demand AI positions in China. MaiMai's Talent supply-demand rate reveals that for two consecutive years, Autonomous Driving Systems Engineer, with a supply-demand ratio of 0.38, is the most sought-after role. This means there are about 2 candidates for every 5 positions."
+        },
+        {
+          "type": "img",
+          "value": {
+            "filename": "../img/data-viz-photo/AI_talent2.webp",
+            "caption": "",
+            "alt": "major-Chinese-company"
+          }
+        },
+        {
+          "type": "text",
+          "value": "While there's some easing in AI role shortages compared to 2022, with speech recognition and AI engineers catching up quickly, algorithm engineers still have a supply-demand ratio below 0.5."
+        },
+        {
+          "type": "text",
+          "value": "And we have some new positions this year: ChatGPT Researchers! I wasn't sure what this job entails, so I checked some job search apps. The descriptions are vague, mostly about training chatbots for specific applications using ChatGPT. Despite the ambiguity, ChatGPT Researchers top the high-salary list with an average monthly wage of $10,000. (I promise to find some ChatGPT researchers to talk to for a future story!)"
+        },
+        {
+          "type": "text",
+          "value": "Next, let's check out the top 10 Chinese companies racing for AI talent."
+        },
+        {
+          "type": "img",
+          "value": {
+            "filename": "../img/data-viz-photo/ AI_talent3.webp",
+            "caption": "",
+            "alt": "AI position"
+          }
+        },
+        {
+          "type": "text",
+          "value": "ByteDance is at the top again for posting the most AI jobs, even though they've slowed down a bit in the last two years. According to the report, this tech giant is a major player in the internet industry for both attracting and sourcing talent."
+        },
+        {
+          "type": "text",
+          "value": "Even smaller internet firms like Xiaohongshu and Meituan are diving into the AI talent hunt."
+        },
+        {
+          "type": "text",
+          "value": "As the chart shows, Alibaba's back in the game, picking up the pace in AI hiring. With their new CEO, Eddie Yongming Wu, on board since September, they're all about putting users first and driving with AI. Their AI job posts have shot up 4.6 times since 2022. Most of these gigs are at their e-commerce giant TaoTian Group, where they're crazy about hiring algorithm engineers – the demand's grown more than ten times over the past year"
+        },
+        {
+          "type": "img",
+          "value": {
+            "filename": "../img/data-viz-photo/AI_talent1.webp",
+            "caption": "",
+            "alt": "AI talent race"
+          }
+        }
+      ]
+    },
+    {
       "slug": "covid",
       "title": "Covid-19",
       "heading": "Covid Dataset Analysis",
@@ -509,24 +578,12 @@
           "value": "My data.js looks like this:"
         },
         {
-          "type": "county",
-          "value": "Harris County, Texas"
-        },
-        {
-          "type": "pop2022",
-          "value": "4780913"
-        },
-        {
-          "type": "pop2020",
-          "value": "4734505"
-        },
-        {
-          "type": "change",
-          "value": "0.980208068"
-        },
-        {
-          "type": "location",
-          "value": "South"
+          "type": "img",
+          "value": {
+            "filename": "../img/data-viz-photo/pop_data.png",
+            "caption": "population change",
+            "alt": "population data"
+          }
         },
         {
           "type": "text",
@@ -602,20 +659,12 @@
           "value": "The geographic data we used is from 110m.json files. The data format is as follows:"
         },
         {
-          "type": "country",
-          "value": "Aruba"
-        },
-        {
-          "type": "code",
-          "value": "AW"
-        },
-        {
-          "type": "id",
-          "value": "533"
-        },
-        {
-          "type": "population",
-          "value": "107195"
+          "type": "img",
+          "value": {
+            "filename": "../img/data-viz-photo/globe_data.png",
+            "caption": "population change",
+            "alt": "globe data"
+          }
         },
         {
           "type": "text",
@@ -623,7 +672,7 @@
         },
         {
           "type": "text",
-          "value": "<strong>D3-Geo</strong>"
+          "value": "D3-Geo"
         },
         {
           "type": "text",

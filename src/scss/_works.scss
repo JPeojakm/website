@@ -44,3 +44,18 @@
   }
   
 }
+
+// Define variable for medium size and spacing
+$medium-width: 50%;  // Adjust the size as needed
+$vertical-spacing: 20px;  // Adjust the spacing as needed
+
+// Apply styles to all images
+img {
+  display: block;  // Ensures the image is treated as a block-level element
+  width: $medium-width;  // Set width to medium
+  height: auto;  // Maintain aspect ratio
+  margin-top: $vertical-spacing;  // Top margin
+  margin-bottom: $vertical-spacing;  // Bottom margin
+  margin-left: auto;  // Centers the image horizontally
+  margin-right: auto;  // Centers the image horizontally
+}
