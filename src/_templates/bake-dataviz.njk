@@ -18,9 +18,17 @@
 
   <div class="row">
     <div class="col-12">
-      {{ prose(description) }}
+      <!-- 使用 id "prose-content" 来加载原始文本 -->
+      <div id="prose-content">{{ prose(content) }}</div>
     </div>
   </div>
 </article>
 
+<!-- 在页面加载完成后，将 Markdown 转换为 HTML -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var contentElement = document.getElementById('prose-content');
+    contentElement.innerHTML = marked(contentElement.textContent);
+  });
+</script>
 {% endblock %}

@@ -1,61 +1,60 @@
 .works-intro {
-  padding-left: 2rem; // 左内边距，为小屏幕设定
-  padding-right: 2rem; // 右内边距，保持对称
-  display: flex; // 使用Flexbox以便于布局
-  flex-direction: column; // 子元素垂直排列
+  max-width: 1500px; // 设置最大宽度
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 2rem; // 设置左右内边距
 
   @media (min-width: 768px) {
-    padding-left: 9rem; // 大屏幕的左内边距
-    padding-right: 6rem; // 大屏幕的右内边距
-    padding-top: 1rem; // 大屏幕的顶部内边距
-    padding-bottom: 0.5rem; // 大屏幕的底部内边距
+    padding: 1rem 9rem 0.5rem 6rem; // 大屏幕时的内边距
   }
 
   h1 {
-    margin-top: 1rem; // 默认的上边距
-    margin-bottom: 1rem; // h1和p之间的间距
+    margin: 1rem 0; // h1 上下边距
 
     @media (max-width: 768px) {
-      margin-top: 0.5rem; // 小屏幕时减少顶部边距
+      margin-top: 0.5rem; // 小屏幕时减少上边距
     }
-  }
-
-  p {
-    max-width: 800px; // 控制宽度以约束每行的词数
-    font-size: 20px;
-    line-height: 1.5;
-    letter-spacing: normal;
-    margin-left: 1rem; // 保证与h1左对齐
-    margin-right: 1rem; // 保证右边有一定间距，避免文本贴边
   }
 }
 
 .works-sections {
+  max-width: 1500px; // 确保与 .works-intro 宽度一致
+  margin: 0 auto; // 居中对齐
+  padding: 0 2rem; // 与 .works-intro 相同的内边距
+
+  @media (min-width: 768px) {
+    padding-left: 9rem; // 大屏幕时的左内边距
+    padding-right: 6rem; // 大屏幕时的右内边距
+  }
+
   h2 {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin: 2rem 0; // 设置上下边距
     font-family: "Inconsolata", monospace;
 
-    @media(min-width: 768px) { // Adjustments for tablets and above
-      margin-left: 10rem;
-      margin-top: 3rem; // More whitespace for larger screens
+    @media (min-width: 768px) {
+      margin-top: 3rem; // 大屏幕时增加上下边距
       margin-bottom: 3rem;
     }
   }
-  
-}
 
-// Define variable for medium size and spacing
-$medium-width: 50%;  // Adjust the size as needed
-$vertical-spacing: 20px;  // Adjust the spacing as needed
+  img {
+    width: 100%;  // 图片宽度自适应
+    height: 150px;  // 固定高度
+    object-fit: cover;  // 裁剪图片以保持比例
+    margin: 20px auto;  // 设置上下边距并居中
+  }
 
-// Apply styles to all images
-img {
-  display: block;  // Ensures the image is treated as a block-level element
-  width: $medium-width;  // Set width to medium
-  height: auto;  // Maintain aspect ratio
-  margin-top: $vertical-spacing;  // Top margin
-  margin-bottom: $vertical-spacing;  // Bottom margin
-  margin-left: auto;  // Centers the image horizontally
-  margin-right: auto;  // Centers the image horizontally
+  .card-body {
+    font-family: "Inconsolata", sans-serif; // 使用字体
+    color: #333; // 深灰色
+
+    .card-link {
+      color: inherit; // 继承链接颜色
+      text-decoration: none; // 去除下划线
+
+      &:hover, &:focus {
+        color: #777; // 鼠标悬停时变为浅灰色
+      }
+    }
+  }
 }

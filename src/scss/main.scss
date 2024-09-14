@@ -53,24 +53,6 @@ p {
   margin-top: 20px;
 }
 
-
-
 footer {
   margin-top: 60px;
-}
-
-
-.card-body {
-  font-family: "Inconsolata", sans-serif; // 你可以根据需要更换字体
-  color: #333; // 深灰色
-  
-  // 当鼠标悬停在链接上时改变颜色
-  .card-link {
-    color: inherit; // 使链接继承.card-title的颜色
-    text-decoration: none; // 去除下划线
-    
-    &:hover, &:focus {
-      color: #777; // 浅灰色
-    }
-  }
 }

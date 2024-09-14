@@ -1,108 +1,17 @@
 {
-  "maps": [
-    {
-      "slug": "arizona_heat",
-      "title": "Extreme Heat And Migration: Insights From The Arizona Border",
-      "image": "Arizona_heat",
-      "description": [
-        {
-          "type": "text",
-          "value": "The US Southwestern border is increasingly recognized as one of the world's most perilous land crossings. Alongside the myriad challenges faced by undocumented migrants, extreme heatwaves have emerged as a formidable barrier. Recently, there's been an increase in deaths caused by extreme heat, as noted by U.S. Customs and Border Protection."
-        },
-        {
-          "type": "text",
-          "value": "As a data reporter, I hope to provide more quantitative analysis and map visualizations to support these migrant stories. My project aims to understand how rising global temperatures affect migrant movements in this region. It will look at how water and emergency beacons are spread across the area, with the goal of finding ways to make the journey safer for migrants."
-        },
-        {
-          "type": "text",
-          "value": "Firstly, here is some background. I gathered weather data from NOAA and migrant information from the International Organization for Migration (IOM) and used R to analyze them. As Figure 1 shows, from 2019 to 2023, during the hottest months of June to September, there has been a notable increase in deaths among migrants trying to cross borders without permission. So, how do rising temperatures influence migration patterns along the Arizona border?"
-        },
-        {
-          "type": "text",
-          "value": "We define missing migrants as individuals who attempt to cross borders without authorization and are later found deceased by non-governmental organizations (NGOs) or patrol officers, without definitive identification at the time of discovery. Heat-related missing migrants are those whose deaths are inferred to be caused by heat, after excluding known causes like violence or drowning."
-        },
-        {
-          "type": "text",
-          "value": "Since data on missing migrants is difficult to obtain and the specific reasons for their disappearance are often unknown, I reached out to the International Organization for Migration and an Arizona local NGO, Humane Borders, for their datasets. To increase accuracy, I focused on missing migrant cases from June to September, the hottest months in Arizona. I also narrowed down the data to include cases that could be related to heat-related causes of death."
-        },
-        {
-          "type": "text",
-          "value": "Figure 2 provides very rich information, through this map, we can get some facts about Arizona: 1) Arizona is characterized by limited water sources and cities concentrated in the central region. 2) Tucson has become one of the fastest-growing cities in recent years due to immigration. 3) It has two patrol stations. 4) Rescue Beacons are primarily located in the lower-left corner, in Yuma County."
-        },
-        {
-          "type": "text",
-          "value": "I use the Heat Index and Geographically Weighted Regression (GWR) as the main methods for this research. For my research on the impact of heat, I initially planned to use temperature and other weather data. However, I realized that this data might not clearly show trends over five years."
-        },
-        {
-          "type": "text",
-          "value": "Then, I discovered the Heat Index in a research paper. Heat Index made by the nonprofit First Street Foundation, calculates the heat risk facing each property in the contiguous United States over the next 30 years, the length of a typical mortgage, providing some of the most detailed nationwide estimates. It uses an average temperature value over seven years, making it a more objective choice for my project. To analyze the data, I'm applying a weighted approach to the Heat Index."
-        },
-        {
-          "type": "text",
-          "value": "As the map indicates, the deep red areas represent the hottest regions, while the lighter colored areas are relatively cooler. However, it's important to note that when looking at the national map, Arizona tends to be overall warmer in the summer. The colorful points on the map represent missing migrants, with different colors indicating different years."
-        },
-        {
-          "type": "text",
-          "value": "Finally, I conducted a Geographically Weighted Regression (GWR), combining factors such as heat, distance from cities, and the presence of rescue beacons, to see how they influence migrant safety. I gained some insights from the results. Migrants should avoid walking in the FID4, 1, and 51 census tracts to minimize health risks. Additionally, NGOs and the US Border Patrol should consider installing more beacons eastward to enhance safety."
-        },
-        {
-          "type": "text",
-          "value": "So far, this is all my work. I sent the results to Humane Borders, hoping it can contribute to their efforts in helping undocumented immigrants protect their lives. Of course, this project has many limitations, such as my inability to verify the migrant data since statistics on heat-related deaths are hard to compile. Also, the heat index data was last updated in July, not including data for August and September."
-        },
-        {
-          "type": "text",
-          "value": "In the future, I aim to extend the study to encompass the entire US southern border for a more comprehensive analysis."
-        }
-      ]
-    },
-    {
-      "slug": "vacant_land",
-      "title": "Re-use Cleveland Vacant Land",
-      "label": "Geographically Weighted Regression analysis",
-      "image": "image1",
-      "description": [
-        {
-          "type": "text",
-          "value": "Cleveland, Ohio - along with many other post-industrial rust-belt cities—has a unique problem: how to cope with a shrinking population. The city has experienced a 56% reduction in overall population since 1950, leaving the city with nearly 20,000 neglected vacant lots. Cleveland has been attempting to “re-use” vacant land in creative ways through municipal “landbanking.” Vacant land re-use projects include small-scale economic development, residential construction, community gardens, public parks, and environmental remediation. The impact of these projects can be significant in terms of improving neighborhood quality of life for residents."
-        },
-        {
-          "type": "text",
-          "value": "This project involves creating maps to support a grant application to the U.S. Department of Housing and Urban Development (HUD). The city is seeking funding to support its vacant-land re-use strategy and aims to showcase the progress made to date. I will demonstrate whether the strategy of neighborhood revitalization through vacant-land reuse is reaching Cleveland’s most vulnerable (and vacant!) neighborhoods."
-        },
-        {
-          "type": "text",
-          "value": "I am tasked specifically with evaluating the success of vacant land re-use in relation to the overall social opportunity index and then delving more deeply into projects that could impact public health."
-        }
-      ]
-    },
-    {
-      "slug": "event_venue",
-      "title": "event venue",
-      "label": "Geocoding; Spatial analysis",
-      "image": "image2",
-      "description": [
-        {
-          "type": "text",
-          "value": "FLUX is an acclaimed annual art event in Pittsburgh, Pennsylvania, that highlights emerging artists. This year, faced with budget cuts, the event organizers have hired a marketing analyst to efficiently target potential attendees using limited data on past participation."
-        },
-        {
-          "type": "text",
-          "value": "The analyst's task is to analyze spatial data to find where previous attendees live, identifying clusters for focused marketing and at least one zip code for concentrated outreach. Additionally, the analyst may suggest a suitable location for the next event. This approach uses geocoding, cluster analysis, and hot spot analysis to overcome budget constraints and maintain the event's high standard."
-        }
-      ]
-    }
-  ],
   "dataviz": [
     {
-      "slug": "small-countries-olympic-medals",
       "title": "How tiny countries find the Olympic podium",
-      "heading": "Small Countries Olympic Medals",
+      "publishDate": "2024/08/09",
+      "slug": "small-countries-olympic-medals",
+      "heading": "Small Countries Olympic Medals | The Post",
       "label": "Data Visual Story",
       "filename": "medal_1.PNG",
-      "description": [
+      "description": "Low-cost-of-entry sports and new sports open opportunities for small countries to break through, a Post analysis found.",
+      "content": [
         {
           "type": "text",
-          "value": "Read the original story on The Washington Post <a href=\"https://www.washingtonpost.com/sports/olympics/2024/08/09/small-countries-olympic-medals/\">here</a>."
+          "value": "<em>Read the original story on The Washington Post <a href=\"https://www.washingtonpost.com/sports/olympics/2024/08/09/small-countries-olympic-medals/\">here</a>.</em>"
         },
         {
           "type": "text",
@@ -118,7 +27,7 @@
         },
         {
           "type": "text",
-          "value": "Dominating vs. left out"
+          "value": "<h2> Dominating vs. left out</h2>"
         },
         {
           "type": "text",
@@ -142,7 +51,7 @@
         },
         {
           "type": "text",
-          "value": "Economics dictate which sports rule"
+          "value": "<h2>Economics dictate which sports rule</h2>"
         },
         {
           "type": "text",
@@ -174,7 +83,7 @@
         },
         {
           "type": "text",
-          "value": "A single route to success"
+          "value": "<h2>A single route to success</h2>"
         },
         {
           "type": "text",
@@ -198,7 +107,7 @@
         },
         {
           "type": "text",
-          "value": "New sports can give some a chance to shine"
+          "value": "<h2> New sports can give some a chance to shine </h2>"
         },
         {
           "type": "text",
@@ -222,7 +131,7 @@
         },
         {
           "type": "text",
-          "value": "Emerging powers"
+          "value": "<h2> Emerging powers </h2>"
         },
         {
           "type": "img",
@@ -238,7 +147,7 @@
         },
         {
           "type": "text",
-          "value": "Methodology"
+          "value": "<h3> Methodology </h3>"
         },
         {
           "type": "text",
@@ -259,15 +168,17 @@
       ]
     },
     {
-      "slug": "usa-gold-medals-paris-olympics-2024",
       "title": "All the ways Team USA dominated the Olympic medal table",
-      "heading": "Team USA Paris Olympics",
+      "publishDate": "2024/08/11",
+      "slug": "h1b",
+      "heading": "Team USA Paris Olympics | The Post",
       "label": "Data Visual Story",
       "filename": "USA_3.png",
-      "description": [
+      "description": "More than 40 percent of U.S. Olympians will leave Paris with a medal.",
+      "content": [
         {
           "type": "text",
-          "value": "Read the original story on The Washington Post <a href=\"https://www.washingtonpost.com/sports/olympics/2024/08/11/usa-gold-medals-paris-olympics-2024/\">here</a>."
+          "value": "<em>Read the original story on The Washington Post <a href=\"https://www.washingtonpost.com/sports/olympics/2024/08/11/usa-gold-medals-paris-olympics-2024/\">here</a>. </em>"
         },
         {
           "type": "text",
@@ -318,14 +229,6 @@
           "value": "Smaller places such as Reno, Nev., (four medals from three athletes) and the Indianapolis region (eight medals from six athletes) outperformed their population size."
         },
         {
-          "type": "text",
-          "value": "Areas that produced the most medals"
-        },
-        {
-          "type": "text",
-          "value": "These metro areas saw the largest number of medal winners in the 2024 games."
-        },
-        {
           "type": "img",
           "value": {
             "filename": "../img/data-viz-photo/USA_3.png",
@@ -339,11 +242,11 @@
         },
         {
           "type": "text",
-          "value": "Caribbean island countries topped the per capita medal standings"
+          "value": "<center><b>Caribbean island countries topped the per capita medal standings</b></center>"
         },
         {
           "type": "text",
-          "value": "Among countries with a population of at least 1 million, New Zealand won the most medals per capita."
+          "value": "<center>Among countries with a population of at least 1 million, New Zealand won the most medals per capita.</center>"
         },
         {
           "type": "img",
@@ -356,12 +259,11 @@
       ]
     },
     {
-      "slug": "h1b",
       "title": "Invisible Wall: How the H-1B Visa Process Creates Challenges for International Students in the US",
       "heading": "H-1B Visa Analysis",
       "filename": "h-1b.jpg",
       "label": "Data Visual Story",
-      "description": [
+      "content": [
         {
           "type": "text",
           "value": "After obtaining his physics doctorate in physics degree from an Ivy League institution, Leo Zheng found it challenging to secure a job in the U.S. For eight months, he repeated the same routine every day: waking up early, browsing through LinkedIn, and submitting a job application every thirty minutes. As he grew increasingly hopeless and contemplated returning to China, he received an unexpected offer from Apple."
@@ -470,15 +372,15 @@
           "type": "text",
           "value": "To attract global talent, Guo believes that the United States should have a more comprehensive and fair consideration for legal immigrants."
         }
-      ]
+      ],
+      "slug": "suicide"
     },
     {
-      "slug": "suicide",
       "title": "How local mental health authority make efforts to save youth life in Lubbock",
       "heading": "Youth Mental Health Solution",
       "label": "Data Visual Story",
       "filename": "suicide.jpg",
-      "description": [
+      "content": [
         {
           "type": "text",
           "value": "For the past 15 years, Bobby Carter has visited all of Lubbock's high schools at the beginning of each school year to tell teachers and counselors about the crisis intervention services offered by StarCare Lubbock, the state-designated local authority for mental health services for the five-county area."
@@ -559,15 +461,15 @@
           "type": "text",
           "value": "\"Patients can expect exceptional support through the FEP program, with the team lead overseeing the delivery of personalized services that may include medication delivery, home visits, and telepsychiatry appointments,\" Amor said."
         }
-      ]
+      ],
+      "slug": "gradlife"
     },
     {
-      "slug": "gradlife",
       "title": "2023 UT Grads Nervous About Job Market",
       "heading": "New Grad Job Searching",
       "label": "Data Visual Story",
       "filename": "grad_pay.png",
-      "description": [
+      "content": [
         {
           "type": "text",
           "value": "On a Wednesday morning in April, the Littlefield Fountain on the University of Texas at Austin’s campus was packed with graduates donning sashes and taking photos. Some raise glasses of champagne and bid farewell to the ivory tower, setting off towards the world."
@@ -680,18 +582,18 @@
           "type": "text",
           "value": "\"I'm a career-oriented person. I need something I can put my heart and soul into, where I can drop everything else and go all in, you know?\" He said, \"That's kind of what I'm looking for in my young 20s.\""
         }
-      ]
+      ],
+      "slug": "ChinaAI"
     },
     {
-      "slug": "ChinaAI",
       "title": "AI-talent",
       "heading": "Top 10 Chinese Company in the race to hire AI Talent",
       "label": "D3",
       "filename": "AI_talent1.webp",
-      "description": [
+      "content": [
         {
           "type": "text",
-          "value": "This visualization was created using D3.js. Read the original story on The Abacus here: https://theabacus.substack.com/p/hiring-data-tells-you-top-10-chinese"
+          "value": "<em>This visualization was created using D3.js. Read the original story on The Abacus <a href=\"https://theabacus.substack.com/p/hiring-data-tells-you-top-10-chinese\">here</a>.</em>"
         },
         {
           "type": "text",
@@ -749,15 +651,15 @@
             "alt": "AI talent race"
           }
         }
-      ]
+      ],
+      "slug": "covid"
     },
     {
-      "slug": "covid",
       "title": "Covid-19",
       "heading": "Covid Dataset Analysis",
       "label": "R-ggplot",
       "filename": "covid_dailyreport.webp",
-      "description": [
+      "content": [
         {
           "type": "text",
           "value": "In this series of data visualizations on COVID, I primarily utilized the ggplot2, scales, and patchwork packages in R for presentation. The data focuses on the daily COVID timeline data for cases and deaths in each US state and territory, sourced from The New York Times. Prior to visualization, a cleaning process was conducted."
@@ -806,18 +708,18 @@
           "type": "text",
           "value": "This visualization was developed under the guidance of Professor Peter Aldhous."
         }
-      ]
+      ],
+      "slug": "us-pop"
     },
     {
-      "slug": "us-pop",
       "title": "US population",
       "heading": "US Population New Change",
       "label": "Svelte.js",
       "filename": "pop.gif",
-      "description": [
+      "content": [
         {
           "type": "text",
-          "value": "This visualization was created using Svelte.js. You can find the code here."
+          "value": "<em>This visualization was created using Svelte.js. You can find the code here.</em>"
         },
         {
           "type": "text",
@@ -825,7 +727,7 @@
         },
         {
           "type": "text",
-          "value": "How I Made This Visualization:"
+          "value": "<h2>How I Made This Visualization</h2>"
         },
         {
           "type": "text",
@@ -849,7 +751,7 @@
         },
         {
           "type": "text",
-          "value": "Using D3-force for Svelte Visualizations"
+          "value": "<h3>Using D3-force for Svelte Visualizations</h3>"
         },
         {
           "type": "text",
@@ -861,7 +763,7 @@
         },
         {
           "type": "text",
-          "value": "Drawing Circles"
+          "value": "<h3>Drawing Circles</h3>"
         },
         {
           "type": "text",
@@ -869,7 +771,7 @@
         },
         {
           "type": "text",
-          "value": "Making Circles Reactive and Responsive"
+          "value": "<h3>Making Circles Reactive and Responsive</h3>"
         },
         {
           "type": "text",
@@ -877,7 +779,7 @@
         },
         {
           "type": "text",
-          "value": "Connecting Data with Circles"
+          "value": "<h3>Connecting Data with Circles</h3>"
         },
         {
           "type": "text",
@@ -885,7 +787,7 @@
         },
         {
           "type": "text",
-          "value": "Adding Legend and Tooltip"
+          "value": "<h3>Adding Legend and Tooltip</h3>"
         },
         {
           "type": "text",
@@ -899,18 +801,18 @@
             "alt": "population change"
           }
         }
-      ]
+      ],
+      "slug": "globe"
     },
     {
-      "slug": "globe",
       "title": "globe population",
       "heading": "Global Population Visualization",
       "label": "Svelte.js",
       "filename": "globe.gif",
-      "description": [
+      "content": [
         {
           "type": "text",
-          "value": "This visualization was created using Svelte.js. You can find the code here."
+          "value": "<em>This visualization was created using Svelte.js. You can find the code here.</em>"
         },
         {
           "type": "text",
@@ -934,7 +836,7 @@
         },
         {
           "type": "text",
-          "value": "D3-Geo"
+          "value": "<h3>D3-Geo</h3>"
         },
         {
           "type": "text",
@@ -942,7 +844,7 @@
         },
         {
           "type": "text",
-          "value": "Responsive"
+          "value": "<h3>Responsive</h3>"
         },
         {
           "type": "text",
@@ -950,7 +852,7 @@
         },
         {
           "type": "text",
-          "value": "Styling the Globe"
+          "value": "<h3>Styling the Globe</h3>"
         },
         {
           "type": "text",
@@ -958,7 +860,7 @@
         },
         {
           "type": "text",
-          "value": "Adding Data to the Globe"
+          "value": "<h3>Adding Data to the Globe</h3>"
         },
         {
           "type": "text",
@@ -966,7 +868,7 @@
         },
         {
           "type": "text",
-          "value": "Rotating"
+          "value": "<h3>Rotating</h3>"
         },
         {
           "type": "text",
@@ -982,7 +884,7 @@
         },
         {
           "type": "text",
-          "value": "Other works"
+          "value": "<h3>Other works</h3>"
         },
         {
           "type": "text",
@@ -995,6 +897,99 @@
             "caption": "global population",
             "alt": "globe population"
           }
+        }
+      ]
+    }
+  ],
+  "maps": [
+    {
+      "slug": "arizona_heat",
+      "title": "Extreme Heat And Migration: Insights From The Arizona Border",
+      "image": "Arizona_heat",
+      "description": [
+        {
+          "type": "text",
+          "value": "The US Southwestern border is increasingly recognized as one of the world's most perilous land crossings. Alongside the myriad challenges faced by undocumented migrants, extreme heatwaves have emerged as a formidable barrier. Recently, there's been an increase in deaths caused by extreme heat, as noted by U.S. Customs and Border Protection."
+        },
+        {
+          "type": "text",
+          "value": "As a data reporter, I hope to provide more quantitative analysis and map visualizations to support these migrant stories. My project aims to understand how rising global temperatures affect migrant movements in this region. It will look at how water and emergency beacons are spread across the area, with the goal of finding ways to make the journey safer for migrants."
+        },
+        {
+          "type": "text",
+          "value": "Firstly, here is some background. I gathered weather data from NOAA and migrant information from the International Organization for Migration (IOM) and used R to analyze them. As Figure 1 shows, from 2019 to 2023, during the hottest months of June to September, there has been a notable increase in deaths among migrants trying to cross borders without permission. So, how do rising temperatures influence migration patterns along the Arizona border?"
+        },
+        {
+          "type": "text",
+          "value": "We define missing migrants as individuals who attempt to cross borders without authorization and are later found deceased by non-governmental organizations (NGOs) or patrol officers, without definitive identification at the time of discovery. Heat-related missing migrants are those whose deaths are inferred to be caused by heat, after excluding known causes like violence or drowning."
+        },
+        {
+          "type": "text",
+          "value": "Since data on missing migrants is difficult to obtain and the specific reasons for their disappearance are often unknown, I reached out to the International Organization for Migration and an Arizona local NGO, Humane Borders, for their datasets. To increase accuracy, I focused on missing migrant cases from June to September, the hottest months in Arizona. I also narrowed down the data to include cases that could be related to heat-related causes of death."
+        },
+        {
+          "type": "text",
+          "value": "Figure 2 provides very rich information, through this map, we can get some facts about Arizona: 1) Arizona is characterized by limited water sources and cities concentrated in the central region. 2) Tucson has become one of the fastest-growing cities in recent years due to immigration. 3) It has two patrol stations. 4) Rescue Beacons are primarily located in the lower-left corner, in Yuma County."
+        },
+        {
+          "type": "text",
+          "value": "I use the Heat Index and Geographically Weighted Regression (GWR) as the main methods for this research. For my research on the impact of heat, I initially planned to use temperature and other weather data. However, I realized that this data might not clearly show trends over five years."
+        },
+        {
+          "type": "text",
+          "value": "Then, I discovered the Heat Index in a research paper. Heat Index made by the nonprofit First Street Foundation, calculates the heat risk facing each property in the contiguous United States over the next 30 years, the length of a typical mortgage, providing some of the most detailed nationwide estimates. It uses an average temperature value over seven years, making it a more objective choice for my project. To analyze the data, I'm applying a weighted approach to the Heat Index."
+        },
+        {
+          "type": "text",
+          "value": "As the map indicates, the deep red areas represent the hottest regions, while the lighter colored areas are relatively cooler. However, it's important to note that when looking at the national map, Arizona tends to be overall warmer in the summer. The colorful points on the map represent missing migrants, with different colors indicating different years."
+        },
+        {
+          "type": "text",
+          "value": "Finally, I conducted a Geographically Weighted Regression (GWR), combining factors such as heat, distance from cities, and the presence of rescue beacons, to see how they influence migrant safety. I gained some insights from the results. Migrants should avoid walking in the FID4, 1, and 51 census tracts to minimize health risks. Additionally, NGOs and the US Border Patrol should consider installing more beacons eastward to enhance safety."
+        },
+        {
+          "type": "text",
+          "value": "So far, this is all my work. I sent the results to Humane Borders, hoping it can contribute to their efforts in helping undocumented immigrants protect their lives. Of course, this project has many limitations, such as my inability to verify the migrant data since statistics on heat-related deaths are hard to compile. Also, the heat index data was last updated in July, not including data for August and September."
+        },
+        {
+          "type": "text",
+          "value": "In the future, I aim to extend the study to encompass the entire US southern border for a more comprehensive analysis."
+        }
+      ]
+    },
+    {
+      "slug": "vacant_land",
+      "title": "Re-use Cleveland Vacant Land",
+      "label": "Geographically Weighted Regression analysis",
+      "image": "image1",
+      "description": [
+        {
+          "type": "text",
+          "value": "Cleveland, Ohio - along with many other post-industrial rust-belt cities—has a unique problem: how to cope with a shrinking population. The city has experienced a 56% reduction in overall population since 1950, leaving the city with nearly 20,000 neglected vacant lots. Cleveland has been attempting to “re-use” vacant land in creative ways through municipal “landbanking.” Vacant land re-use projects include small-scale economic development, residential construction, community gardens, public parks, and environmental remediation. The impact of these projects can be significant in terms of improving neighborhood quality of life for residents."
+        },
+        {
+          "type": "text",
+          "value": "This project involves creating maps to support a grant application to the U.S. Department of Housing and Urban Development (HUD). The city is seeking funding to support its vacant-land re-use strategy and aims to showcase the progress made to date. I will demonstrate whether the strategy of neighborhood revitalization through vacant-land reuse is reaching Cleveland’s most vulnerable (and vacant!) neighborhoods."
+        },
+        {
+          "type": "text",
+          "value": "I am tasked specifically with evaluating the success of vacant land re-use in relation to the overall social opportunity index and then delving more deeply into projects that could impact public health."
+        }
+      ]
+    },
+    {
+      "slug": "event_venue",
+      "title": "event venue",
+      "label": "Geocoding; Spatial analysis",
+      "image": "image2",
+      "description": [
+        {
+          "type": "text",
+          "value": "FLUX is an acclaimed annual art event in Pittsburgh, Pennsylvania, that highlights emerging artists. This year, faced with budget cuts, the event organizers have hired a marketing analyst to efficiently target potential attendees using limited data on past participation."
+        },
+        {
+          "type": "text",
+          "value": "The analyst's task is to analyze spatial data to find where previous attendees live, identifying clusters for focused marketing and at least one zip code for concentrated outreach. Additionally, the analyst may suggest a suitable location for the next event. This approach uses geocoding, cluster analysis, and hot spot analysis to overcome budget constraints and maintain the event's high standard."
         }
       ]
     }
