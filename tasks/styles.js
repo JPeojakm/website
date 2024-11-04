@@ -1,4 +1,3 @@
-const sass = gulpSass(dartSass);
 import autoprefixer from 'gulp-autoprefixer';
 import browserSync from 'browser-sync';
 import cssnano from 'cssnano';
@@ -9,6 +8,8 @@ import log from 'fancy-log';
 import newer from 'gulp-newer';
 import postcss from 'gulp-postcss';
 import sourcemaps from 'gulp-sourcemaps';
+
+const sass = gulpSass(dartSass);
 
 function styles() {
   const AUTOPREFIXER_BROWSERS = [
@@ -29,7 +30,7 @@ function styles() {
     .src(['src/scss/*.scss'])
     .pipe(newer('./docs/css'))
     .pipe(sourcemaps.init())
-    .pipe(sass())
+    .pipe(sass.sync())  // Updated to use the new sync method
     .on('error', log.error)
     .pipe(autoprefixer(AUTOPREFIXER_BROWSERS))
     .pipe(postcss(plugins))

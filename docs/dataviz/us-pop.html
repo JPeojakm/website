@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>JP Li | Covid-19</title>
-    <meta name="description" content="Covid-19 by R-ggplot">
+    <title>JP Li | US population</title>
+    <meta name="description" content="US population by Svelte.js">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -55,7 +55,7 @@
 <article class="container">
   <div class="row">
     <div class="col-12">
-      <h1>Covid-19</h1>
+      <h1>US population</h1>
     </div>
   </div>
 
@@ -66,55 +66,115 @@
 
   
     
-<p>In this series of data visualizations on COVID, I primarily utilized the ggplot2, scales, and patchwork packages in R for presentation. The data focuses on the daily COVID timeline data for cases and deaths in each US state and territory, sourced from The New York Times. Prior to visualization, a cleaning process was conducted.</p>
+<p><em>This visualization was created using Svelte.js. You can find the code here.</em></p>
 
   
 
   
     
-<p>To create graphic panels containing multiple charts, I employed the patchwork package. Additionally, I calculated the seven-day rolling averages for daily reported COVID cases and deaths for each state and territory. Subsequently, I filtered the timeline data to include only the states with a population of more than 15 million.</p>
+<p>In June 2023, the Census Bureau released new population data. I used Svelte.js to create this visualization. The data granularity extends to the county level. After processing the entire dataset in R, I selected the top 100 counties based on population to compare the changes from 2020 to 2022, hoping to discern post-pandemic migration trends across different parts of the United States.</p>
 
   
 
   
     
-<img src="../img/data-viz-photo/covid_dailyreport.webp" alt="covid daily report" class="img-fluid">
+<p><h2>How I Made This Visualization</h2></p>
 
   
 
   
     
-<p>In the next set of charts, I aim to study the confirmed cases and death cases in Texas due to COVID and combine them into a single chart.</p>
+<p>Exploring visualization options. The states are divided into four main regions according to the 1950 Census Bureau standards: Northeast, South, Midwest, and West, represented in the visualization by blue, pink, yellow, and grey respectively.</p>
 
   
 
   
     
-<img src="../img/data-viz-photo/ covid_tx.webp" alt="covid texas" class="img-fluid">
+<p>Each bubble represents a county. You can arrange the bubbles by state location. Click anywhere on the chart to interact. To enhance user interaction, the chart is responsive, includes hover interactions, and features meaningful peripheral elements.</p>
 
   
 
   
     
-<p>Certainly! Trend lines are useful for illustrating the relationship between two variables, especially in scatter plots and bubble plots. To begin, I will create a bubble plot to investigate the correlation between case rates and death rates across US states and territories. Subsequently, I will incorporate a line to depict linear regression.</p>
+<p>My data.js looks like this:</p>
 
   
 
   
     
-<img src="../img/data-viz-photo/covid_case_death_rates.jpg" alt="covid death rate" class="img-fluid">
+<img src="../img/data-viz-photo/pop_data.png" alt="population data" class="img-fluid">
 
   
 
   
     
-<p>Considering the large number of data points, I will highlight the key states by labeling their names. Moreover, I will use color and labels to emphasize a subset of the points while keeping the rest of the data visible on the chart.</p>
+<p><h3>Using D3-force for Svelte Visualizations</h3></p>
 
   
 
   
     
-<p>This visualization was developed under the guidance of Professor Peter Aldhous.</p>
+<p>Before using D3-force, I generally apply fixed x and y positions to each circle. D3-force, like a physics engine, determines the position of each circle. I was inspired by Ben Tanen’s tutorial on ObservableHQ.</p>
+
+  
+
+  
+    
+<p>For this chart, I wanted three forces: forceX, forceY, and forceCollide. I mapped the population change percentage column to the forceX when grouped by region and the forceY force. ForceCollide ensures no two circles overlap.</p>
+
+  
+
+  
+    
+<p><h3>Drawing Circles</h3></p>
+
+  
+
+  
+    
+<p>I use SVG to draw circles. One important aspect is to use an {#each} block to iterate over our data. We also use the “g” element to wrap our inner chart, allowing us to add axes later and position them correctly.</p>
+
+  
+
+  
+    
+<p><h3>Making Circles Reactive and Responsive</h3></p>
+
+  
+
+  
+    
+<p>I’m actually very confused about using the .on('tick') function. My bubbles always don’t fit in the window. The issue here is that the simulation is re-instantiated every time any of its constituent elements change. Because we are using $: to instantiate the simulation, we essentially overwrite the previous simulation with a new one every time we resize the window.</p>
+
+  
+
+  
+    
+<p><h3>Connecting Data with Circles</h3></p>
+
+  
+
+  
+    
+<p>So far, I’ve connected each circle's y-position to its location and its x-position to its population change percentage. In this step, I connected the circle’s color to its grouping variable, which is location, and also connected the radius to its change percentage variable.</p>
+
+  
+
+  
+    
+<p><h3>Adding Legend and Tooltip</h3></p>
+
+  
+
+  
+    
+<p>This step is more routine, designed to make the visualization more interactive. It only requires adding hover listeners.</p>
+
+  
+
+  
+    
+<img src="../img/data-viz-photo/pop.gif" alt="population change" class="img-fluid">
 
   
 

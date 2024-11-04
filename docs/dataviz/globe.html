@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>JP Li | US population</title>
-    <meta name="description" content="US population by Svelte.js">
+    <title>JP Li | globe population</title>
+    <meta name="description" content="globe population by Svelte.js">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -55,7 +55,7 @@
 <article class="container">
   <div class="row">
     <div class="col-12">
-      <h1>US population</h1>
+      <h1>globe population</h1>
     </div>
   </div>
 
@@ -72,109 +72,115 @@
 
   
     
-<p>In June 2023, the Census Bureau released new population data. I used Svelte.js to create this visualization. The data granularity extends to the county level. After processing the entire dataset in R, I selected the top 100 counties based on population to compare the changes from 2020 to 2022, hoping to discern post-pandemic migration trends across different parts of the United States.</p>
+<p>It’s another population project, but unlike the previous one, this time I aimed to visualize global population data. Creating an interactive globe was an ideal choice, allowing users to click and drag the globe to see population numbers for each country.</p>
 
   
 
   
     
-<p><h2>How I Made This Visualization</h2></p>
+<p>The geographic data we used is from 110m.json files. The data format is as follows:</p>
 
   
 
   
     
-<p>Exploring visualization options. The states are divided into four main regions according to the 1950 Census Bureau standards: Northeast, South, Midwest, and West, represented in the visualization by blue, pink, yellow, and grey respectively.</p>
+<img src="../img/data-viz-photo/globe_data.png" alt="globe data" class="img-fluid">
 
   
 
   
     
-<p>Each bubble represents a county. You can arrange the bubbles by state location. Click anywhere on the chart to interact. To enhance user interaction, the chart is responsive, includes hover interactions, and features meaningful peripheral elements.</p>
+<p>Here, "id" represents the ISO code, which I'll use to link the data. This is more reliable than using the country name.</p>
 
   
 
   
     
-<p>My data.js looks like this:</p>
+<p><h3>D3-Geo</h3></p>
 
   
 
   
     
-<img src="../img/data-viz-photo/pop_data.png" alt="population data" class="img-fluid">
+<p>I employed d3-geo for this project. D3-geo helps plot a set of values onto corresponding geographic locations. The general approach to using d3-geo involves four steps: 1) Create a projection function; 2) Create a path generator; 3) Render the country paths; 4) Add a globe.</p>
 
   
 
   
     
-<p><h3>Using D3-force for Svelte Visualizations</h3></p>
+<p><h3>Responsive</h3></p>
 
   
 
   
     
-<p>Before using D3-force, I generally apply fixed x and y positions to each circle. D3-force, like a physics engine, determines the position of each circle. I was inspired by Ben Tanen’s tutorial on ObservableHQ.</p>
+<p>Similar to the bubble visualization, we just need to create a .chart-container and use a dimension binding equal to the width.</p>
 
   
 
   
     
-<p>For this chart, I wanted three forces: forceX, forceY, and forceCollide. I mapped the population change percentage column to the forceX when grouped by region and the forceY force. ForceCollide ensures no two circles overlap.</p>
+<p><h3>Styling the Globe</h3></p>
 
   
 
   
     
-<p><h3>Drawing Circles</h3></p>
+<p>The next step is to add background color and fill the globe. I also added a subtle glow to the globe, achieved using an SVG drop shadow with feOffset, feGaussianBlur, and feMerge.</p>
 
   
 
   
     
-<p>I use SVG to draw circles. One important aspect is to use an {#each} block to iterate over our data. We also use the “g” element to wrap our inner chart, allowing us to add axes later and position them correctly.</p>
+<p><h3>Adding Data to the Globe</h3></p>
 
   
 
   
     
-<p><h3>Making Circles Reactive and Responsive</h3></p>
+<p>We now have a globe, but the data isn't embedded yet. In addition to importing data, I created a color scale that adjusts the fill of each country based on population density. The brighter the color, the lower the population, and vice versa.</p>
 
   
 
   
     
-<p>I’m actually very confused about using the .on('tick') function. My bubbles always don’t fit in the window. The issue here is that the simulation is re-instantiated every time any of its constituent elements change. Because we are using $: to instantiate the simulation, we essentially overwrite the previous simulation with a new one every time we resize the window.</p>
+<p><h3>Rotating</h3></p>
 
   
 
   
     
-<p><h3>Connecting Data with Circles</h3></p>
+<p>This animation is a bit complex. I envision that when the user is not interacting with the page, the globe will automatically rotate. Once an interaction event is triggered, the user can drag the globe to explore different countries.</p>
 
   
 
   
     
-<p>So far, I’ve connected each circle's y-position to its location and its x-position to its population change percentage. In this step, I connected the circle’s color to its grouping variable, which is location, and also connected the radius to its change percentage variable.</p>
+<p>For auto-rotation, I use d3-timer. We're instantiating the rotation to be 0, and then updating it by 0.5 degrees every second.</p>
 
   
 
   
     
-<p><h3>Adding Legend and Tooltip</h3></p>
+<p>For drag functionality, I use d3-drag. This module allows us to add drag events to any DOM element. It's worth noting that we set the rotation on the x-axis first—don't forget to add yRotation. Additionally, for a globe, adding inertia is better. I use a spring function for this; the spring works by taking an initial value and a set of options, including stiffness and damping.</p>
 
   
 
   
     
-<p>This step is more routine, designed to make the visualization more interactive. It only requires adding hover listeners.</p>
+<p><h3>Other works</h3></p>
 
   
 
   
     
-<img src="../img/data-viz-photo/pop.gif" alt="population change" class="img-fluid">
+<p>To enhance the experience further, we still have many things we can do, like styling the cursor when the user is dragging the globe or adding interactive tooltips to provide more information.</p>
+
+  
+
+  
+    
+<img src="../img/data-viz-photo/globe.gif" alt="globe population" class="img-fluid">
 
   
 
