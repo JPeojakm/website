@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   </head>
   <body>
     {% include "_includes/nav.njk" %}
@@ -25,17 +25,5 @@
     <script src="{{ relative_path }}js/bootstrap.bundle.min.js"></script>
     <script src="{{ relative_path }}js/scripts.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/marked@4.0.12/marked.min.js"></script> 
-
-    <!-- Post-processing script to remove <p> tags wrapping <h1>, <h2>, and <h3> -->
-    <script>
-      document.addEventListener("DOMContentLoaded", function() {
-        document.querySelectorAll("p > h1, p > h2, p > h3").forEach(heading => {
-          const parent = heading.parentNode;
-          if (parent.tagName === 'P') {
-            parent.replaceWith(heading); // Remove the <p> parent, keeping only the heading
-          }
-        });
-      });
-    </script>
   </body>
 </html>
