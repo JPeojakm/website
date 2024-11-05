@@ -10,7 +10,7 @@
   
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Lora:ital,wght@0,400..700;1,400;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   </head>
   <body>
@@ -121,10 +121,28 @@
 
 
 
-
     <script src="../js/jquery.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="../js/scripts.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/marked@4.0.12/marked.min.js"></script> 
+
+    <!-- Custom marked.js configuration to prevent <p> wrapping on headers -->
+    <script>
+      const renderer = new marked.Renderer();
+
+      // Custom renderer for headings to avoid wrapping them in <p> tags
+      renderer.heading = function (text, level) {
+        return `<h${level}>${text}</h${level}>`;
+      };
+
+      marked.setOptions({
+        renderer: renderer
+      });
+
+      // Apply markdown parsing to elements with specific class
+      document.querySelectorAll('.content').forEach(element => {
+        element.innerHTML = marked.parse(element.innerHTML);
+      });
+    </script>
   </body>
 </html>
