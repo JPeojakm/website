@@ -19,7 +19,22 @@
   <div class="row">
     <div class="col-12">
       <!-- 使用 id "prose-content" 来加载原始文本 -->
-      <div id="prose-content">{{ prose(content) }}</div>
+     <div id="prose-content">
+  {% for item in content %}
+    {% if item.type == 'text' %}
+      {% if item.value.startsWith('<em>') or item.value.startsWith('<a') %}
+        {{ item.value | safe }}
+      {% else %}
+        <p>{{ item.value | safe }}</p>
+      {% endif %}
+    {% elif item.type == 'img' %}
+      <img src="{{ item.value.filename }}" alt="{{ item.value.alt }}">
+      {% if item.value.caption %}
+        <p class="caption">{{ item.value.caption }}</p>
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+</div>
     </div>
   </div>
 </article>

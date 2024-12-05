@@ -1,9 +1,8 @@
 {
   "dataviz": [
     {
-      "title": "How tiny countries find the Olympic podium",
-      "publishDate": "2024/08/09",
       "slug": "small-countries-olympic-medals",
+      "title": "How tiny countries find the Olympic podium",
       "heading": "Small Countries Olympic Medals | The Post",
       "label": "Data Visual Story",
       "filename": "medal_1.PNG",
@@ -27,7 +26,7 @@
         },
         {
           "type": "text",
-          "value": "<h2> Dominating vs. left out</h2>"
+          "value": "<h2>Dominating vs. left out</h2>"
         },
         {
           "type": "text",
@@ -168,9 +167,8 @@
       ]
     },
     {
-      "title": "All the ways Team USA dominated the Olympic medal table",
-      "publishDate": "2024/08/11",
       "slug": "usa-gold-medals-paris-olympics-2024",
+      "title": "All the ways Team USA dominated the Olympic medal table",
       "heading": "Team USA Paris Olympics | The Post",
       "label": "Data Visual Story",
       "filename": "USA_3.png",
@@ -259,8 +257,8 @@
       ]
     },
     {
-      "title": "Invisible Wall: How the H-1B Visa Process Creates Challenges for International Students in the US",
       "slug": "h1b",
+      "title": "Invisible Wall: How the H-1B Visa Process Creates Challenges for International Students in the US",
       "heading": "H-1B Visa Analysis",
       "filename": "h-1b.jpg",
       "label": "Data Visual Story",
@@ -376,8 +374,8 @@
       ]
     },
     {
-      "title": "How local mental health authority make efforts to save youth life in Lubbock",
       "slug": "suicide",
+      "title": "How local mental health authority make efforts to save youth life in Lubbock",
       "heading": "Youth Mental Health Solution",
       "label": "Data Visual Story",
       "filename": "suicide.jpg",
@@ -465,8 +463,8 @@
       ]
     },
     {
-      "title": "2023 UT Grads Nervous About Job Market",
       "slug": "gradlife",
+      "title": "2023 UT Grads Nervous About Job Market",
       "heading": "New Grad Job Searching",
       "label": "Data Visual Story",
       "filename": "grad_pay.png",
@@ -586,8 +584,8 @@
       ]
     },
     {
-      "title": "AI-talent",
       "slug": "ChinaAI",
+      "title": "AI-talent",
       "heading": "Top 10 Chinese Company in the race to hire AI Talent",
       "label": "D3",
       "filename": "AI_talent1.webp",
@@ -655,8 +653,8 @@
       ]
     },
     {
-      "title": "Covid-19",
       "slug": "covid",
+      "title": "Covid-19",
       "heading": "Covid Dataset Analysis",
       "label": "R-ggplot",
       "filename": "covid_dailyreport.webp",
@@ -712,8 +710,8 @@
       ]
     },
     {
-      "title": "US population",
       "slug": "us-pop",
+      "title": "US population",
       "heading": "US Population New Change",
       "label": "Svelte.js",
       "filename": "pop.gif",
@@ -728,7 +726,7 @@
         },
         {
           "type": "text",
-          "value": "<h2>How I Made This Visualization</h2>"
+          "value": "## How I Made This Visualization"
         },
         {
           "type": "text",
@@ -805,8 +803,8 @@
       ]
     },
     {
-      "title": "globe population",
       "slug": "globe",
+      "title": "globe population",
       "heading": "Global Population Visualization",
       "label": "Svelte.js",
       "filename": "globe.gif",
@@ -905,7 +903,7 @@
   "maps": [
     {
       "slug": "arizona_heat",
-      "title": "Re-use Cleveland Vacant Land",
+      "title": "Extreme Heat And Migration: Insights From The Arizona Border",
       "image": "Arizona_heat",
       "description": [
         {
@@ -960,6 +958,7 @@
     },
     {
       "slug": "vacant_land",
+      "title": "Re-use Cleveland Vacant Land",
       "label": "Geographically Weighted Regression analysis",
       "image": "image1",
       "description": [
@@ -975,11 +974,11 @@
           "type": "text",
           "value": "I am tasked specifically with evaluating the success of vacant land re-use in relation to the overall social opportunity index and then delving more deeply into projects that could impact public health."
         }
-      ],
-      "title": "event venue"
+      ]
     },
     {
       "slug": "event_venue",
+      "title": "event venue",
       "label": "Geocoding; Spatial analysis",
       "image": "image2",
       "description": [
