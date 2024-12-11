@@ -1,69 +1,57 @@
+.container {
+  max-width: 1200px; /* 限制容器宽度 */
+  margin: 0 auto; /* 居中 */
+  padding: 40px 20px; /* 上下内边距 */
+}
+
+.row {
+  display: flex; /* Flexbox 布局 */
+  align-items: center; /* 垂直居中对齐 */
+}
+
+.profile-picture {
+  max-width: 100%; /* 图片宽度自适应 */
+  height: auto; /* 保持图片比例 */
+  border-radius: 8px; /* 圆角效果（可选） */
+  margin-bottom: 10px; /* 图片与文字的间距 */
+}
+
+.photo-credit {
+  font-size: 14px;
+  color: #666; /* 浅灰色 */
+  margin-top: 10px;
+  text-align: center;
+  font-style: italic;
+}
+
 .intro {
-  h1 {
-    font-family: "Inconsolata", monospace;
-    font-weight: normal;
-    font-size: 40px;
-  }
-  
-  p {
-    font-family: "Inconsolata", monospace;
-    font-weight: normal;
-    font-size: 30px;
-    margin-top: 20px;
-  }
-
-  .link {
-    font-weight: bold;
-    color: #87D3BC; 
-    transition: transform 0.3s ease; 
-  }
-  
+  font-family: 'Inconsolata', monospace;
+  line-height: 1.8; /* 行间距 */
+  font-size: 18px; /* 字体大小 */
 }
 
-
-.badge {
-  &.newsman {
-    background-color: #CC5500; 
-    color: white; 
-  }
-  &.dataviz {
-    background-color: #F84C06; 
-    color: white; 
-  }
-  &.ai {
-    background-color: #F5C8A7; 
-    color: white; 
-  }
+.intro p {
+  margin-bottom: 20px; /* 每段文字之间的间距 */
 }
 
-.badge-container {
-  .btn {
-    margin-right: 0.5rem; 
-    margin-bottom: 0.5rem; 
-
-    &:last-child {
-      margin-right: 0; 
-    }
-  }
-
-  .btn-credit {
-    background-color: #0097b2;
-    border-color: #01849b; 
-    color: white; 
-  }
-  
-  .btn-label {
-    background-color: #7ed957; 
-    border-color: #6ebf4b;
-    color: white; 
-  }
-  
+.intro a {
+  color: #fe5a24; /* 链接颜色 */
+  text-decoration: none; /* 去掉下划线 */
 }
 
+.intro a:hover {
+  text-decoration: underline; /* 悬停下划线 */
+}
+
+.intro .story-link {
+  text-decoration: underline; /* 添加下划线 */
+  color: currentColor; /* 颜色与文本一致 */
+}
 
 /* Add responsive styles as needed */
 @media (max-width: 768px) {
-  .image-container, .text-container {
+  .image-container,
+  .text-container {
     text-align: center; /* Center elements on smaller screens */
   }
   .btn-primary {
