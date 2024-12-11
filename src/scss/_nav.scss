@@ -1,7 +1,7 @@
 /* nav */
 
 .navbar {
-  background: linear-gradient(to right, #FE5A24, #4FF0E0);
+  background: linear-gradient(to right, #fe5a24, #4ff0e0);
   margin-bottom: 20px;
 
   .navbar-brand img {
@@ -10,30 +10,69 @@
   }
 
   .nav-link {
-    color: white; 
+    color: white;
     font-size: 24px;
-    font-family: "Inconsolata", monospace;
+    font-family: 'Inconsolata', monospace;
     font-weight: normal;
   }
 
   .newsletter-signup {
-    font-family: "Inconsolata", monospace;
+    font-family: 'Inconsolata', monospace;
     font-size: 24px;
-    color: #FE5A24; /* Use the appropriate color */
+    color: #fe5a24; /* Use the appropriate color */
     text-decoration: none; /* Removes underline */
     padding: 5px 10px; /* Adjust as needed */
     transition: color 0.3s ease; /* Smooth transition for hover effect */
   }
-  
+
   .newsletter-signup:hover {
-    color: #C9302C; /* Darker shade for hover effect */
+    color: #c9302c; /* Darker shade for hover effect */
     text-decoration: underline; /* Underline on hover for effect */
+  }
+
+  footer {
+    display: flex; /* Flex 布局 */
+    flex-wrap: wrap; /* 允许内容换行 */
+    justify-content: space-between; /* 两端对齐 */
+    align-items: center; /* 垂直居中 */
+    padding: 12px 20px; /* 收紧上下内边距：从 16px 减少到 12px */
+    border-top: 1px solid #ddd; /* 添加顶部边框 */
+    font-size: 14px; /* 字体大小 */
+    line-height: 1.5; /* 行高 */
+    margin-bottom: 0; /* 去掉底部的外边距 */
+  }
+
+  footer .text-muted {
+    margin: 0; /* 去掉默认外边距 */
+    padding: 0; /* 去掉默认内边距 */
+  }
+
+  footer .nav {
+    display: flex; /* 使用 Flex 布局 */
+    flex-wrap: nowrap; /* 禁止换行 */
+    justify-content: center; /* 居中显示 */
+    gap: 16px; /* 图标间距 */
+    margin: 0; /* 去掉默认外边距 */
+    padding: 0; /* 去掉默认内边距 */
+  }
+
+  footer .nav li {
+    list-style: none; /* 去掉默认列表样式 */
+  }
+
+  footer .nav a {
+    color: #666; /* 图标颜色 */
+    transition: color 0.3s ease; /* 悬停颜色过渡效果 */
+  }
+
+  footer .nav a:hover {
+    color: #000; /* 悬停时颜色加深 */
   }
 
   // For smaller devices
   @media (max-width: 991px) {
     .navbar-toggler {
-      padding: .25rem .75rem; // Adjust padding to align the button as needed
+      padding: 0.25rem 0.75rem; // Adjust padding to align the button as needed
     }
   }
 }
