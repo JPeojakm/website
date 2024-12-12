@@ -3,8 +3,8 @@
     {
       "slug": "small-countries-olympic-medals",
       "title": "How tiny countries find the Olympic podium",
-      "heading": "Small Countries Olympic Medals | The Post",
-      "label": "Data Visual Story",
+      "publication": "The Washington Post",
+      "time": "August 9, 2024",
       "filename": "medal_1.PNG",
       "description": "Low-cost-of-entry sports and new sports open opportunities for small countries to break through, a Post analysis found.",
       "content": [
@@ -170,7 +170,8 @@
       "slug": "usa-gold-medals-paris-olympics-2024",
       "title": "All the ways Team USA dominated the Olympic medal table",
       "heading": "Team USA Paris Olympics | The Post",
-      "label": "Data Visual Story",
+      "publication": "The Washington Post",
+      "time": "August 11, 2024",
       "filename": "USA_3.png",
       "description": "More than 40 percent of U.S. Olympians will leave Paris with a medal.",
       "content": [
@@ -259,9 +260,9 @@
     {
       "slug": "h1b",
       "title": "Invisible Wall: How the H-1B Visa Process Creates Challenges for International Students in the US",
-      "heading": "H-1B Visa Analysis",
+      "publication": "Personal Project",
+      "time": "May 2, 2023",
       "filename": "h-1b.jpg",
-      "label": "Data Visual Story",
       "content": [
         {
           "type": "text",
@@ -376,8 +377,8 @@
     {
       "slug": "suicide",
       "title": "How local mental health authority make efforts to save youth life in Lubbock",
-      "heading": "Youth Mental Health Solution",
-      "label": "Data Visual Story",
+      "publication": "Personal Project",
+      "time": "April 5, 2023",
       "filename": "suicide.jpg",
       "content": [
         {
@@ -465,8 +466,8 @@
     {
       "slug": "gradlife",
       "title": "2023 UT Grads Nervous About Job Market",
-      "heading": "New Grad Job Searching",
-      "label": "Data Visual Story",
+      "publication": "Personal Project",
+      "time": "June 10, 2023",
       "filename": "grad_pay.png",
       "content": [
         {
@@ -585,9 +586,9 @@
     },
     {
       "slug": "ChinaAI",
-      "title": "AI-talent",
-      "heading": "Top 10 Chinese Company in the race to hire AI Talent",
-      "label": "D3",
+      "title": "Hiring data tells you Top 10 Chinese Company in the race to hire AI Talent",
+      "publication": "The Abacus",
+      "time": "December 18, 2023",
       "filename": "AI_talent1.webp",
       "content": [
         {
@@ -653,67 +654,10 @@
       ]
     },
     {
-      "slug": "covid",
-      "title": "Covid-19",
-      "heading": "Covid Dataset Analysis",
-      "label": "R-ggplot",
-      "filename": "covid_dailyreport.webp",
-      "content": [
-        {
-          "type": "text",
-          "value": "In this series of data visualizations on COVID, I primarily utilized the ggplot2, scales, and patchwork packages in R for presentation. The data focuses on the daily COVID timeline data for cases and deaths in each US state and territory, sourced from The New York Times. Prior to visualization, a cleaning process was conducted."
-        },
-        {
-          "type": "text",
-          "value": "To create graphic panels containing multiple charts, I employed the patchwork package. Additionally, I calculated the seven-day rolling averages for daily reported COVID cases and deaths for each state and territory. Subsequently, I filtered the timeline data to include only the states with a population of more than 15 million."
-        },
-        {
-          "type": "img",
-          "value": {
-            "filename": "../img/data-viz-photo/covid_dailyreport.webp",
-            "caption": "I calculated the seven-day rolling averages for daily reported COVID cases and deaths for each state and territory.",
-            "alt": "covid daily report"
-          }
-        },
-        {
-          "type": "text",
-          "value": "In the next set of charts, I aim to study the confirmed cases and death cases in Texas due to COVID and combine them into a single chart."
-        },
-        {
-          "type": "img",
-          "value": {
-            "filename": "../img/data-viz-photo/ covid_tx.webp",
-            "caption": "I aim to study the confirmed cases and death cases in Texas due to COVID and combine them into a single chart.",
-            "alt": "covid texas"
-          }
-        },
-        {
-          "type": "text",
-          "value": "Certainly! Trend lines are useful for illustrating the relationship between two variables, especially in scatter plots and bubble plots. To begin, I will create a bubble plot to investigate the correlation between case rates and death rates across US states and territories. Subsequently, I will incorporate a line to depict linear regression."
-        },
-        {
-          "type": "img",
-          "value": {
-            "filename": "../img/data-viz-photo/covid_case_death_rates.jpg",
-            "caption": "Trend lines are useful for illustrating the relationship between two variables.",
-            "alt": "covid death rate"
-          }
-        },
-        {
-          "type": "text",
-          "value": "Considering the large number of data points, I will highlight the key states by labeling their names. Moreover, I will use color and labels to emphasize a subset of the points while keeping the rest of the data visible on the chart."
-        },
-        {
-          "type": "text",
-          "value": "This visualization was developed under the guidance of Professor Peter Aldhous."
-        }
-      ]
-    },
-    {
       "slug": "us-pop",
-      "title": "US population",
-      "heading": "US Population New Change",
-      "label": "Svelte.js",
+      "title": "US Population New Change",
+      "publication": "Personal Project",
+      "time": "July 15, 2023",
       "filename": "pop.gif",
       "content": [
         {
@@ -804,9 +748,9 @@
     },
     {
       "slug": "globe",
-      "title": "globe population",
-      "heading": "Global Population Visualization",
-      "label": "Svelte.js",
+      "title": "Global Population Visualization",
+      "publication": "Personal Project",
+      "time": "August 2, 2023",
       "filename": "globe.gif",
       "content": [
         {
@@ -904,6 +848,8 @@
     {
       "slug": "arizona_heat",
       "title": "Extreme Heat And Migration: Insights From The Arizona Border",
+      "publication": "School Project",
+      "time": "2023 Fall",
       "image": "Arizona_heat",
       "description": [
         {

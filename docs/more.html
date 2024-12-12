@@ -1,12 +1,12 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Jinpeng Li Covid-19</title>
-    <meta name="description" content="Covid-19 by R-ggplot">
+    <title>Jinpeng Li More</title>
+    <meta name="description" content="Default description">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="css/main.css">
   
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,13 +26,13 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav"> <!-- 'ms-auto' will push the navigation to the right -->
       <li class="nav-item">
-          <a class="nav-link" href="../index.html">Home</a>
+          <a class="nav-link" href="index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="../work.html">Work</a>
+          <a class="nav-link" href="work.html">Work</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="../about.html">About</a>
+          <a class="nav-link" href="more.html">More</a>
         </li>
       </ul>
     </div>
@@ -42,8 +42,8 @@
 
     <!-- Navbar Brand in the Center -->
      <!--
-      <a class="navbar-brand" href="../index.html">
-      <img src="../img/profile.svg" alt="profile">
+      <a class="navbar-brand" href="index.html">
+      <img src="img/profile.svg" alt="profile">
     </a>
     -->
 
@@ -52,87 +52,49 @@
 
 
     
-<article class="container">
-  <div class="row">
-    <div class="col-12">
-      <h1>Covid-19</h1>
+<div class="more-content">
+  <!-- 第一部分: Recent Work -->
+  <section class="recent-work">
+    <h2 class="section-title">Recent Work</h2>
+    <div class="content-section">
+      <p>
+        - Worked on a detailed analysis of small countries' Olympic successes for 
+        <a href="https://www.washingtonpost.com/" class="text-link">The Washington Post</a>.
+      </p>
+      <p>
+        - Investigated the impact of clean energy in China for a collaborative project with the Asia team.
+      </p>
     </div>
-  </div>
+  </section>
 
-  <div class="row">
-    <div class="col-12">
-      <!-- 使用 id "prose-content" 来加载原始文本 -->
-     <div id="prose-content">
-    
-       
-       
-       <p>In this series of data visualizations on COVID, I primarily utilized the ggplot2, scales, and patchwork packages in R for presentation. The data focuses on the daily COVID timeline data for cases and deaths in each US state and territory, sourced from The New York Times. Prior to visualization, a cleaning process was conducted.</p>
-    
-    
-  
-       
-       
-       <p>To create graphic panels containing multiple charts, I employed the patchwork package. Additionally, I calculated the seven-day rolling averages for daily reported COVID cases and deaths for each state and territory. Subsequently, I filtered the timeline data to include only the states with a population of more than 15 million.</p>
-    
-    
-  
-       
-      <img src="../img/data-viz-photo/covid_dailyreport.webp" alt="covid daily report">
-      
-        <p class="caption">I calculated the seven-day rolling averages for daily reported COVID cases and deaths for each state and territory.</p>
-      
-    
-  
-       
-       
-       <p>In the next set of charts, I aim to study the confirmed cases and death cases in Texas due to COVID and combine them into a single chart.</p>
-    
-    
-  
-       
-      <img src="../img/data-viz-photo/ covid_tx.webp" alt="covid texas">
-      
-        <p class="caption">I aim to study the confirmed cases and death cases in Texas due to COVID and combine them into a single chart.</p>
-      
-    
-  
-       
-       
-       <p>Certainly! Trend lines are useful for illustrating the relationship between two variables, especially in scatter plots and bubble plots. To begin, I will create a bubble plot to investigate the correlation between case rates and death rates across US states and territories. Subsequently, I will incorporate a line to depict linear regression.</p>
-    
-    
-  
-       
-      <img src="../img/data-viz-photo/covid_case_death_rates.jpg" alt="covid death rate">
-      
-        <p class="caption">Trend lines are useful for illustrating the relationship between two variables.</p>
-      
-    
-  
-       
-       
-       <p>Considering the large number of data points, I will highlight the key states by labeling their names. Moreover, I will use color and labels to emphasize a subset of the points while keeping the rest of the data visible on the chart.</p>
-    
-    
-  
-       
-       
-       <p>This visualization was developed under the guidance of Professor Peter Aldhous.</p>
-    
-    
-  
+  <!-- 第二部分: Recognized -->
+  <section class="recognized">
+    <h2 class="section-title">Recognized</h2>
+    <div class="content-section">
+      <p>
+        - Awarded "Data Journalism Fellow of the Year" by 
+        <a href="https://www.someorganization.org" class="text-link">Some Organization</a>.
+      </p>
+      <p>
+        - Work featured in the <em>Best Data Stories of 2024</em> list by 
+        <a href="https://www.datajournalismawards.org" class="text-link">Data Journalism Awards</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- 第三部分: Impact -->
+  <section class="impact">
+    <h2 class="section-title">Impact</h2>
+    <div class="content-section">
+      <p>
+        - Collaborated with local journalists in Texas to report on policies impacting Chinese immigrant communities.
+      </p>
+      <p>
+        - Produced a series of features on youth mental health in Lubbock, Texas, leading to actionable community reforms.
+      </p>
+    </div>
+  </section>
 </div>
-    </div>
-  </div>
-</article>
-
-<!-- 在页面加载完成后，将 Markdown 转换为 HTML -->
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    var contentElement = document.getElementById('prose-content');
-    contentElement.innerHTML = marked(contentElement.textContent);
-  });
-</script>
 
 
     
@@ -178,9 +140,9 @@
 
 
 
-    <script src="../js/jquery.js"></script>
-    <script src="../js/bootstrap.bundle.min.js"></script>
-    <script src="../js/scripts.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/marked@4.0.12/marked.min.js"></script> 
   </body>
 </html>

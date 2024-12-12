@@ -1,0 +1,42 @@
+.more-content {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 800px; /* 限制内容最大宽度，更窄更居中 */
+  text-align: center; /* 居中对齐文字 */
+  font-family: 'Inconsolata', sans-serif;
+
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 2.5rem; /* 增加标题与内容的间距 */
+    color: #333;
+  }
+
+  .content-section {
+    font-size: 1.2rem; /* 字体稍大 */
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 4rem; /* 每个部分之间的间距 */
+  }
+
+  .text-link {
+    color: #f1592b; /* 链接颜色 */
+    text-decoration: none;
+    font-weight: bold;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  /* 针对小屏幕的样式调整 */
+  @media (max-width: 768px) {
+    padding: 10px; /* 在小屏幕上减少边距 */
+    .section-title {
+      font-size: 1.8rem; /* 标题字体稍微缩小 */
+    }
+    .content-section {
+      font-size: 1rem; /* 内容字体缩小 */
+      margin-bottom: 3rem; /* 减少部分间距 */
+    }
+  }
+}

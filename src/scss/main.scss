@@ -23,24 +23,23 @@
 @import 'index';
 @import 'works';
 @import 'musicapp';
-@import 'about';
+@import 'more';
 @import 'bake';
 
 h3 {
   font-size: 1.5rem;
-  font-family: "Inconsolata", monospace;
+  font-family: 'Inconsolata', monospace;
 }
 
 h1 {
-  font-family: "Inconsolata", monospace;
+  font-family: 'Inconsolata', monospace;
   font-weight: 400;
 }
 
 p {
-  font-family: "Lora", serif;
+  font-family: 'Lora', serif;
   font-weight: 300;
 }
-
 
 .badge-container .badge {
   margin-right: 5px;
