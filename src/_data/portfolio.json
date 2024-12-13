@@ -1,4 +1,24 @@
 {
+  "latest": [
+    {
+      "credit": "Yimagazine, September Issue 2024",
+      "title": "TikTok E-commerce: A Race Against the Clock (中文)",
+      "src": "https://news.qq.com/rain/a/20241112A01IEU00",
+      "type": "Feature Writing"
+    }
+  ],
+  "cite": [
+    {
+      "credit": "Forbes Aug.2024",
+      "intro": "Forbes dedicated half the piece to citing my research, describing it as one of “some of the best and most insightful pieces of research” and “a superb analysis of the Olympic medals tables”",
+      "src": "https://www.forbes.com/sites/stevendesmyter/2024/08/19/post-olympics-analysis-a-reader/"
+    },
+    {
+      "credit": "Cosmopolitan Aug. 2024",
+      "intro": "Cosmopolitan references my tracking of Team USA’s dominance of the Olympic medal table.",
+      "src": "https://www.cosmopolitan.com/entertainment/tv/a61852264/who-won-the-olympics/"
+    }
+  ],
   "dataviz": [
     {
       "slug": "small-countries-olympic-medals",

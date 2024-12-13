@@ -4,43 +4,37 @@
 
 {% block content %}
 <div class="more-content">
-  <!-- 第一部分: Recent Work -->
-  <section class="recent-work">
-    <h2 class="section-title">Recent Work</h2>
+  <!-- Latest Section -->
+  <section class="latest-section">
+    <h2 class="section-title">Latest</h2>
     <div class="content-section">
-      <p>
-        - Worked on 
-      </p>
-      <p>
-        - Investigated 
-      </p>
+      {% for item in portfolio.latest %}
+        <p>
+          <strong>
+            <a href="{{ item.src }}" class="text-link" target="_blank">{{ item.credit }}</a>
+          </strong>
+        </p>
+        <p>{{ item.title }}</p>
+        <p>{{ item.type }}</p>
+      {% endfor %}
     </div>
   </section>
 
-  <!-- 第二部分: Recognized -->
-  <section class="recognized">
-    <h2 class="section-title">Recognized</h2>
+  <!-- Cite Section -->
+  <section class="cite-section">
+    <h2 class="section-title">In the News</h2>
     <div class="content-section">
-      <p>
-        - 
-      </p>
-      <p>
-        - 
-      </p>
-    </div>
-  </section>
-
-  <!-- 第三部分: Impact -->
-  <section class="impact">
-    <h2 class="section-title">Impact</h2>
-    <div class="content-section">
-      <p>
-        - 
-      </p>
-      <p>
-        - 
-      </p>
+      {% for item in portfolio.cite %}
+        <p>
+          <strong>
+            <a href="{{ item.src }}" class="text-link" target="_blank">{{ item.credit }}</a>
+          </strong>
+        </p>
+        <p>{{ item.intro }}</p>
+      {% endfor %}
     </div>
   </section>
 </div>
+
+
 {% endblock %}
