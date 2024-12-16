@@ -1,121 +1,88 @@
-.works-intro {
+// 全局内容区域通用样式
+.content-sections {
   max-width: 1500px; // 设置最大宽度
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 2rem; // 设置左右内边距
+  margin: 0 auto; // 居中对齐
+  padding: 0 2rem;
 
   @media (min-width: 768px) {
-    padding: 1rem 9rem 0.5rem 6rem; // 大屏幕时的内边距
+    padding: 1rem 9rem 0.5rem 6rem;
   }
 
-  h1 {
-    margin: 1rem 0; // h1 上下边距
+  h2 {
+    margin: 2rem 0; // 标题上下边距
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.5rem;
+    color: #333;
+  }
+}
 
-    @media (max-width: 768px) {
-      margin-top: 0.5rem; // 小屏幕时减少上边距
+// 卡片统一样式（应用于所有内容部分）
+.card {
+  border: none;
+  overflow: hidden;
+  border-radius: 15px; // 圆角
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15);
+  transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+
+  min-height: 300px;
+  max-height: 300px;
+
+  @media (max-width: 768px) {
+    min-height: 250px;
+  }
+
+  &.card-has-bg {
+    background-size: 120%; // 背景图比例
+    background-position: center bottom; // 背景图位置
+    background-repeat: no-repeat;
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: rgba(247, 247, 233, 0.4); // 米色背景，透明度 70%
+      z-index: 1; // 确保在背景图之上
+    }
+
+    &:hover {
+      transform: scale(0.98); // 缩放动画
+      box-shadow: 0 0 5px -2px rgba(0, 0, 0, 0.3); // 添加阴影动效
+    }
+
+    .card-body {
+      font-family: 'Inconsolata', sans-serif;
+      color: #333;
+      z-index: 2; // 确保文字内容在背景之上
+      position: relative;
+
+      .card-title {
+        font-size: 1rem; // 标题字体大小
+        font-weight: 700;
+      }
+
+      .card-meta {
+        color: #000; // publication 字体颜色
+        text-transform: uppercase;
+        font-weight: 500;
+        letter-spacing: 1.5px;
+      }
     }
   }
 }
 
-.works-sections {
-  max-width: 1500px; // 确保内容宽度限制
-  margin: 0 auto; // 居中对齐
-  padding: 0 2rem; // 默认内边距
-
-  @media (min-width: 768px) {
-    padding-left: 9rem; // 大屏幕时的左内边距
-    padding-right: 6rem; // 大屏幕时的右内边距
-  }
-
-  h2 {
-    margin: 2rem 0; // 设置上下边距
-    font-family: 'Inconsolata', monospace;
-
-    @media (min-width: 768px) {
-      margin-top: 3rem; // 大屏幕时增加上下边距
-      margin-bottom: 3rem;
-    }
-  }
+// 特定内容部分继承通用样式和卡片效果
+.works-intro,
+.data-graphics,
+.cartography-projects,
+.interaction-design,
+.writing-notes {
+  @extend .content-sections;
 
   .card {
-    border: none;
-    transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1); // 平滑动画
-    overflow: hidden;
-    border-radius: 15px; // 卡片圆角缩小
-    min-height: 300px; // 缩小卡片高度，接近正方形
-    max-height: 300px; // 限制最大高度
-    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15); // 减弱阴影
-
-    @media (max-width: 768px) {
-      min-height: 250px; // 小屏幕卡片高度
-    }
-
-    @media (max-width: 420px) {
-      min-height: 220px; // 更小屏幕卡片高度
-    }
-
-    &.card-has-bg {
-      background-size: 120%; // 放大背景图片以聚焦下部分
-      background-repeat: no-repeat;
-      background-position: center bottom; // 背景图片主要显示下 30%
-      position: relative;
-
-      &:before {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background: rgba(247, 247, 233, 0.7); // 调整为淡米色，透明度 80%
-      }
-
-      &:hover {
-        transform: scale(0.98);
-        box-shadow: 0 0 5px -2px rgba(0, 0, 0, 0.3); // 减弱阴影
-        transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
-      }
-    }
-
-    .card-body {
-      font-family: 'Inconsolata', sans-serif; // 使用一致字体
-      color: #333; // 深灰色
-      transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
-
-      .card-link {
-        color: inherit; // 继承父元素颜色
-        text-decoration: none;
-
-        &:hover,
-        &:focus {
-          color: #777; // 鼠标悬停变浅灰色
-        }
-      }
-    }
-
-    .card-title {
-      font-size: 1.2rem;
-      font-weight: 700; // 标题加粗
-      color: #333;
-      margin-top: 10px;
-    }
-
-    .card-meta {
-      color: #000; // publication 字体改为黑色
-      text-transform: uppercase; // 大写
-      font-weight: 500;
-      letter-spacing: 1.5px; // 调整字母间距
-    }
-
-    .card-footer {
-      background: none;
-      border-top: none;
-      padding: 8px 16px; // 内边距
-
-      small {
-        font-size: 12px; // 小字体
-        color: #6c757d; // 淡灰色
-      }
-    }
+    @extend .card;
   }
 }

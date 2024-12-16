@@ -38,62 +38,74 @@
 
 
   <!-- Cartography Projects -->
-  <section class="cartography-projects">
-    <h2>Cartography Projects</h2>
-    <div class="container-fluid">
-      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+<section class="cartography-projects">
+  <h2>Cartography Projects</h2>
+  <div class="container-fluid">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
        {% for map in portfolio.maps %}
           <div class="col">
-            <div class="card h-90">
-              <img src="img/maps-photo/{{ map.image }}.jpg" class="card-img-top" alt="{{ map.title }}">
-              <div class="card-body">
-                <h5 class="card-title">
-                   <a href="maps/{{ map.slug }}.html" class="card-link">{{ map.title }}</a>
-                </h5>
+            <div class="card text-dark card-has-bg click-col" style="background-image:url('img/maps-photo/{{ map.image }}.jpg');">
+              <img src="img/maps-photo/{{ map.image }}.jpg" class="card-img d-none" alt="{{ map.title }}">
+              <div class="card-img-overlay d-flex flex-column">
+                <div class="card-body">
+                  <small class="card-meta mb-2">Cartography</small>
+                  <h4 class="card-title mt-0">
+                    <a href="maps/{{ map.slug }}.html" class="text-dark">{{ map.title }}</a>
+                  </h4>
+                </div>
               </div>
             </div>
           </div>
-          {% endfor %}
-      </div>
+       {% endfor %}
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Interaction Design -->
-  <section class="interaction-design">
-    <h2>Interaction Design</h2>
-    <div class="container-fluid">
-      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
-        <div class="col">
-        <div class="card h-100">
-          <img src="img/musicapp_img/banner.png" class="card-img-top" alt="Music App">
-          <div class="card-body">
-              <h5 class="card-title"><a href="Musicapp.html" class="card-link">Music App</a></h5>
-          </div>
-        </div>
-      </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Writing and Notes -->
-  <section class="writing-notes">
-    <h2>Writings</h2>
-    <div class="container-fluid">
-      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
-        {% for writing in home.writing %}
-        <div class="col">
-          <div class="card hover-card">
-            <img src="img/writing-photo/{{ writing.image }}" class="card-img-top" alt="{{ writing.title }}">
+<!-- Interaction Design -->
+<section class="interaction-design">
+  <h2>Interaction Design</h2>
+  <div class="container-fluid">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+      <div class="col">
+        <div class="card text-dark card-has-bg click-col" style="background-image:url('img/musicapp_img/banner.png');">
+          <img src="img/musicapp_img/banner.jpg" class="card-img d-none" alt="Music App">
+          <div class="card-img-overlay d-flex flex-column">
             <div class="card-body">
-              <h5 class="card-title">
-               <a href="{{ writing.source }}" class="card-link">{{ writing.name }}</a>
-              </h5>
+              <small class="card-meta mb-2">Interaction Design</small>
+              <h4 class="card-title mt-0">
+                <a href="Musicapp.html" class="text-dark">Music App</a>
+              </h4>
             </div>
           </div>
         </div>
-        {% endfor %}
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
+
+<!-- Writing and Notes -->
+<section class="writing-notes">
+  <h2>Writings</h2>
+  <div class="container-fluid">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+       {% for writing in home.writing %}
+        <div class="col">
+          <div class="card text-dark card-has-bg click-col" style="background-image:url('img/writing-photo/{{ writing.image }}');">
+            <img src="img/writing-photo/{{ writing.image }}" class="card-img d-none" alt="{{ writing.title }}">
+            <div class="card-img-overlay d-flex flex-column">
+              <div class="card-body">
+                <small class="card-meta mb-2">Writings</small>
+                <h4 class="card-title mt-0">
+                  <a href="{{ writing.source }}" class="text-dark">{{ writing.name }}</a>
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+       {% endfor %}
+    </div>
+  </div>
+</section>
 </div>
 {% endblock %}
