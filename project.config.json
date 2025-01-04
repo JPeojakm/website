@@ -25,6 +25,13 @@
       "array": "dataviz",
       "slug": "slug",
       "path": "dataviz"
+    },
+    {
+      "template": "bake-blog",
+      "data": "portfolio",
+      "array": "blog",
+      "slug": "slug",
+      "path": "blog"
     }
   ]
 }

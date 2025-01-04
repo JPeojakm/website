@@ -23,6 +23,16 @@
   line-height: 1.4; /* 行高更易读 */
 }
 
+.blog-title-link {
+  color: black; /* 设置标题为黑色 */
+  text-decoration: none; /* 移除下划线 */
+}
+
+.blog-title-link:hover {
+  color: gray; /* 鼠标悬停时变成灰色（可选） */
+  text-decoration: none; /* 悬停时也不显示下划线 */
+}
+
 .blog-description {
   font-size: 1.2rem; /* 描述部分大小 */
   margin-bottom: 1.5rem;

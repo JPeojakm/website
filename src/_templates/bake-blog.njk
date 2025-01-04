@@ -1,0 +1,41 @@
+{% extends '_templates/base.njk' %}
+
+{% set relative_path = "../" %}
+
+{% from '_macros/prose.njk' import prose %} {# Import the prose macro #}
+
+{% block page_title %}{{ title }}{% endblock %}
+
+{% block page_description %}{{ description }}{% endblock %}
+
+{% block content %}
+<article class="container">
+  <div class="row">
+    <!-- 左侧图片部分 -->
+    <div class="col-sm-4">
+      <img src="{{ relative_path }}img/blog-photo/{{ filename }}" alt="{{ slug }}" class="img-fluid mb-4">
+    </div>
+    <!-- 右侧文字部分 -->
+    <div class="col-sm-8">
+      <h1>{{ title }}</h1>
+      <p class="text-muted">{{ time }}</p>
+      {{ prose(description) }}
+    </div>
+  </div>
+
+  <div class="row mt-5">
+    <!-- 正文内容部分 -->
+    <div class="col-12">
+      <div id="prose-content">
+        {% for item in content %}
+          {% if item.startsWith('<h2') or item.startsWith('<h3') %}
+            {{ item | safe }}
+          {% else %}
+            <p>{{ item | safe }}</p>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</article>
+{% endblock %}
