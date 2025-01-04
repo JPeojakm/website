@@ -1,0 +1,26 @@
+.blog-post {
+  margin-bottom: 2rem;
+}
+
+.blog-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.blog-meta {
+  font-size: 0.9rem;
+  color: gray;
+}
+
+.blog-description {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.blog-image {
+  max-width: 100%; /* 保持图片宽度响应式 */
+  height: auto; /* 确保图片比例不失真 */
+  max-height: 300px; /* 限制最大高度为 300px，可根据需求调整 */
+  object-fit: cover; /* 裁剪图片以适应大小 */
+}
