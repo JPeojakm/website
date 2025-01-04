@@ -1,37 +1,29 @@
 {% extends '_templates/base.njk' %}
 
 {% block page_title %}Blog{% endblock %}
-{% block page_description %}A collection of my blog posts{% endblock %}
+{% block page_description %}Selected stories and insights{% endblock %}
 
 {% block content %}
 
 <div class="blog-list">
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 mx-auto">
-        {% for blog in portfolio.blog %}
-          <div class="row blog-post align-items-center mb-4">
-            <!-- Blog Content -->
-            <div class="col-md-8">
-              <h2 class="blog-title">
-                <a href="blog/{{ blog.slug }}.html" class="text-dark">{{ blog.title }}</a>
-              </h2>
-              <p class="blog-description">{{ blog.description }}</p>
-              <p class="blog-meta">
-                {{ blog.time }}
-                {% if blog.read_time %}
-                  · {{ blog.read_time }}
-                {% endif %}
-              </p>
-            </div>
-            <!-- Blog Image -->
-            <div class="col-md-4">
-              <img class="img-fluid blog-image" src="img/blog-photo/{{ blog.filename }}" alt="{{ blog.title }}">
-            </div>
+      {% for blog in portfolio.blog %}
+        <div class="blog-post d-flex align-items-center mb-5">
+          <!-- 左侧文字部分 -->
+          <div class="blog-text flex-grow-1">
+            <h2 class="blog-title">
+              <a href="blog/{{ blog.slug }}.html" class="blog-title-link">{{ blog.title }}</a>
+            </h2>
+            <p class="blog-description">{{ blog.description }}</p>
+            <p class="blog-meta text-muted">{{ blog.time }}</p>
           </div>
-          
-        {% endfor %}
-      </div>
+          <!-- 右侧图片部分 -->
+          <div class="blog-image-container ms-2">
+            <img class="blog-image" src="img/blog-photo/{{ blog.filename }}" alt="{{ blog.title }}">
+          </div>
+        </div>
+      {% endfor %}
     </div>
   </div>
 </div>

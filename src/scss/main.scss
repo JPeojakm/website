@@ -54,5 +54,10 @@ p {
 }
 
 footer {
-  margin-top: 60px;
+  position: sticky; /* 保证 footer 跟随页面内容，但固定在底部 */
+  bottom: 0; /* 将 footer 定位到视窗底部 */
+  width: 100%; /* 占据全宽 */
+  padding: 20px 0; /* 上下内边距 */
+  text-align: center; /* 文本居中 */
+  border-top: 1px solid #e9ecef; /* 增加顶部边框分隔 */
 }

@@ -1,26 +1,47 @@
+/* 整个博客部分容器 */
+.blog-list {
+  max-width: 85%; /* 调整内容宽度，更靠左 */
+  margin: 0 auto; /* 居中对齐 */
+  padding: 2rem 0; /* 上下间距 */
+}
+
+/* 每个帖子容器 */
 .blog-post {
-  margin-bottom: 2rem;
+  display: flex; /* 使用 Flexbox 布局 */
+  gap: 30px; /* 图片和文字之间的间距 */
+}
+
+/* 文字部分 */
+.blog-text {
+  flex-grow: 1; /* 文字部分动态填充剩余空间 */
 }
 
 .blog-title {
-  font-size: 1.5rem;
+  font-size: 2rem; /* 标题大小 */
   font-weight: bold;
-}
-
-.blog-meta {
-  font-size: 0.9rem;
-  color: gray;
+  margin-bottom: 1rem;
+  line-height: 1.4; /* 行高更易读 */
 }
 
 .blog-description {
-  margin-top: 0.5rem;
-  margin-bottom: 1rem;
-  font-size: 1rem;
+  font-size: 1.2rem; /* 描述部分大小 */
+  margin-bottom: 1.5rem;
+  color: #333; /* 深灰色文字 */
+}
+
+.blog-meta {
+  font-size: 1rem; /* 时间字体较小 */
+  color: #6c757d; /* 浅灰色 */
+}
+
+/* 图片部分 */
+.blog-image-container {
+  flex-shrink: 0; /* 防止图片被压缩 */
 }
 
 .blog-image {
-  max-width: 100%; /* 保持图片宽度响应式 */
-  height: auto; /* 确保图片比例不失真 */
-  max-height: 300px; /* 限制最大高度为 300px，可根据需求调整 */
-  object-fit: cover; /* 裁剪图片以适应大小 */
+  max-width: 500px; /* 增加图片宽度 */
+  height: auto; /* 保持比例 */
+  max-height: 500px; /* 限制最大高度 */
+  object-fit: cover; /* 裁剪图片内容 */
 }
