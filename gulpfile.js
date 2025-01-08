@@ -14,12 +14,14 @@ import serve from './tasks/serve.js';
 import styles from './tasks/styles.js';
 
 // default tasks
-gulp.task('default', gulp.series(
-  clean,
-  gulp.parallel(styles, copy, gulp.series(scripts, images, nunjucks, bake)),
-  gulp.series(lint, format)
-));
-
+gulp.task(
+  'default',
+  gulp.series(
+    clean,
+    gulp.parallel(styles, copy, gulp.series(scripts, images, nunjucks, bake)),
+    gulp.series(lint, format)
+  )
+);
 
 // run default tasks and then serve locally
 gulp.task('dev', gulp.series('default', serve));
