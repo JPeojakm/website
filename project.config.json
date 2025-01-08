@@ -4,11 +4,6 @@
       "fileId": "1OowQ7l_VenUrQUZS3agzaQqsaeL156nu4wWkBTuLOV4",
       "type": "doc",
       "name": "portfolio"
-    },
-    {
-      "fileId": "1EUeJtpbqwxAGmZdOGLRZSO1D7bRZV2UdfB9E8k2Yog4",
-      "type": "sheet",
-      "name": "home"
     }
   ],
   "to_bake": [
@@ -27,7 +22,7 @@
       "path": "dataviz"
     },
     {
-      "template": "bake-blog",
+      "template": "bake-dataviz",
       "data": "portfolio",
       "array": "blog",
       "slug": "slug",

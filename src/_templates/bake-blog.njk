@@ -2,40 +2,48 @@
 
 {% set relative_path = "../" %}
 
-{% from '_macros/prose.njk' import prose %} {# Import the prose macro #}
+{% from '_macros/prose.njk' import prose %}
 
 {% block page_title %}{{ title }}{% endblock %}
 
-{% block page_description %}{{ description }}{% endblock %}
+{% block page_description %}{{ title }} by {{ label }}{% endblock %}
 
 {% block content %}
 <article class="container">
   <div class="row">
-    <!-- 左侧图片部分 -->
-    <div class="col-sm-4">
-      <img src="{{ relative_path }}img/blog-photo/{{ filename }}" alt="{{ slug }}" class="img-fluid mb-4">
-    </div>
-    <!-- 右侧文字部分 -->
-    <div class="col-sm-8">
+    <div class="col-12">
       <h1>{{ title }}</h1>
-      <p class="text-muted">{{ time }}</p>
-      {{ prose(description) }}
     </div>
   </div>
 
-  <div class="row mt-5">
-    <!-- 正文内容部分 -->
+  <div class="row">
     <div class="col-12">
-      <div id="prose-content">
-        {% for item in content %}
-          {% if item.startsWith('<h2') or item.startsWith('<h3') %}
-            {{ item | safe }}
-          {% else %}
-            <p>{{ item | safe }}</p>
-          {% endif %}
-        {% endfor %}
-      </div>
+      <!-- 使用 id "prose-content" 来加载原始文本 -->
+     <div id="prose-content">
+    {% for item in content %}
+       {% if item.type == 'text' %}
+       {% if item.value.startsWith('<em>') or item.value.startsWith('<a') or item.value.startsWith('<h2') or item.value.startsWith('<h3') %}
+       {{ item.value | safe }}
+    {% else %}
+       <p>{{ item.value | safe }}</p>
+    {% endif %}
+    {% elif item.type == 'img' %}
+      <img src="{{ item.value.filename }}" alt="{{ item.value.alt }}">
+      {% if item.value.caption %}
+        <p class="caption">{{ item.value.caption }}</p>
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+</div>
     </div>
   </div>
 </article>
+
+<!-- 在页面加载完成后，将 Markdown 转换为 HTML -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var contentElement = document.getElementById('prose-content');
+    contentElement.innerHTML = marked(contentElement.textContent);
+  });
+</script>
 {% endblock %}
