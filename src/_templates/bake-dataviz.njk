@@ -1,4 +1,4 @@
- {% extends '_templates/base.njk' %}
+{% extends '_templates/base.njk' %}
 
 {% set relative_path = "../" %}
 
@@ -9,32 +9,32 @@
 {% block page_description %}{{ title }} by {{ label }}{% endblock %}
 
 {% block content %}
-<article class="container">
-  <div class="row">
-    <div class="col-12">
+<article class="story-container">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
       <h1>{{ title }}</h1>
     </div>
   </div>
 
-  <div class="row">
-    <div class="col-12">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
       <!-- 使用 id "prose-content" 来加载原始文本 -->
-     <div id="prose-content">
-    {% for item in content %}
-       {% if item.type == 'text' %}
-       {% if item.value.startsWith('<em>') or item.value.startsWith('<a') or item.value.startsWith('<h2') or item.value.startsWith('<h3') %}
-       {{ item.value | safe }}
-    {% else %}
-       <p>{{ item.value | safe }}</p>
-    {% endif %}
-    {% elif item.type == 'img' %}
-      <img src="{{ item.value.filename }}" alt="{{ item.value.alt }}">
-      {% if item.value.caption %}
-        <p class="caption">{{ item.value.caption }}</p>
-      {% endif %}
-    {% endif %}
-  {% endfor %}
-</div>
+      <div id="prose-content">
+        {% for item in content %}
+          {% if item.type == 'text' %}
+            {% if item.value.startsWith('<em>') or item.value.startsWith('<a') or item.value.startsWith('<h2') or item.value.startsWith('<h3') %}
+              {{ item.value | safe }}
+            {% else %}
+              <p>{{ item.value | safe }}</p>
+            {% endif %}
+          {% elif item.type == 'img' %}
+            <img src="{{ item.value.filename }}" alt="{{ item.value.alt }}">
+            {% if item.value.caption %}
+              <p class="caption">{{ item.value.caption }}</p>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      </div>
     </div>
   </div>
 </article>

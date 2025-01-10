@@ -55,141 +55,141 @@
 
 
     
-<article class="container">
-  <div class="row">
-    <div class="col-12">
+<article class="story-container">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
       <h1>Global Population Visualization</h1>
     </div>
   </div>
 
-  <div class="row">
-    <div class="col-12">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
       <!-- 使用 id "prose-content" 来加载原始文本 -->
-     <div id="prose-content">
-    
-       
-       
-       <em>This visualization was created using Svelte.js. You can find the code here.</em>
-    
-    
-  
-       
-       
-       <p>It’s another population project, but unlike the previous one, this time I aimed to visualize global population data. Creating an interactive globe was an ideal choice, allowing users to click and drag the globe to see population numbers for each country.</p>
-    
-    
-  
-       
-       
-       <p>The geographic data we used is from 110m.json files. The data format is as follows:</p>
-    
-    
-  
-       
-      <img src="../img/data-viz-photo/globe_data.png" alt="globe data">
-      
-        <p class="caption">population change</p>
-      
-    
-  
-       
-       
-       <p>Here, "id" represents the ISO code, which I'll use to link the data. This is more reliable than using the country name.</p>
-    
-    
-  
-       
-       
-       <h3>D3-Geo</h3>
-    
-    
-  
-       
-       
-       <p>I employed d3-geo for this project. D3-geo helps plot a set of values onto corresponding geographic locations. The general approach to using d3-geo involves four steps: 1) Create a projection function; 2) Create a path generator; 3) Render the country paths; 4) Add a globe.</p>
-    
-    
-  
-       
-       
-       <h3>Responsive</h3>
-    
-    
-  
-       
-       
-       <p>Similar to the bubble visualization, we just need to create a .chart-container and use a dimension binding equal to the width.</p>
-    
-    
-  
-       
-       
-       <h3>Styling the Globe</h3>
-    
-    
-  
-       
-       
-       <p>The next step is to add background color and fill the globe. I also added a subtle glow to the globe, achieved using an SVG drop shadow with feOffset, feGaussianBlur, and feMerge.</p>
-    
-    
-  
-       
-       
-       <h3>Adding Data to the Globe</h3>
-    
-    
-  
-       
-       
-       <p>We now have a globe, but the data isn't embedded yet. In addition to importing data, I created a color scale that adjusts the fill of each country based on population density. The brighter the color, the lower the population, and vice versa.</p>
-    
-    
-  
-       
-       
-       <h3>Rotating</h3>
-    
-    
-  
-       
-       
-       <p>This animation is a bit complex. I envision that when the user is not interacting with the page, the globe will automatically rotate. Once an interaction event is triggered, the user can drag the globe to explore different countries.</p>
-    
-    
-  
-       
-       
-       <p>For auto-rotation, I use d3-timer. We're instantiating the rotation to be 0, and then updating it by 0.5 degrees every second.</p>
-    
-    
-  
-       
-       
-       <p>For drag functionality, I use d3-drag. This module allows us to add drag events to any DOM element. It's worth noting that we set the rotation on the x-axis first—don't forget to add yRotation. Additionally, for a globe, adding inertia is better. I use a spring function for this; the spring works by taking an initial value and a set of options, including stiffness and damping.</p>
-    
-    
-  
-       
-       
-       <h3>Other works</h3>
-    
-    
-  
-       
-       
-       <p>To enhance the experience further, we still have many things we can do, like styling the cursor when the user is dragging the globe or adding interactive tooltips to provide more information.</p>
-    
-    
-  
-       
-      <img src="../img/data-viz-photo/globe.gif" alt="globe population">
-      
-        <p class="caption">global population</p>
-      
-    
-  
-</div>
+      <div id="prose-content">
+        
+          
+            
+              <em>This visualization was created using Svelte.js. You can find the code here.</em>
+            
+          
+        
+          
+            
+              <p>It’s another population project, but unlike the previous one, this time I aimed to visualize global population data. Creating an interactive globe was an ideal choice, allowing users to click and drag the globe to see population numbers for each country.</p>
+            
+          
+        
+          
+            
+              <p>The geographic data we used is from 110m.json files. The data format is as follows:</p>
+            
+          
+        
+          
+            <img src="../img/data-viz-photo/globe_data.png" alt="globe data">
+            
+              <p class="caption">population change</p>
+            
+          
+        
+          
+            
+              <p>Here, "id" represents the ISO code, which I'll use to link the data. This is more reliable than using the country name.</p>
+            
+          
+        
+          
+            
+              <h3>D3-Geo</h3>
+            
+          
+        
+          
+            
+              <p>I employed d3-geo for this project. D3-geo helps plot a set of values onto corresponding geographic locations. The general approach to using d3-geo involves four steps: 1) Create a projection function; 2) Create a path generator; 3) Render the country paths; 4) Add a globe.</p>
+            
+          
+        
+          
+            
+              <h3>Responsive</h3>
+            
+          
+        
+          
+            
+              <p>Similar to the bubble visualization, we just need to create a .chart-container and use a dimension binding equal to the width.</p>
+            
+          
+        
+          
+            
+              <h3>Styling the Globe</h3>
+            
+          
+        
+          
+            
+              <p>The next step is to add background color and fill the globe. I also added a subtle glow to the globe, achieved using an SVG drop shadow with feOffset, feGaussianBlur, and feMerge.</p>
+            
+          
+        
+          
+            
+              <h3>Adding Data to the Globe</h3>
+            
+          
+        
+          
+            
+              <p>We now have a globe, but the data isn't embedded yet. In addition to importing data, I created a color scale that adjusts the fill of each country based on population density. The brighter the color, the lower the population, and vice versa.</p>
+            
+          
+        
+          
+            
+              <h3>Rotating</h3>
+            
+          
+        
+          
+            
+              <p>This animation is a bit complex. I envision that when the user is not interacting with the page, the globe will automatically rotate. Once an interaction event is triggered, the user can drag the globe to explore different countries.</p>
+            
+          
+        
+          
+            
+              <p>For auto-rotation, I use d3-timer. We're instantiating the rotation to be 0, and then updating it by 0.5 degrees every second.</p>
+            
+          
+        
+          
+            
+              <p>For drag functionality, I use d3-drag. This module allows us to add drag events to any DOM element. It's worth noting that we set the rotation on the x-axis first—don't forget to add yRotation. Additionally, for a globe, adding inertia is better. I use a spring function for this; the spring works by taking an initial value and a set of options, including stiffness and damping.</p>
+            
+          
+        
+          
+            
+              <h3>Other works</h3>
+            
+          
+        
+          
+            
+              <p>To enhance the experience further, we still have many things we can do, like styling the cursor when the user is dragging the globe or adding interactive tooltips to provide more information.</p>
+            
+          
+        
+          
+            <img src="../img/data-viz-photo/globe.gif" alt="globe population">
+            
+              <p class="caption">global population</p>
+            
+          
+        
+      </div>
     </div>
   </div>
 </article>

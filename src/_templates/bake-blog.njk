@@ -9,15 +9,16 @@
 {% block page_description %}{{ title }} by {{ label }}{% endblock %}
 
 {% block content %}
-<article class="container">
+
   <div class="row">
     <div class="col-12">
       <h1>{{ title }}</h1>
     </div>
   </div>
 
-  <div class="row">
-    <div class="col-12">
+<article class="story-container">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
       <!-- 使用 id "prose-content" 来加载原始文本 -->
      <div id="prose-content">
     {% for item in content %}
