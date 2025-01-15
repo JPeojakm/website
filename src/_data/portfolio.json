@@ -1,6 +1,12 @@
 {
   "latest": [
     {
+      "credit": "Initium Media, Jan 2024",
+      "title": "How This Chinese Immigrant Community Overturned an “Unconstitutional” State Alien Land Bill (中文)",
+      "src": "https://theinitium.com/article/20250114-international-chinese-american-commuinity-protest-against-texas-property-bill",
+      "type": "Feature Writing"
+    },
+    {
       "credit": "Yimagazine, September Issue 2024",
       "title": "TikTok E-commerce: A Race Against the Clock (中文)",
       "src": "https://news.qq.com/rain/a/20241112A01IEU00",
@@ -756,64 +762,7 @@
       "time": "December, 2024",
       "filename": "arpa_treasury.jpg",
       "description": "The project dealt with messy government data and a ton of manual coding. Data validation? A must.",
-      "content": [
-        {
-          "type": "text",
-          "value": "In mid-September, I joined a data project with The Maine Monitor to track how Maine’s $4.6 billion from the American Rescue Plan Act (ARPA) was being spent. With a deadline of December 31, 2024, local governments must allocate these funds to pandemic recovery efforts. Our task was to analyze where the money was going and how it was being used."
-        },
-        {
-          "type": "text",
-          "value": "<h2>How We Did It</h2>"
-        },
-        {
-          "type": "text",
-          "value": "Once we received Treasury data, I began compiling and cleaning files year by year. To make the data accessible to the public, we needed clear categories, not vague labels like “Negative Economic Impacts.” We followed a framework from the <a href=\"https://www.brookings.edu/articles/arpa-investment-tracker/\">Brookings</a>, which had categorized ARPA data for one county in Maryland. My editor and I researched their eight categories, adapting them to Maine’s data. This was tricky—no fixed standards existed. For instance, Brookings sometimes categorized COVID-19 responses in jails as “Public Safety” instead of “Public Health.”"
-        },
-        {
-          "type": "text",
-          "value": "We spent two and a half weeks coding nearly 3,000 projects across Maine. Starting small with Q1 2022, we refined our process, then scaled up. The Maine Monitor’s reporter reviewed our classifications, helping us make adjustments like changing “Police Department” to “Sheriff’s Office” and adding a “County Jail” category. Once we finished one quarter, automation sped up the process, but differences across years required manual checks. Thanks to weekly check-ins and real-time feedback, Aarushi and I completed the coding in just one and a half weeks."
-        },
-        {
-          "type": "text",
-          "value": "<h2>The Mistake I Made</h2>"
-        },
-        {
-          "type": "text",
-          "value": "After categorizing the data, I created a TreeMap and compiled it into a Datawrapper table to visualize the results. That’s when a problem popped up—we discovered many duplicate values. Rushing through the coding process without fully understanding the data led to this issue. Counties updated project amounts quarterly, and we had unintentionally double-counted some figures."
-        },
-        {
-          "type": "text",
-          "value": "Removing duplicates wasn’t easy. Without consistent naming conventions, we almost lost the original dataset. Fortunately, my habit of keeping a data journal saved us. Using the “project_id” column available after Q1 2022, along with county names and project descriptions, I removed half the duplicates. For the rest, which had slightly different descriptions, we manually reviewed and cleaned the data."
-        },
-        {
-          "type": "text",
-          "value": "<h2>Lessons I Learned</h2>"
-        },
-        {
-          "type": "text",
-          "value": "* Understand the Data First. Spend time learning how the data was collected and what each column represents before diving in. If possible, contact the source directly for clarification."
-        },
-        {
-          "type": "text",
-          "value": "* Validate with Multiple Reviewers. At least three people should be involved in data validation. A second set of eyes is helpful, but a third person can catch what others miss."
-        },
-        {
-          "type": "text",
-          "value": "* Use “Gatekeepers” for Accuracy. Cross-check results against government documents for consistency and create visualizations to identify anomalies that might go unnoticed in raw data."
-        },
-        {
-          "type": "text",
-          "value": "* Communicate Effectively. Clear and timely communication was crucial. With our team spread across different states, we stayed in sync through weekly check-ins and over 80 emails with The Maine Monitor."
-        },
-        {
-          "type": "text",
-          "value": "* Stay Organized. Document every stage of the process and use clear file naming conventions. This habit saved us from losing early versions of the data and made backtracking easier when issues arose."
-        },
-        {
-          "type": "text",
-          "value": "Even though working with thousands of rows of data sometimes made me feel like I was auditioning for a job as a human spreadsheet, the sense of accomplishment was worth it. Aarushi’s experience helped refine my decisions, and his careful reviews gave me confidence. I’m proud of what we achieved and excited to take on more projects like this in the future."
-        }
-      ]
+      "content": []
     }
   ]
 }
