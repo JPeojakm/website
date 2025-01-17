@@ -53,16 +53,15 @@
   font-family: 'Inconsolata', monospace;
   margin-bottom: 20px; /* Add spacing below */
   animation: typewriter 4s steps(40, end), blink 0.7s step-end infinite;
-  animation: typewriter 4s steps(40, end) 1, blink 0.7s step-end infinite;
 }
 
 /* Keyframes for typewriter effect */
 @keyframes typewriter {
   from {
-    width: 0;
+    clip-path: inset(0 100% 0 0); /* 使用 clip-path 遮挡 */
   }
   to {
-    width: 100%;
+    clip-path: inset(0 0 0 0); /* 完全显示 */
   }
 }
 
