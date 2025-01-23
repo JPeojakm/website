@@ -6,18 +6,34 @@
 <div class="more-content">
   <!-- Latest Section -->
   <section class="latest-section">
-    <h2 class="section-title">Latest</h2>
+    <h2 class="section-title">Latest...</h2>
     <div class="content-section">
+      {% set current_type = '' %}
+
       {% for item in portfolio.latest %}
+        {% if item.type != current_type %}
+          {% if not loop.first %}
+            </div> <!-- Close previous category-content div -->
+          {% endif %}
+          <div class="category-group">
+            <p class="category-title"><strong>{{ item.type }}</strong></p>
+            <div class="category-content">
+          {% set current_type = item.type %}
+        {% endif %}
+
         <p>
+          {{ item.title }}
           <strong>
             <a href="{{ item.src }}" class="text-link" target="_blank">{{ item.credit }}</a>
           </strong>
         </p>
-        <p>{{ item.title }}</p>
-        <p>{{ item.type }}</p>
+
+        {% if loop.last %}
+          </div> <!-- Close last category-content div -->
+          </div> <!-- Close last category-group div -->
+        {% endif %}
       {% endfor %}
-    </div>
+    </div> <!-- Close content-section -->
   </section>
 
   <!-- Cite Section -->
@@ -35,6 +51,4 @@
     </div>
   </section>
 </div>
-
-
 {% endblock %}

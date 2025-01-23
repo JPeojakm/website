@@ -8,7 +8,7 @@
 /* 每个帖子容器 */
 .blog-post {
   display: flex; /* 使用 Flexbox 布局 */
-  gap: 30px; /* 图片和文字之间的间距 */
+  gap: 10px; /* 图片和文字之间的间距 */
 }
 
 /* 文字部分 */
@@ -24,7 +24,7 @@
 }
 
 .blog-title-link {
-  color: black; /* 设置标题为黑色 */
+  color: #f9602e; /* 设置标题为黑色 */
   text-decoration: none; /* 移除下划线 */
 }
 
@@ -54,4 +54,39 @@
   height: auto; /* 保持比例 */
   max-height: 500px; /* 限制最大高度 */
   object-fit: cover; /* 裁剪图片内容 */
+}
+
+/* Responsive styles for small screens */
+@media (max-width: 768px) {
+  .blog-post {
+    flex-direction: column; /* 改为垂直布局 */
+    gap: 20px; /* 增加间距 */
+    align-items: center; /* 居中内容 */
+  }
+
+  .blog-text {
+    text-align: center; /* 文字居中 */
+  }
+
+  .blog-title {
+    font-size: 1.8rem; /* 小屏幕调整标题大小 */
+  }
+
+  .blog-description {
+    font-size: 1rem; /* 小屏幕时字体变小 */
+    margin-bottom: 1rem;
+  }
+
+  .blog-meta {
+    font-size: 0.9rem; /* 小屏幕缩小字体 */
+  }
+
+  .blog-image-container {
+    order: -1; /* 将图片移到最前面 */
+  }
+
+  .blog-image {
+    max-width: 100%; /* 小屏幕时宽度适应屏幕 */
+    max-height: 300px; /* 调整最大高度 */
+  }
 }
