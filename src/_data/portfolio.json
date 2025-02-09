@@ -36,7 +36,7 @@
       "slug": "maine-arpa",
       "title": "Dig into Maine counties’ stimulus spending with this ARPA project database",
       "publication": "Maine Monitor",
-      "time": "February 9, 2024",
+      "time": "February 9, 2025",
       "filename": "ARPA.webp",
       "description": "This dashboard details how the state allocated nearly $1 billion through the Maine Jobs and Recovery Plan.",
       "content": [
@@ -79,12 +79,18 @@
       ]
     },
     {
-      "slug": "",
+      "slug": "oyster",
       "title": "Maryland Is Bringing Back Oysters; Will Global Warming Ruin a Decade of Work?",
       "publication": "Personal Project",
       "time": "January, 2025",
       "filename": "oyster.jpg",
-      "link": "https://md-oysters.vercel.app/"
+      "link": "<a href=\"https://md-oysters.vercel.app/\">https://md-oysters.vercel.app/</a>",
+      "content": [
+        {
+          "type": "text",
+          "value": "<em>Read the story<a href=\"https://md-oysters.vercel.app/\"> here</a>.</em>"
+        }
+      ]
     },
     {
       "slug": "small-countries-olympic-medals",
