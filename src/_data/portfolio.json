@@ -33,6 +33,60 @@
   ],
   "dataviz": [
     {
+      "slug": "maine-arpa",
+      "title": "Dig into Maine counties’ stimulus spending with this ARPA project database",
+      "publication": "Maine Monitor",
+      "time": "February 9, 2024",
+      "filename": "ARPA.webp",
+      "description": "This dashboard details how the state allocated nearly $1 billion through the Maine Jobs and Recovery Plan.",
+      "content": [
+        {
+          "type": "text",
+          "value": "<em>Read the original story and interact with the charts on Maine Monitor <a href=\"https://themainemonitor.org/arpa/\">here</a>.</em>"
+        },
+        {
+          "type": "text",
+          "value": "<em>Read our methodology on Maine Monitor <a href=\"https://themainemonitor.org/arpa-methodology/\">here</a>.</em>"
+        },
+        {
+          "type": "text",
+          "value": "<em>Read my blog about this story <a href=\"https://jinpengli.com/blog/arpa.html\">here</a>.</em>"
+        },
+        {
+          "type": "text",
+          "value": "Maine counties received $261 million through the American Rescue Plan Act (ARPA), which pumped billions in federal funding into Maine to help government agencies respond to disruptions caused by the COVID-19 pandemic and invest in critical infrastructure. The deadline to obligate these funds was December 31, 2024, and the deadline to spend them is December 31, 2026."
+        },
+        {
+          "type": "text",
+          "value": "The U.S. Treasury Department directed local governments to use the funds to replace lost public sector revenue; respond to the pandemic’s public health and economic impacts; provide additional compensation for essential workers; invest in water, sewer, and broadband infrastructure; provide emergency relief from natural disasters; support transportation projects; and support community development programs."
+        },
+        {
+          "type": "text",
+          "value": "This <a href=\"https://www.maine.gov/jobsplan/dashboard\">dashboard</a> details how the state allocated nearly $1 billion through the Maine Jobs and Recovery Plan. Counties’ spending decisions have proved harder to track. Because <a href=\"https://themainemonitor.org/awash-in-federal-cash-maine-counties-ponder-limited-ways-to-spend-it/\">county governments in Maine</a> perform fewer functions than counties in many other states, there is less infrastructure to oversee the funds — which for many of them represented an unprecedented windfall."
+        },
+        {
+          "type": "text",
+          "value": "The Maine Monitor reached out to representatives from all 16 counties with questions about their ARPA spending and received a wide range of responses: some were able to provide quarterly reports and color-coded budget documents, others were less forthcoming, for instance simply noting “$10,000,000 for County needs.”"
+        },
+        {
+          "type": "text",
+          "value": "To get a better picture of their budgets, The Maine Monitor worked with the Investigative Reporting Workshop to analyze data from quarterly reports submitted to the Treasury Department. This data is up to date through the end of September 2024, the latest that’s available. It does not reflect the final spending decisions made in the last three months of the year, but it accounts for more than 90% of the allocated funds."
+        },
+        {
+          "type": "text",
+          "value": "Below, you can explore how Maine counties have chosen to spend their ARPA funds."
+        }
+      ]
+    },
+    {
+      "slug": "",
+      "title": "Maryland Is Bringing Back Oysters; Will Global Warming Ruin a Decade of Work?",
+      "publication": "Personal Project",
+      "time": "January, 2025",
+      "filename": "oyster.jpg",
+      "link": "https://md-oysters.vercel.app/"
+    },
+    {
       "slug": "small-countries-olympic-medals",
       "title": "How tiny countries find the Olympic podium",
       "publication": "The Washington Post",

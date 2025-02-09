@@ -15,7 +15,7 @@
 <section class="data-graphics">
   <h2>Data and Graphics</h2>
   <div class="container-fluid">
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
       {% for dataviz in portfolio.dataviz %}
         <div class="col">
           <div class="card text-dark card-has-bg click-col" style="background-image:url('img/data-viz-photo/{{ dataviz.filename }}');">
@@ -24,8 +24,11 @@
               <div class="card-body">
                 <small class="card-meta mb-2">{{ dataviz.publication }}</small>
                 <h4 class="card-title mt-0">
-                  <a href="dataviz/{{ dataviz.slug }}.html" class="text-dark">{{ dataviz.title }}</a>
-                </h4>
+  <a href="{% if dataviz.slug %}dataviz/{{ dataviz.slug }}.html{% else %}{{ dataviz.link }}{% endif %}" class="text-dark" {% if not dataviz.slug %}target="_blank" rel="noopener noreferrer"{% endif %}>
+    {{ dataviz.title }}
+  </a>
+</h4>
+
                 <small><i class="far fa-clock"></i> {{ dataviz.time }}</small>
               </div>
             </div>
