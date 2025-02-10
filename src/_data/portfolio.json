@@ -1,22 +1,28 @@
 {
   "latest": [
     {
-      "credit": "YiMagazine, Jan. 2025",
-      "title": "TikTok's 75-Day \"Lifeline\": Chinese E-commerce Sellers Face a Crossroad (中文)",
-      "src": "https://www.cbnweek.com/article_detail/32498",
-      "type": "Breaking"
+      "credit": "The Maine Monitor, Feb. 2025",
+      "title": "Dig into Maine counties’ stimulus spending with this ARPA project database",
+      "src": "https://themainemonitor.org/arpa/",
+      "type": "Enterprise"
     },
     {
       "credit": "Initium Media, Jan. 2025",
       "title": "How a Land Bill Awakened Political Awareness in Texas’s Chinese American Community  (中文)",
       "src": "https://theinitium.com/article/20250114-international-chinese-american-commuinity-protest-against-texas-property-bill",
-      "type": "Feature"
+      "type": "Enterprise"
     },
     {
       "credit": "YiMagazine, September Issue 2024",
       "title": "TikTok E-commerce: A Race Against the Clock (中文)",
       "src": "https://www.cbnweek.com/article_detail/32203",
-      "type": "Investigation"
+      "type": "Enterprise"
+    },
+    {
+      "credit": "YiMagazine, Jan. 2025",
+      "title": "TikTok's 75-Day \"Lifeline\": Chinese E-commerce Sellers Face a Crossroad (中文)",
+      "src": "https://www.cbnweek.com/article_detail/32498",
+      "type": "Breaking"
     }
   ],
   "cite": [
@@ -95,7 +101,7 @@
     {
       "slug": "small-countries-olympic-medals",
       "title": "How tiny countries find the Olympic podium",
-      "publication": "The Washington Post",
+      "publication": "Washington Post",
       "time": "August 9, 2024",
       "filename": "medal_1.jpg",
       "description": "Low-cost-of-entry sports and new sports open opportunities for small countries to break through, a Post analysis found.",
@@ -262,7 +268,7 @@
       "slug": "usa-gold-medals-paris-olympics-2024",
       "title": "All the ways Team USA dominated the Olympic medal table",
       "heading": "Team USA Paris Olympics | The Post",
-      "publication": "The Washington Post",
+      "publication": "Washington Post",
       "time": "August 11, 2024",
       "filename": "USA_3.png",
       "description": "More than 40 percent of U.S. Olympians will leave Paris with a medal.",
