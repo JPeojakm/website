@@ -1,6 +1,12 @@
 {
   "latest": [
     {
+      "credit": "The Washington Post, Mar. 2025",
+      "title": "How China came to dominate the world in renewable energy",
+      "src": "https://www.washingtonpost.com/climate-solutions/2025/03/03/china-renewable-energy-green-world-leader/",
+      "type": "Enterprise"
+    },
+    {
       "credit": "The Maine Monitor, Feb. 2025",
       "title": "Dig into Maine counties’ stimulus spending with this ARPA project database",
       "src": "https://themainemonitor.org/arpa/",
@@ -27,8 +33,18 @@
   ],
   "cite": [
     {
+      "credit": "端闻Initium Media Podcast, Feb. 2025",
+      "intro": "",
+      "src": "https://www.youtube.com/watch?v=cihVwcKhqDM&t=1108s"
+    },
+    {
+      "credit": "News Center Maine, Feb. 2025",
+      "intro": "",
+      "src": "https://www.newscentermaine.com/video/news/regional/the-maine-monitor/maine-monitor-a-closer-look-at-arpa-spending-in-maine/97-60e4088f-9d96-4b6d-981d-79efe435d658"
+    },
+    {
       "credit": "Forbes, Aug. 2024",
-      "intro": "Forbes dedicated half the piece to citing my research, describing it as one of “some of the best and most insightful pieces of research” and “a superb analysis of the Olympic medals tables”",
+      "intro": "Forbes dedicated half the piece to citing my research, describing it as one of “the best and most insightful pieces of research” and “a superb analysis of the Olympic medals tables”",
       "src": "https://www.forbes.com/sites/stevendesmyter/2024/08/19/post-olympics-analysis-a-reader/"
     },
     {
@@ -38,6 +54,20 @@
     }
   ],
   "dataviz": [
+    {
+      "slug": "china-energy",
+      "title": "How China came to dominate the world in renewable energy",
+      "publication": "The Washington Post",
+      "time": "March 3, 2025",
+      "filename": "chinaenergy.png",
+      "description": "China now eclipses every other country in the world — including the United States — in the green technologies of the future. Here’s how it achieved this lead.",
+      "content": [
+        {
+          "type": "text",
+          "value": "<em>Read the original story and interact with the charts on Washington Post <a href=\"https://www.washingtonpost.com/climate-solutions/2025/03/03/china-renewable-energy-green-world-leader/\">here</a>.</em>"
+        }
+      ]
+    },
     {
       "slug": "maine-arpa",
       "title": "Dig into Maine counties’ stimulus spending with this ARPA project database",
@@ -53,10 +83,6 @@
         {
           "type": "text",
           "value": "<em>Read our methodology on Maine Monitor <a href=\"https://themainemonitor.org/arpa-methodology/\">here</a>.</em>"
-        },
-        {
-          "type": "text",
-          "value": "<em>Read my blog about this story <a href=\"https://jinpengli.com/blog/arpa.html\">here</a>.</em>"
         },
         {
           "type": "text",
