@@ -22,10 +22,8 @@
         {% endif %}
 
         <p>
-          {{ item.title }}
-          <strong>
-            <a href="{{ item.src }}" class="text-link" target="_blank">{{ item.credit }}</a>
-          </strong>
+          <strong>{{ item.credit }}</strong>: 
+          <a href="{{ item.src }}" class="text-link" target="_blank">{{ item.title }}</a>
         </p>
 
         {% if loop.last %}
