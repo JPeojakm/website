@@ -34,18 +34,43 @@
   margin-bottom: 20px; /* 每段文字之间的间距 */
 }
 
-.intro a {
-  color: #fe5a24; /* 链接颜色 */
-  text-decoration: none; /* 去掉下划线 */
+.link {
+  color: black;
+  text-decoration: none;
+  position: relative;
+  display: inline-block; /* 让 a 能撑开大小，保证 ::after 生效 */
+  transition: background-color 0.2s ease-in-out;
 }
 
-.intro a:hover {
-  text-decoration: underline; /* 悬停下划线 */
+/* 默认状态：底部只显示一条高亮条 */
+.link::after {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  left: -0.1em;
+  right: -0.1em;
+  top: 66%; /* 初始状态，底部三分之一 */
+  height: 28%; /* 确保矩形大小是 33% 左右 */
+  background-color: rgba(79, 192, 141, 0.5);
+  transition: top 200ms cubic-bezier(0, 0.8, 0.13, 1),
+    height 200ms cubic-bezier(0, 0.8, 0.13, 1);
 }
 
-.intro .story-link {
-  text-decoration: underline; /* 添加下划线 */
-  color: currentColor; /* 颜色与文本一致 */
+/* 悬停时：底部高亮扩展到整个文本 */
+.link:hover::after {
+  top: 0;
+  height: 100%;
+}
+
+/* 点击时：背景填满并且变得更圆 */
+.link:active {
+  background-color: rgba(79, 192, 141, 0.8);
+  border-radius: 6px;
+}
+
+/* 确保 p 不会隐藏 ::after */
+.intro p {
+  overflow: visible !important;
 }
 
 #typewriter {
