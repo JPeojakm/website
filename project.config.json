@@ -8,13 +8,6 @@
   ],
   "to_bake": [
     {
-      "template": "bake-map",
-      "data": "portfolio",
-      "array": "maps",
-      "slug": "slug",
-      "path": "maps"
-    },
-    {
       "template": "bake-dataviz",
       "data": "portfolio",
       "array": "dataviz",

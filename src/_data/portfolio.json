@@ -45,10 +45,26 @@
   ],
   "dataviz": [
     {
+      "slug": "option-oportunism",
+      "title": "Timing is money",
+      "publication": "Business Insider",
+      "time": "June, 2025",
+      "filename": "options.png",
+      "link": "https://www.businessinsider.com/options-opportunism-executive-stock-grant-timing-2025-6"
+    },
+    {
+      "slug": "datacenter",
+      "title": "The AI Boom",
+      "publication": "Business Insider",
+      "time": "June, 2025",
+      "filename": "datacenter.png",
+      "link": "https://www.businessinsider.com/data-centers-northern-virginia-noise-air-pollution-cost-2025-5"
+    },
+    {
       "slug": "china-energy",
       "title": "How China came to dominate the world in renewable energy",
       "publication": "The Washington Post",
-      "time": "March 3, 2025",
+      "time": "March, 2025",
       "filename": "chinaenergy.png",
       "description": "China now eclipses every other country in the world — including the United States — in the green technologies of the future. Here’s how it achieved this lead.",
       "content": [
@@ -70,7 +86,7 @@
       "slug": "maine-arpa",
       "title": "Dig into Maine counties’ stimulus spending with this ARPA project database",
       "publication": "Maine Monitor",
-      "time": "February 9, 2025",
+      "time": "February, 2025",
       "filename": "ARPA.webp",
       "description": "This dashboard details how the state allocated nearly $1 billion through the Maine Jobs and Recovery Plan.",
       "content": [
@@ -126,7 +142,7 @@
       "slug": "small-countries-olympic-medals",
       "title": "How tiny countries find the Olympic podium",
       "publication": "The Washington Post",
-      "time": "August 9, 2024",
+      "time": "August, 2024",
       "filename": "medal_1.jpg",
       "description": "Low-cost-of-entry sports and new sports open opportunities for small countries to break through, a Post analysis found.",
       "content": [
@@ -447,16 +463,22 @@
           }
         }
       ]
-    }
-  ],
-  "maps": [
+    },
     {
       "slug": "arizona_heat",
       "title": "Extreme Heat And Migration: Insights From The Arizona Border",
       "publication": "School Project",
       "time": "2023 Fall",
-      "image": "Arizona_heat",
-      "description": [
+      "filename": "Arizona_heat.jpg",
+      "content": [
+        {
+          "type": "img",
+          "value": {
+            "filename": "../img/data-viz-photo/Arizona_heat.jpg",
+            "caption": "",
+            "alt": "Arizona Heat"
+          }
+        },
         {
           "type": "text",
           "value": "The US Southwestern border is increasingly recognized as one of the world's most perilous land crossings. Alongside the myriad challenges faced by undocumented migrants, extreme heatwaves have emerged as a formidable barrier. Recently, there's been an increase in deaths caused by extreme heat, as noted by U.S. Customs and Border Protection."
@@ -516,16 +538,6 @@
       "filename": "arpa_treasury.jpg",
       "description": "The project dealt with messy government data and a ton of manual coding. Data validation? A must.",
       "content": []
-    }
-  ],
-  "graphics": [
-    {
-      "slug": "option-oportunism",
-      "title": "Timing is money",
-      "publication": "Business Insider",
-      "time": "June, 2025",
-      "filename": "options.png",
-      "link": "<a href=\"https://www.businessinsider.com/options-opportunism-executive-stock-grant-timing-2025-6#:~:text=A%20Business%20Insider%20analysis%20of,scheduled%20stock%20options%20grant%20dates\">https://www.businessinsider.com/options-opportunism-executive-stock-grant-timing-2025-6</a>"
     }
   ]
 }

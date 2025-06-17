@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Jinpeng Li ｜event venue</title>
-    <meta name="description" content="event venue by Geocoding; Spatial analysis">
+    <title>Jinpeng Li ｜Extreme Heat And Migration: Insights From The Arizona Border</title>
+    <meta name="description" content="Extreme Heat And Migration: Insights From The Arizona Border by ">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -56,32 +56,107 @@
 
 
     
-<article class="container">
-  <div class="row">
-    <div class="col-sm-4">
-      <img src="../img/maps-photo/image2.jpg" alt="event_venue" class="img-fluid mb-4">
+<article class="story-container">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <h1>Extreme Heat And Migration: Insights From The Arizona Border</h1>
     </div>
-    <div class="col-sm-8">
-      <h1>event venue</h1>
-      
+  </div>
 
-  
-    
-<p>FLUX is an acclaimed annual art event in Pittsburgh, Pennsylvania, that highlights emerging artists. This year, faced with budget cuts, the event organizers have hired a marketing analyst to efficiently target potential attendees using limited data on past participation.</p>
-
-  
-
-  
-    
-<p>The analyst's task is to analyze spatial data to find where previous attendees live, identifying clusters for focused marketing and at least one zip code for concentrated outreach. Additionally, the analyst may suggest a suitable location for the next event. This approach uses geocoding, cluster analysis, and hot spot analysis to overcome budget constraints and maintain the event's high standard.</p>
-
-  
-
- 
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <!-- 使用 id "prose-content" 来加载原始文本 -->
+      <div id="prose-content">
+        
+          
+            <img src="../img/data-viz-photo/Arizona_heat.jpg" alt="Arizona Heat">
+            
+          
+        
+          
+            
+              <p>The US Southwestern border is increasingly recognized as one of the world's most perilous land crossings. Alongside the myriad challenges faced by undocumented migrants, extreme heatwaves have emerged as a formidable barrier. Recently, there's been an increase in deaths caused by extreme heat, as noted by U.S. Customs and Border Protection.</p>
+            
+          
+        
+          
+            
+              <p>As a data reporter, I hope to provide more quantitative analysis and map visualizations to support these migrant stories. My project aims to understand how rising global temperatures affect migrant movements in this region. It will look at how water and emergency beacons are spread across the area, with the goal of finding ways to make the journey safer for migrants.</p>
+            
+          
+        
+          
+            
+              <p>Firstly, here is some background. I gathered weather data from NOAA and migrant information from the International Organization for Migration (IOM) and used R to analyze them. As Figure 1 shows, from 2019 to 2023, during the hottest months of June to September, there has been a notable increase in deaths among migrants trying to cross borders without permission. So, how do rising temperatures influence migration patterns along the Arizona border?</p>
+            
+          
+        
+          
+            
+              <p>We define missing migrants as individuals who attempt to cross borders without authorization and are later found deceased by non-governmental organizations (NGOs) or patrol officers, without definitive identification at the time of discovery. Heat-related missing migrants are those whose deaths are inferred to be caused by heat, after excluding known causes like violence or drowning.</p>
+            
+          
+        
+          
+            
+              <p>Since data on missing migrants is difficult to obtain and the specific reasons for their disappearance are often unknown, I reached out to the International Organization for Migration and an Arizona local NGO, Humane Borders, for their datasets. To increase accuracy, I focused on missing migrant cases from June to September, the hottest months in Arizona. I also narrowed down the data to include cases that could be related to heat-related causes of death.</p>
+            
+          
+        
+          
+            
+              <p>Figure 2 provides very rich information, through this map, we can get some facts about Arizona: 1) Arizona is characterized by limited water sources and cities concentrated in the central region. 2) Tucson has become one of the fastest-growing cities in recent years due to immigration. 3) It has two patrol stations. 4) Rescue Beacons are primarily located in the lower-left corner, in Yuma County.</p>
+            
+          
+        
+          
+            
+              <p>I use the Heat Index and Geographically Weighted Regression (GWR) as the main methods for this research. For my research on the impact of heat, I initially planned to use temperature and other weather data. However, I realized that this data might not clearly show trends over five years.</p>
+            
+          
+        
+          
+            
+              <p>Then, I discovered the Heat Index in a research paper. Heat Index made by the nonprofit First Street Foundation, calculates the heat risk facing each property in the contiguous United States over the next 30 years, the length of a typical mortgage, providing some of the most detailed nationwide estimates. It uses an average temperature value over seven years, making it a more objective choice for my project. To analyze the data, I'm applying a weighted approach to the Heat Index.</p>
+            
+          
+        
+          
+            
+              <p>As the map indicates, the deep red areas represent the hottest regions, while the lighter colored areas are relatively cooler. However, it's important to note that when looking at the national map, Arizona tends to be overall warmer in the summer. The colorful points on the map represent missing migrants, with different colors indicating different years.</p>
+            
+          
+        
+          
+            
+              <p>Finally, I conducted a Geographically Weighted Regression (GWR), combining factors such as heat, distance from cities, and the presence of rescue beacons, to see how they influence migrant safety. I gained some insights from the results. Migrants should avoid walking in the FID4, 1, and 51 census tracts to minimize health risks. Additionally, NGOs and the US Border Patrol should consider installing more beacons eastward to enhance safety.</p>
+            
+          
+        
+          
+            
+              <p>So far, this is all my work. I sent the results to Humane Borders, hoping it can contribute to their efforts in helping undocumented immigrants protect their lives. Of course, this project has many limitations, such as my inability to verify the migrant data since statistics on heat-related deaths are hard to compile. Also, the heat index data was last updated in July, not including data for August and September.</p>
+            
+          
+        
+          
+            
+              <p>In the future, I aim to extend the study to encompass the entire US southern border for a more comprehensive analysis.</p>
+            
+          
+        
+      </div>
     </div>
   </div>
 </article>
 
+<!-- 在页面加载完成后，将 Markdown 转换为 HTML -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var contentElement = document.getElementById('prose-content');
+    contentElement.innerHTML = marked(contentElement.textContent);
+  });
+</script>
 
 
     

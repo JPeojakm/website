@@ -11,39 +11,19 @@
 </div>
 
 <div class="works-sections">
-
-  <!-- Interactive Graphics -->
-  <section class="graphics">
-    <h2>Interactive Graphics</h2>
-    <div class="container-fluid">
-      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
-        {% for graphic in portfolio.graphics %}
-          <div class="col">
-            <div class="work-item">
-              <a href="{{ graphic.link }}" target="_blank" rel="noopener noreferrer">
-                <img src="img/graphic-photo/{{ graphic.filename }}" alt="{{ graphic.title }}" class="work-image">
-                <h4 class="work-title">{{ graphic.title }}</h4>
-                <div class="work-meta">
-                  <span class="publication">{{ graphic.publication }}</span>
-                   {% if graphic.time %}<span class="time">{{ graphic.time }}</span>{% endif %}
-                </div>
-              </a>
-            </div>
-          </div>
-        {% endfor %}
-      </div>
-    </div>
-  </section>
-
-  <!-- Data Reporting -->
+  <!-- All Projects -->
   <section class="data-graphics">
-    <h2>Data Reporting</h2>
+    <h2>My Work</h2>
     <div class="container-fluid">
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
         {% for dataviz in portfolio.dataviz %}
           <div class="col">
             <div class="work-item">
-              <a href="{% if dataviz.slug %}dataviz/{{ dataviz.slug }}.html{% else %}{{ dataviz.link }}{% endif %}" {% if not dataviz.slug %}target="_blank" rel="noopener noreferrer"{% endif %}>
+              {% if dataviz.link %}
+                <a href="{{ dataviz.link }}" target="_blank" rel="noopener noreferrer">
+              {% else %}
+                <a href="dataviz/{{ dataviz.slug }}.html">
+              {% endif %}
                 <img src="img/data-viz-photo/{{ dataviz.filename }}" alt="{{ dataviz.title }}" class="work-image">
                 <h4 class="work-title">{{ dataviz.title }}</h4>
                 <div class="work-meta">
@@ -57,48 +37,5 @@
       </div>
     </div>
   </section>
-
-  <!-- Maps -->
-  <section class="cartography-projects">
-    <h2>Maps</h2>
-    <div class="container-fluid">
-      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-        {% for map in portfolio.maps %}
-          <div class="col">
-            <div class="work-item">
-              <a href="maps/{{ map.slug }}.html">
-                <img src="img/maps-photo/{{ map.image }}.jpg" alt="{{ map.title }}" class="work-image">
-                <h4 class="work-title">{{ map.title }}</h4>
-                <div class="work-meta">
-                  <span class="publication">Cartography</span>
-                </div>
-              </a>
-            </div>
-          </div>
-        {% endfor %}
-      </div>
-    </div>
-  </section>
-
-  <!-- Interaction Design -->
-  <section class="interaction-design">
-    <h2>Interaction Design</h2>
-    <div class="container-fluid">
-      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-        <div class="col">
-          <div class="work-item">
-            <a href="Musicapp.html">
-              <img src="img/musicapp_img/banner.png" alt="Music App" class="work-image">
-              <h4 class="work-title">Music App</h4>
-              <div class="work-meta">
-                <span class="publication">Interaction Design</span>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
 </div>
 {% endblock %}
