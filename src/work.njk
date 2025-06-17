@@ -11,104 +11,94 @@
 </div>
 
 <div class="works-sections">
- <!-- Data and Graphics -->
-<section class="data-graphics">
-  <h2>Data and Graphics</h2>
-  <div class="container-fluid">
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
-      {% for dataviz in portfolio.dataviz %}
-        <div class="col">
-          <div class="card text-dark card-has-bg click-col" style="background-image:url('img/data-viz-photo/{{ dataviz.filename }}');">
-            <img class="card-img d-none" src="img/data-viz-photo/{{ dataviz.filename }}" alt="{{ dataviz.title }}">
-            <div class="card-img-overlay d-flex flex-column">
-              <div class="card-body">
-                <small class="card-meta mb-2">{{ dataviz.publication }}</small>
-                <h4 class="card-title mt-0">
-  <a href="{% if dataviz.slug %}dataviz/{{ dataviz.slug }}.html{% else %}{{ dataviz.link }}{% endif %}" class="text-dark" {% if not dataviz.slug %}target="_blank" rel="noopener noreferrer"{% endif %}>
-    {{ dataviz.title }}
-  </a>
-</h4>
 
-                <small><i class="far fa-clock"></i> {{ dataviz.time }}</small>
-              </div>
-            </div>
-          </div>
-        </div>
-      {% endfor %}
-    </div>
-  </div>
-</section>
-
-
-  <!-- Cartography Projects -->
-<section class="cartography-projects">
-  <h2>Cartography Projects</h2>
-  <div class="container-fluid">
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
-       {% for map in portfolio.maps %}
+  <!-- Interactive Graphics -->
+  <section class="graphics">
+    <h2>Interactive Graphics</h2>
+    <div class="container-fluid">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        {% for graphic in portfolio.graphics %}
           <div class="col">
-            <div class="card text-dark card-has-bg click-col" style="background-image:url('img/maps-photo/{{ map.image }}.jpg');">
-              <img src="img/maps-photo/{{ map.image }}.jpg" class="card-img d-none" alt="{{ map.title }}">
-              <div class="card-img-overlay d-flex flex-column">
-                <div class="card-body">
-                  <small class="card-meta mb-2">Cartography</small>
-                  <h4 class="card-title mt-0">
-                    <a href="maps/{{ map.slug }}.html" class="text-dark">{{ map.title }}</a>
-                  </h4>
+            <div class="work-item">
+              <a href="{{ graphic.link }}" target="_blank" rel="noopener noreferrer">
+                <img src="img/graphic-photo/{{ graphic.filename }}" alt="{{ graphic.title }}" class="work-image">
+                <h4 class="work-title">{{ graphic.title }}</h4>
+                <div class="work-meta">
+                  <span class="publication">{{ graphic.publication }}</span>
+                   {% if graphic.time %}<span class="time">{{ graphic.time }}</span>{% endif %}
                 </div>
-              </div>
+              </a>
             </div>
           </div>
-       {% endfor %}
+        {% endfor %}
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Interaction Design -->
-<section class="interaction-design">
-  <h2>Interaction Design</h2>
-  <div class="container-fluid">
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
-      <div class="col">
-        <div class="card text-dark card-has-bg click-col" style="background-image:url('img/musicapp_img/banner.png');">
-          <img src="img/musicapp_img/banner.jpg" class="card-img d-none" alt="Music App">
-          <div class="card-img-overlay d-flex flex-column">
-            <div class="card-body">
-              <small class="card-meta mb-2">Interaction Design</small>
-              <h4 class="card-title mt-0">
-                <a href="Musicapp.html" class="text-dark">Music App</a>
-              </h4>
+  <!-- Data Reporting -->
+  <section class="data-graphics">
+    <h2>Data Reporting</h2>
+    <div class="container-fluid">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        {% for dataviz in portfolio.dataviz %}
+          <div class="col">
+            <div class="work-item">
+              <a href="{% if dataviz.slug %}dataviz/{{ dataviz.slug }}.html{% else %}{{ dataviz.link }}{% endif %}" {% if not dataviz.slug %}target="_blank" rel="noopener noreferrer"{% endif %}>
+                <img src="img/data-viz-photo/{{ dataviz.filename }}" alt="{{ dataviz.title }}" class="work-image">
+                <h4 class="work-title">{{ dataviz.title }}</h4>
+                <div class="work-meta">
+                  <span class="publication">{{ dataviz.publication }}</span>
+                  {% if dataviz.time %}<span class="time">{{ dataviz.time }}</span>{% endif %}
+                </div>
+              </a>
             </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <!-- Maps -->
+  <section class="cartography-projects">
+    <h2>Maps</h2>
+    <div class="container-fluid">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        {% for map in portfolio.maps %}
+          <div class="col">
+            <div class="work-item">
+              <a href="maps/{{ map.slug }}.html">
+                <img src="img/maps-photo/{{ map.image }}.jpg" alt="{{ map.title }}" class="work-image">
+                <h4 class="work-title">{{ map.title }}</h4>
+                <div class="work-meta">
+                  <span class="publication">Cartography</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <!-- Interaction Design -->
+  <section class="interaction-design">
+    <h2>Interaction Design</h2>
+    <div class="container-fluid">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <div class="col">
+          <div class="work-item">
+            <a href="Musicapp.html">
+              <img src="img/musicapp_img/banner.png" alt="Music App" class="work-image">
+              <h4 class="work-title">Music App</h4>
+              <div class="work-meta">
+                <span class="publication">Interaction Design</span>
+              </div>
+            </a>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-
-<!-- Writing and Notes -->
-<section class="writing-notes">
-  <h2>Writings</h2>
-  <div class="container-fluid">
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
-       {% for writing in home.writing %}
-        <div class="col">
-          <div class="card text-dark card-has-bg click-col" style="background-image:url('img/writing-photo/{{ writing.image }}');">
-            <img src="img/writing-photo/{{ writing.image }}" class="card-img d-none" alt="{{ writing.title }}">
-            <div class="card-img-overlay d-flex flex-column">
-              <div class="card-body">
-                <small class="card-meta mb-2">Writings</small>
-                <h4 class="card-title mt-0">
-                  <a href="{{ writing.source }}" class="text-dark">{{ writing.name }}</a>
-                </h4>
-              </div>
-            </div>
-          </div>
-        </div>
-       {% endfor %}
-    </div>
-  </div>
-</section>
 </div>
 {% endblock %}

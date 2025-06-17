@@ -1,7 +1,7 @@
 // 全局内容区域通用样式
 .content-sections {
-  max-width: 1500px; // 设置最大宽度
-  margin: 0 auto; // 居中对齐
+  max-width: 1500px;
+  margin: 0 auto;
   padding: 0 2rem;
 
   @media (min-width: 768px) {
@@ -9,18 +9,81 @@
   }
 
   h2 {
-    margin: 2rem 0; // 标题上下边距
+    margin: 2rem 0;
     font-family: 'Inconsolata', monospace;
     font-size: 1.5rem;
     color: #333;
   }
 }
 
-// 卡片统一样式（应用于所有内容部分）
+// 新的工作项目样式
+.work-item {
+  margin-bottom: 2rem;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      text-decoration: none;
+      color: inherit;
+
+      .work-image {
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+      }
+    }
+  }
+
+  .work-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .work-title {
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+  }
+
+  .work-meta {
+    font-family: 'Inconsolata', sans-serif;
+    font-size: 0.9rem;
+    color: #666;
+
+    .publication {
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .time {
+      margin-left: 0.5rem;
+      font-weight: 400;
+
+      &:before {
+        content: '• ';
+        margin-right: 0.25rem;
+      }
+    }
+  }
+}
+
+// 旧的卡片样式（如果你还需要在其他地方使用）
 .card {
   border: none;
   overflow: hidden;
-  border-radius: 15px; // 圆角
+  border-radius: 15px;
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15);
   transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
 
@@ -32,8 +95,8 @@
   }
 
   &.card-has-bg {
-    background-size: 75%; // 背景图比例
-    background-position: center center; // 背景图位置
+    background-size: 75%;
+    background-position: center center;
     background-repeat: no-repeat;
     position: relative;
 
@@ -44,28 +107,28 @@
       right: 0;
       bottom: 0;
       left: 0;
-      background: rgba(247, 247, 233, 0.4); // 米色背景，透明度 70%
-      z-index: 1; // 确保在背景图之上
+      background: rgba(247, 247, 233, 0.4);
+      z-index: 1;
     }
 
     &:hover {
-      transform: scale(0.98); // 缩放动画
-      box-shadow: 0 0 5px -2px rgba(0, 0, 0, 0.3); // 添加阴影动效
+      transform: scale(0.98);
+      box-shadow: 0 0 5px -2px rgba(0, 0, 0, 0.3);
     }
 
     .card-body {
       font-family: 'Inconsolata', sans-serif;
       color: #333;
-      z-index: 2; // 确保文字内容在背景之上
+      z-index: 2;
       position: relative;
 
       .card-title {
-        font-size: 1rem; // 标题字体大小
+        font-size: 1rem;
         font-weight: 700;
       }
 
       .card-meta {
-        color: #000; // publication 字体颜色
+        color: #000;
         text-transform: uppercase;
         font-weight: 500;
         letter-spacing: 1.5px;
@@ -74,15 +137,12 @@
   }
 }
 
-// 特定内容部分继承通用样式和卡片效果
+// 特定内容部分继承通用样式
 .works-intro,
+.graphics,
 .data-graphics,
 .cartography-projects,
 .interaction-design,
 .writing-notes {
   @extend .content-sections;
-
-  .card {
-    @extend .card;
-  }
 }

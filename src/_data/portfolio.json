@@ -25,7 +25,7 @@
       "type": "Enterprise"
     },
     {
-      "credit": "24-01. YiMagazine",
+      "credit": "25-01. YiMagazine",
       "title": "TikTok US Ban (中文)",
       "src": "https://www.cbnweek.com/article_detail/32498",
       "type": "Breaking"
@@ -125,7 +125,7 @@
     {
       "slug": "small-countries-olympic-medals",
       "title": "How tiny countries find the Olympic podium",
-      "publication": "Washington Post",
+      "publication": "The Washington Post",
       "time": "August 9, 2024",
       "filename": "medal_1.jpg",
       "description": "Low-cost-of-entry sports and new sports open opportunities for small countries to break through, a Post analysis found.",
@@ -292,7 +292,7 @@
       "slug": "usa-gold-medals-paris-olympics-2024",
       "title": "All the ways Team USA dominated the Olympic medal table",
       "heading": "Team USA Paris Olympics | The Post",
-      "publication": "Washington Post",
+      "publication": "The Washington Post",
       "time": "August 11, 2024",
       "filename": "USA_3.png",
       "description": "More than 40 percent of U.S. Olympians will leave Paris with a medal.",
@@ -380,123 +380,6 @@
       ]
     },
     {
-      "slug": "h1b",
-      "title": "Invisible Wall: How the H-1B Visa Process Creates Challenges for International Students in the US",
-      "publication": "Personal Project",
-      "time": "May 2023",
-      "filename": "h-1b.jpg",
-      "content": [
-        {
-          "type": "text",
-          "value": "After obtaining his physics doctorate in physics degree from an Ivy League institution, Leo Zheng found it challenging to secure a job in the U.S. For eight months, he repeated the same routine every day: waking up early, browsing through LinkedIn, and submitting a job application every thirty minutes. As he grew increasingly hopeless and contemplated returning to China, he received an unexpected offer from Apple."
-        },
-        {
-          "type": "text",
-          "value": "But this still did not guarantee that he could stay and work in the U.S."
-        },
-        {
-          "type": "text",
-          "value": "In the 2022 fiscal year, over 478,000 individuals like Zheng submitted their H-1B visa petitions to the U.S. Citizenship and Immigration Services (USCIS), the federal agency that awards H-1B visas. Because of the overwhelming number of H-1B applications, the agency conducts a lottery system to determine which applications they will review. Ultimately, only 26.36% of the applicants qualified for review, a percentage that continues to decrease year after year."
-        },
-        {
-          "type": "img",
-          "value": {
-            "filename": "../img/data-viz-photo/h-1b.jpg",
-            "caption": "In the 2022 fiscal year, over 478,000 individuals like Zheng submitted their H-1B visa petitions to the USCIS.",
-            "alt": "H-1B visa people"
-          }
-        },
-        {
-          "type": "text",
-          "value": "In 2020, the Trump administration implemented an overhaul of the H-1B visa program by moving the registration process online. This change resulted in a reduction of the petition fees to a mere $10. If an applicant was chosen in the lottery, they would be required to pay all the related visa fees to ensure that their application was reviewed in detail."
-        },
-        {
-          "type": "text",
-          "value": "Prior to this change, U.S. employers had to create full petitions for their candidates, which incurred costly fees to file, and then enter a lottery that usually commenced on April 1st."
-        },
-        {
-          "type": "text",
-          "value": "​​  The new registration system, however, significantly reduced the barriers to entry, potentially leading to the submission of duplicate applications."
-        },
-        {
-          "type": "text",
-          "value": "USCIS found that a few companies entered the same applicants into the lottery multiple times to artificially increase their chances of winning a visa. This caused a record-high demand of 781,000 entries for 85,000 visa slots this year."
-        },
-        {
-          "type": "text",
-          "value": "“Many individuals attempted to game the system by submitting multiple applications through different companies, causing a massive surge of 300,000 additional applications in 2023,\" said Chuck Guo, an immigration lawyer with six years of experience. \"This is unfair and dilutes the chances of others in the lottery.\""
-        },
-        {
-          "type": "text",
-          "value": "After graduation, international students typically use their \"Optional Practical Training\" to find a job, and then apply for an H-1B visa to legally work in the U.S. The H-1B visa, established in 1990, has been the primary way for companies to hire foreign employees with college degrees, including those who studied in the U.S."
-        },
-        {
-          "type": "text",
-          "value": "\"For the past 30 years, the U.S. has not updated its immigration laws, despite the population doubling and the economy growing twice as large during that time. However, the number of H-1B visas has not significantly increased.” said Guo."
-        },
-        {
-          "type": "img",
-          "value": {
-            "filename": "../img/data-viz-photo/h1b_map.png",
-            "caption": "Both Texas and the Bay Area had three cities where employers filed more than 10,000 H-1B petitions in 2022.",
-            "alt": "H-1B visa map"
-          }
-        },
-        {
-          "type": "text",
-          "value": "According to Guo, he has noticed a significant increase in the scrutiny of legal immigrants by the immigration agency, resulting in longer processing times and unresponsive departments."
-        },
-        {
-          "type": "text",
-          "value": "There are also certain trends among H-1B applicants in terms of the cities and professions they apply for."
-        },
-        {
-          "type": "text",
-          "value": "Zheng explains that although international students studying STEM majors and eligible for three chances to participate in the H-1B lottery during their OPT period, they often work for positions such as \"software engineer\" or \"data scientist\" at large tech companies. In the past five years, over 60% of H-1B applicants have been employed in computer science and data science roles."
-        },
-        {
-          "type": "img",
-          "value": {
-            "filename": "../img/data-viz-photo/h1b_applications.png",
-            "caption": "Over 60% of H-1B visa applicants work in CS-related jobs",
-            "alt": "H-1B visa applications"
-          }
-        },
-        {
-          "type": "text",
-          "value": "Additionally, H-1B applicants have relatively high average salaries. For instance, in 2022, H-1B applicants in California earned an average annual salary of over $120,000, with those in Washington and New York following closely behind at $114,000 and $97,000, respectively."
-        },
-        {
-          "type": "text",
-          "value": "\"This is a trend. The H-1B visa requires applicants to have a bachelor's degree or higher, so positions are often located in big cities. And the legal and immigration fees are not small amounts, so it's usually larger companies that apply,\" said Guo."
-        },
-        {
-          "type": "text",
-          "value": "Both Texas and the Bay Area had three cities where employers filed more than 10,000 H-1B petitions in 2022. In Texas, the cities were Austin, Plano, and Dallas. Meanwhile, New York City had the highest number of H-1B petitions filed by employers, with over 30,000."
-        },
-        {
-          "type": "text",
-          "value": "Even if you are selected for the H-1B lottery, it does not guarantee that you will receive the visa."
-        },
-        {
-          "type": "text",
-          "value": "Zheng encountered a problem when he applied for his H-1B visa. The immigration agency determined that his doctoral degree was not in line with data science and requested additional documentation."
-        },
-        {
-          "type": "text",
-          "value": "In recent years, the government has gradually lifted restrictions on H-1B visas, resulting in a higher approval rate during this period. In the 2022 fiscal year, the approval rate was 98%."
-        },
-        {
-          "type": "text",
-          "value": "The government has proposed increasing the registration fee to $215, which is expected to be effective for next year's lottery. Additionally, the agency intends to draft regulations to prevent future fraud."
-        },
-        {
-          "type": "text",
-          "value": "To attract global talent, Guo believes that the United States should have a more comprehensive and fair consideration for legal immigrants."
-        }
-      ]
-    },
-    {
       "slug": "ChinaAI",
       "title": "Hiring data tells you Top 10 Chinese Company in the race to hire AI Talent",
       "publication": "The Abacus",
@@ -564,196 +447,6 @@
           }
         }
       ]
-    },
-    {
-      "slug": "us-pop",
-      "title": "US Population New Change",
-      "publication": "Personal Project",
-      "time": "July 2023",
-      "filename": "pop.gif",
-      "content": [
-        {
-          "type": "text",
-          "value": "<em>This visualization was created using Svelte.js. You can find the code here.</em>"
-        },
-        {
-          "type": "text",
-          "value": "In June 2023, the Census Bureau released new population data. I used Svelte.js to create this visualization. The data granularity extends to the county level. After processing the entire dataset in R, I selected the top 100 counties based on population to compare the changes from 2020 to 2022, hoping to discern post-pandemic migration trends across different parts of the United States."
-        },
-        {
-          "type": "text",
-          "value": "## How I Made This Visualization"
-        },
-        {
-          "type": "text",
-          "value": "Exploring visualization options. The states are divided into four main regions according to the 1950 Census Bureau standards: Northeast, South, Midwest, and West, represented in the visualization by blue, pink, yellow, and grey respectively."
-        },
-        {
-          "type": "text",
-          "value": "Each bubble represents a county. You can arrange the bubbles by state location. Click anywhere on the chart to interact. To enhance user interaction, the chart is responsive, includes hover interactions, and features meaningful peripheral elements."
-        },
-        {
-          "type": "text",
-          "value": "My data.js looks like this:"
-        },
-        {
-          "type": "img",
-          "value": {
-            "filename": "../img/data-viz-photo/pop_data.png",
-            "caption": "population change",
-            "alt": "population data"
-          }
-        },
-        {
-          "type": "text",
-          "value": "<h3>Using D3-force for Svelte Visualizations</h3>"
-        },
-        {
-          "type": "text",
-          "value": "Before using D3-force, I generally apply fixed x and y positions to each circle. D3-force, like a physics engine, determines the position of each circle. I was inspired by Ben Tanen’s tutorial on ObservableHQ."
-        },
-        {
-          "type": "text",
-          "value": "For this chart, I wanted three forces: forceX, forceY, and forceCollide. I mapped the population change percentage column to the forceX when grouped by region and the forceY force. ForceCollide ensures no two circles overlap."
-        },
-        {
-          "type": "text",
-          "value": "<h3>Drawing Circles</h3>"
-        },
-        {
-          "type": "text",
-          "value": "I use SVG to draw circles. One important aspect is to use an {#each} block to iterate over our data. We also use the “g” element to wrap our inner chart, allowing us to add axes later and position them correctly."
-        },
-        {
-          "type": "text",
-          "value": "<h3>Making Circles Reactive and Responsive</h3>"
-        },
-        {
-          "type": "text",
-          "value": "I’m actually very confused about using the .on('tick') function. My bubbles always don’t fit in the window. The issue here is that the simulation is re-instantiated every time any of its constituent elements change. Because we are using $: to instantiate the simulation, we essentially overwrite the previous simulation with a new one every time we resize the window."
-        },
-        {
-          "type": "text",
-          "value": "<h3>Connecting Data with Circles</h3>"
-        },
-        {
-          "type": "text",
-          "value": "So far, I’ve connected each circle's y-position to its location and its x-position to its population change percentage. In this step, I connected the circle’s color to its grouping variable, which is location, and also connected the radius to its change percentage variable."
-        },
-        {
-          "type": "text",
-          "value": "<h3>Adding Legend and Tooltip</h3>"
-        },
-        {
-          "type": "text",
-          "value": "This step is more routine, designed to make the visualization more interactive. It only requires adding hover listeners."
-        },
-        {
-          "type": "img",
-          "value": {
-            "filename": "../img/data-viz-photo/pop.gif",
-            "caption": "population change",
-            "alt": "population change"
-          }
-        }
-      ]
-    },
-    {
-      "slug": "globe",
-      "title": "Global Population Visualization",
-      "publication": "Personal Project",
-      "time": "August 2023",
-      "filename": "globe.gif",
-      "content": [
-        {
-          "type": "text",
-          "value": "<em>This visualization was created using Svelte.js. You can find the code here.</em>"
-        },
-        {
-          "type": "text",
-          "value": "It’s another population project, but unlike the previous one, this time I aimed to visualize global population data. Creating an interactive globe was an ideal choice, allowing users to click and drag the globe to see population numbers for each country."
-        },
-        {
-          "type": "text",
-          "value": "The geographic data we used is from 110m.json files. The data format is as follows:"
-        },
-        {
-          "type": "img",
-          "value": {
-            "filename": "../img/data-viz-photo/globe_data.png",
-            "caption": "population change",
-            "alt": "globe data"
-          }
-        },
-        {
-          "type": "text",
-          "value": "Here, \"id\" represents the ISO code, which I'll use to link the data. This is more reliable than using the country name."
-        },
-        {
-          "type": "text",
-          "value": "<h3>D3-Geo</h3>"
-        },
-        {
-          "type": "text",
-          "value": "I employed d3-geo for this project. D3-geo helps plot a set of values onto corresponding geographic locations. The general approach to using d3-geo involves four steps: 1) Create a projection function; 2) Create a path generator; 3) Render the country paths; 4) Add a globe."
-        },
-        {
-          "type": "text",
-          "value": "<h3>Responsive</h3>"
-        },
-        {
-          "type": "text",
-          "value": "Similar to the bubble visualization, we just need to create a .chart-container and use a dimension binding equal to the width."
-        },
-        {
-          "type": "text",
-          "value": "<h3>Styling the Globe</h3>"
-        },
-        {
-          "type": "text",
-          "value": "The next step is to add background color and fill the globe. I also added a subtle glow to the globe, achieved using an SVG drop shadow with feOffset, feGaussianBlur, and feMerge."
-        },
-        {
-          "type": "text",
-          "value": "<h3>Adding Data to the Globe</h3>"
-        },
-        {
-          "type": "text",
-          "value": "We now have a globe, but the data isn't embedded yet. In addition to importing data, I created a color scale that adjusts the fill of each country based on population density. The brighter the color, the lower the population, and vice versa."
-        },
-        {
-          "type": "text",
-          "value": "<h3>Rotating</h3>"
-        },
-        {
-          "type": "text",
-          "value": "This animation is a bit complex. I envision that when the user is not interacting with the page, the globe will automatically rotate. Once an interaction event is triggered, the user can drag the globe to explore different countries."
-        },
-        {
-          "type": "text",
-          "value": "For auto-rotation, I use d3-timer. We're instantiating the rotation to be 0, and then updating it by 0.5 degrees every second."
-        },
-        {
-          "type": "text",
-          "value": "For drag functionality, I use d3-drag. This module allows us to add drag events to any DOM element. It's worth noting that we set the rotation on the x-axis first—don't forget to add yRotation. Additionally, for a globe, adding inertia is better. I use a spring function for this; the spring works by taking an initial value and a set of options, including stiffness and damping."
-        },
-        {
-          "type": "text",
-          "value": "<h3>Other works</h3>"
-        },
-        {
-          "type": "text",
-          "value": "To enhance the experience further, we still have many things we can do, like styling the cursor when the user is dragging the globe or adding interactive tooltips to provide more information."
-        },
-        {
-          "type": "img",
-          "value": {
-            "filename": "../img/data-viz-photo/globe.gif",
-            "caption": "global population",
-            "alt": "globe population"
-          }
-        }
-      ]
     }
   ],
   "maps": [
@@ -813,42 +506,6 @@
           "value": "In the future, I aim to extend the study to encompass the entire US southern border for a more comprehensive analysis."
         }
       ]
-    },
-    {
-      "slug": "vacant_land",
-      "title": "Re-use Cleveland Vacant Land",
-      "label": "Geographically Weighted Regression analysis",
-      "image": "image1",
-      "description": [
-        {
-          "type": "text",
-          "value": "Cleveland, Ohio - along with many other post-industrial rust-belt cities—has a unique problem: how to cope with a shrinking population. The city has experienced a 56% reduction in overall population since 1950, leaving the city with nearly 20,000 neglected vacant lots. Cleveland has been attempting to “re-use” vacant land in creative ways through municipal “landbanking.” Vacant land re-use projects include small-scale economic development, residential construction, community gardens, public parks, and environmental remediation. The impact of these projects can be significant in terms of improving neighborhood quality of life for residents."
-        },
-        {
-          "type": "text",
-          "value": "This project involves creating maps to support a grant application to the U.S. Department of Housing and Urban Development (HUD). The city is seeking funding to support its vacant-land re-use strategy and aims to showcase the progress made to date. I will demonstrate whether the strategy of neighborhood revitalization through vacant-land reuse is reaching Cleveland’s most vulnerable (and vacant!) neighborhoods."
-        },
-        {
-          "type": "text",
-          "value": "I am tasked specifically with evaluating the success of vacant land re-use in relation to the overall social opportunity index and then delving more deeply into projects that could impact public health."
-        }
-      ]
-    },
-    {
-      "slug": "event_venue",
-      "title": "event venue",
-      "label": "Geocoding; Spatial analysis",
-      "image": "image2",
-      "description": [
-        {
-          "type": "text",
-          "value": "FLUX is an acclaimed annual art event in Pittsburgh, Pennsylvania, that highlights emerging artists. This year, faced with budget cuts, the event organizers have hired a marketing analyst to efficiently target potential attendees using limited data on past participation."
-        },
-        {
-          "type": "text",
-          "value": "The analyst's task is to analyze spatial data to find where previous attendees live, identifying clusters for focused marketing and at least one zip code for concentrated outreach. Additionally, the analyst may suggest a suitable location for the next event. This approach uses geocoding, cluster analysis, and hot spot analysis to overcome budget constraints and maintain the event's high standard."
-        }
-      ]
     }
   ],
   "blog": [
@@ -859,6 +516,16 @@
       "filename": "arpa_treasury.jpg",
       "description": "The project dealt with messy government data and a ton of manual coding. Data validation? A must.",
       "content": []
+    }
+  ],
+  "graphics": [
+    {
+      "slug": "option-oportunism",
+      "title": "Timing is money",
+      "publication": "Business Insider",
+      "time": "June, 2025",
+      "filename": "options.png",
+      "link": "<a href=\"https://www.businessinsider.com/options-opportunism-executive-stock-grant-timing-2025-6#:~:text=A%20Business%20Insider%20analysis%20of,scheduled%20stock%20options%20grant%20dates\">https://www.businessinsider.com/options-opportunism-executive-stock-grant-timing-2025-6</a>"
     }
   ]
 }
