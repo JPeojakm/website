@@ -45,20 +45,44 @@
   ],
   "dataviz": [
     {
-      "slug": "option-oportunism",
-      "title": "Timing is money",
+      "slug": "chinese-retail",
+      "title": "Chinese Retail Chains",
       "publication": "Business Insider",
-      "time": "June, 2025",
-      "filename": "options.png",
-      "link": "https://www.businessinsider.com/options-opportunism-executive-stock-grant-timing-2025-6"
+      "time": "August 2025",
+      "filename": "china_brand.gif",
+      "link": "https://www.businessinsider.com/chinese-retail-brands-labubu-luckin-expand-us-open-stores-data-2025-8"
+    },
+    {
+      "slug": "byd-shipping",
+      "title": "BYD Deep Ocean Shipping.",
+      "publication": "Business Insider",
+      "time": "August 2025",
+      "filename": "bydshipping.gif",
+      "link": "https://www.businessinsider.com/see-byds-fleet-car-carrying-cargo-ships-tesla-2025-8"
     },
     {
       "slug": "datacenter",
       "title": "The AI Boom",
       "publication": "Business Insider",
-      "time": "June, 2025",
+      "time": "June 2025",
       "filename": "datacenter.png",
-      "link": "https://www.businessinsider.com/data-centers-northern-virginia-noise-air-pollution-cost-2025-5"
+      "link": "https://www.businessinsider.com/ai-data-center-development-true-cost-environmental-impact-2025-6"
+    },
+    {
+      "slug": "option-oportunism",
+      "title": "Option Opportunism",
+      "publication": "Business Insider",
+      "time": "June 2025",
+      "filename": "options.gif",
+      "link": "https://www.businessinsider.com/options-opportunism-executive-stock-grant-timing-2025-6"
+    },
+    {
+      "slug": "genz-delay",
+      "title": "Gen Z Delay",
+      "publication": "Business Insider",
+      "time": "April 2025",
+      "filename": "GenZdelay.png",
+      "link": "https://www.businessinsider.com/gen-z-delays-work-marriage-children-homebuying-delayed-development-2025-4"
     },
     {
       "slug": "china-energy",
